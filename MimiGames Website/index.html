@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mimi Games | Mobile Game Studio & Creators of Rogue Wheel</title>
+  <meta name="description" content="Mimi Games — Mobile game studio from Pakistan. Creators of Rogue Wheel: Catapult Thrower and Xtremeversity. High-quality games for Android.">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/favicon.png">
+  <meta property="og:title" content="Mimi Games">
+  <meta property="og:description" content="Mimi Games — Mobile game studio from Pakistan. High-quality games for Android.">
+  <meta property="og:image" content="https://www.mimigames.games/assets/images/MIMI GAMES LOGO.jpg">
+  <meta property="og:url" content="https://www.mimigames.games">
+  <meta property="og:type" content="website">
+
+  <!-- SCHEMA.ORG JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.mimigames.games",
+    "logo": "https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg",
+    "name": "Mimi Games",
+    "description": "Mobile game studio from Pakistan creating high-quality games for Android, including Rogue Wheel and Xtremeversity.",
+    "sameAs": [
+      "https://play.google.com/store/apps/dev?id=7588389315845065039",
+      "https://youtube.com/@mimigames.2k24",
+      "https://www.linkedin.com/company/mimi-game/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sargodha",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
+    <div class="preloader-bar-wrap">
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+
+  <mimi-header></mimi-header>
+
+  <!-- ══════════════════════════════════
+       HERO — Cinematic Full-Screen
+  ═════════════════════════════════════ -->
+  <section class="hero" style="border:none;padding:0;background:var(--void);">
+    <canvas id="particles-canvas" style="position:absolute; inset:0; z-index:0; pointer-events:none;"></canvas>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-ring"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Official Studio Website</div>
+      <h1>Play.<br>Explore.<br>Dominate.</h1>
+      <p class="hero-sub">Mimi Games is a passionate mobile game studio from Pakistan — crafting high-quality, immersive Android games that leave a lasting impression.</p>
+      <div class="hero-cta">
+        <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="btn btn-primary" target="_blank">
+          ▶ Play on Google Play
+        </a>
+        <a href="#games" class="btn btn-ghost">Our Games</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       TICKER STRIP
+  ═════════════════════════════════════ -->
+  <div class="ticker-strip">
+    <div class="ticker-inner">
+      <span>Mimi Games</span><span>★</span>
+      <span>Rogue Wheel: Catapult Thrower</span><span>★</span>
+      <span>Xtremeversity</span><span>★</span>
+      <span>Made in Pakistan 🇵🇰</span><span>★</span>
+      <span>Mobile Gaming Studio</span><span>★</span>
+      <span>Unity · DOTween · Android</span><span>★</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Mimi Games</span><span>★</span>
+      <span>Rogue Wheel: Catapult Thrower</span><span>★</span>
+      <span>Xtremeversity</span><span>★</span>
+      <span>Made in Pakistan 🇵🇰</span><span>★</span>
+      <span>Mobile Gaming Studio</span><span>★</span>
+      <span>Unity · DOTween · Android</span><span>★</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       STATS STRIP
+  ═════════════════════════════════════ -->
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item reveal">
+        <span class="stat-number">2+</span>
+        <div class="stat-label">Games Released</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">4</span>
+        <div class="stat-label">Team Members</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">100%</span>
+        <div class="stat-label">Android Optimized</div>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number">🇵🇰</span>
+        <div class="stat-label">Born in Pakistan</div>
+      </div>
+    </div>
+  </div>
+
+  <main style="background:var(--void);padding:0;">
+
+    <!-- ══════════════════════════════════
+         ABOUT — Editorial Two-Column
+    ═════════════════════════════════════ -->
+    <div class="editorial" id="about">
+      <div class="container">
+        <div class="label">About the Studio</div>
+        <div class="two-col">
+          <div class="reveal-l">
+            <h2>We Build Games<br>That <span style="color:var(--orange)">Matter</span></h2>
+            <div class="accent-quote">
+              <p>"Where Fantasy Becomes Playable — one mobile game at a time."</p>
+            </div>
+            <p>Mimi Games is based in Sargodha, Punjab, Pakistan. From our first Unity project we have been dedicated to pushing the boundaries of mobile gaming — crafting polished, immersive experiences that resonate with players worldwide.</p>
+          </div>
+          <div class="reveal-r">
+            <p>We believe every game should not only entertain but also leave a lasting impression. Our team fuses smooth gameplay, beautiful visuals, and thoughtful systems — whether that's an intense FPS or a relaxing puzzle adventure.</p>
+            <p>Performance is our religion. Every title we ship is engineered to run buttery-smooth across all Android devices, from flagships to budget phones. We represent Pakistan on the global gaming stage — and we're just getting started.</p>
+            <div style="margin-top:2rem;">
+              <a href="values.html" class="btn btn-ghost">Our Philosophy →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         FEATURED GAME — Rogue Wheel
+    ═════════════════════════════════════ -->
+    <div class="game-feature" id="games">
+      <div class="game-feature-grid">
+        <div class="game-feature-content reveal-l">
+          <span class="badge">Featured Title · 2024</span>
+          <h2 style="margin-top:1.5rem;">Rogue Wheel:<br>Catapult Thrower</h2>
+          <p style="margin-top:1rem;">Our debut Unity project — a fierce fusion of rogue-style chaos and physics-based catapult mechanics. Every shot counts. Every run is a new story.</p>
+
+          <div class="num-list">
+            <div class="num-item">
+              <span class="num">01</span>
+              <div>
+                <div class="num-label">Physics-Based Combat</div>
+                <p class="num-desc">Real ballistics — knock down enemies and structures with satisfying, skill-based destruction.</p>
+              </div>
+            </div>
+            <div class="num-item">
+              <span class="num">02</span>
+              <div>
+                <div class="num-label">Rogue-Lite Progression</div>
+                <p class="num-desc">Randomized levels, enemies, and power-ups make every run unique and unpredictable.</p>
+              </div>
+            </div>
+            <div class="num-item">
+              <span class="num">03</span>
+              <div>
+                <div class="num-label">Upgrade & Customize</div>
+                <p class="num-desc">Enhance your catapult with new designs, powers, and damage upgrades between runs.</p>
+              </div>
+            </div>
+            <div class="num-item">
+              <span class="num">04</span>
+              <div>
+                <div class="num-label">One-Handed Mobile Play</div>
+                <p class="num-desc">Designed for mobile — offline, lightweight, and smooth on every Android device.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.mimigames.catapultbrawl" class="btn btn-primary" target="_blank">Play Now →</a>
+          </div>
+        </div>
+
+        <div class="game-feature-visual">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 1.5rem; z-index: 2;">
+            <a href="https://play.google.com/store/apps/details?id=com.mimigames.catapultbrawl" target="_blank" style="transition: transform 0.3s ease; display: block;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'">
+              <img src="assets/images/Rogue Wheel.png" alt="Rogue Wheel Icon" style="width: 140px; height: 140px; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.1); object-fit: cover; display: block;">
+            </a>
+            <span style="font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; color: var(--muted); letter-spacing: 3px; text-transform: uppercase;">Mobile Release</span>
+          </div>
+          <!-- Abstract background texture to frame the icon nicely -->
+          <div style="width: 100%; height: 100%; background: radial-gradient(circle at 70% 50%, rgba(232,124,42,0.15), transparent 60%);"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         WHAT WE BUILD — Glass Cards
+    ═════════════════════════════════════ -->
+    <div class="glass-section">
+      <div class="container">
+        <div class="label">Our Craft</div>
+        <div class="two-col" style="margin-top:0;gap:2rem;align-items:center;">
+          <h2 class="reveal-l">What We<br>Build</h2>
+          <p class="reveal-r" style="font-size:1.05rem;">From physics-based action games to open-world FPS titles, Mimi Games spans genres with one constant: quality and creativity at every frame.</p>
+        </div>
+
+        <div class="glass-grid">
+          <div class="g-card reveal">
+            <div class="g-card-icon">🎯</div>
+            <h3>Action & Arcade</h3>
+            <p>Fast-paced, high-energy gameplay with tight mechanics and satisfying feedback at every interaction.</p>
+          </div>
+          <div class="g-card reveal">
+            <div class="g-card-icon">🌍</div>
+            <h3>Open World FPS</h3>
+            <p>Expansive maps, tactical combat, and realistic military-grade action in a cinematic mobile experience.</p>
+          </div>
+          <div class="g-card reveal">
+            <div class="g-card-icon">🧩</div>
+            <h3>Puzzle & Strategy</h3>
+            <p>Thoughtful, replayable designs that challenge the mind while remaining accessible for casual players.</p>
+          </div>
+          <div class="g-card reveal">
+            <div class="g-card-icon">🚀</div>
+            <h3>Rogue-Lite</h3>
+            <p>Procedural randomness meets skill-based progression — every run teaches you something new.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         TECHNOLOGIES
+    ═════════════════════════════════════ -->
+    <div class="editorial" style="background:var(--night);">
+      <div class="container">
+        <div class="label">Our Stack</div>
+        <div class="two-col" style="margin-top:0;align-items:center;gap:3rem;">
+          <h2 class="reveal-l">Built With<br>The Best</h2>
+          <p class="reveal-r">We don't cut corners. Every system, animation, and save-file is engineered for reliability, performance, and longevity across a massive device ecosystem.</p>
+        </div>
+        <div class="tech-row reveal">
+          <div class="tech-cell">
+            <div class="tech-name">Unity Engine</div>
+            <div class="tech-sub">C# · Cross-platform game dev</div>
+          </div>
+          <div class="tech-cell">
+            <div class="tech-name">DOTween</div>
+            <div class="tech-sub">Fluid high-performance animations</div>
+          </div>
+          <div class="tech-cell">
+            <div class="tech-name">TextMeshPro</div>
+            <div class="tech-sub">Professional UI typography</div>
+          </div>
+          <div class="tech-cell">
+            <div class="tech-name">JSON + PlayerPrefs</div>
+            <div class="tech-sub">Advanced data persistence</div>
+          </div>
+          <div class="tech-cell">
+            <div class="tech-name">Android SDK</div>
+            <div class="tech-sub">Optimized for all devices</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         TEAM
+    ═════════════════════════════════════ -->
+    <div class="editorial" id="team">
+      <div class="container">
+        <div class="label">The People</div>
+        <div class="two-col" style="margin-top:0;align-items:center;gap:3rem;">
+          <h2 class="reveal-l">Meet the<br>Team</h2>
+          <p class="reveal-r">Small team, massive ambition. Every person at Mimi Games wears multiple hats and shares one obsession: making games worth playing.</p>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <span class="team-initial">MW</span>
+            <h3>Musa Warraich</h3>
+            <p>Co-Founder & Collaboration Partner</p>
+          </div>
+          <div class="team-card reveal">
+            <span class="team-initial">MA</span>
+            <h3>Muhammad Arslan</h3>
+            <p>Systems & Architecture Specialist</p>
+          </div>
+          <div class="team-card reveal">
+            <span class="team-initial">SZ</span>
+            <h3>Sabeen Zahra</h3>
+            <p>Visual Design & Animation Designer</p>
+          </div>
+          <div class="team-card reveal">
+            <span class="team-initial">MI</span>
+            <h3>Minhal Ali</h3>
+            <p>Art & Creative Director</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         MISSION — Manifesto Block
+    ═════════════════════════════════════ -->
+    <div class="mission-block" id="mission">
+      <div class="container">
+        <div class="label">Our Purpose</div>
+        <div class="two-col" style="margin-top:0;gap:5rem;align-items:start;">
+          <div class="reveal-l">
+            <div class="mission-quote-big">
+              Delivering games that <span>entertain</span>, <span style="color:var(--teal)">challenge</span>, and <span>inspire</span>.
+            </div>
+            <p>At Mimi Games, our mission is to design emotionally satisfying and accessible mobile gaming experiences that bring joy, creativity, and challenge to players worldwide — especially young audiences.</p>
+          </div>
+          <div class="reveal-r">
+            <div class="num-list">
+              <div class="num-item">
+                <span class="num">—</span>
+                <div><div class="num-label">Family-Friendly Action</div><p class="num-desc">Games that entertain, educate, and inspire across all ages.</p></div>
+              </div>
+              <div class="num-item">
+                <span class="num">—</span>
+                <div><div class="num-label">Universal Performance</div><p class="num-desc">Optimal experience on every Android device, no compromises.</p></div>
+              </div>
+              <div class="num-item">
+                <span class="num">—</span>
+                <div><div class="num-label">Genre Innovation</div><p class="num-desc">Fresh, replayable experiences in hyper-casual and FPS genres.</p></div>
+              </div>
+              <div class="num-item">
+                <span class="num">—</span>
+                <div><div class="num-label">Pakistan on the Map</div><p class="num-desc">Representing Pakistani talent on the global gaming stage.</p></div>
+              </div>
+            </div>
+            <div class="mission-pills" style="margin-top:2rem;">
+              <span class="pill">Quality First</span>
+              <span class="pill">Player-Centric</span>
+              <span class="pill">Ethical Design</span>
+              <span class="pill">Creativity</span>
+              <span class="pill">Performance</span>
+              <span class="pill">Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         XTREMEVERSITY TEASER
+    ═════════════════════════════════════ -->
+    <div class="game-teaser" id="xtremeversity">
+      <div class="game-teaser-bg"></div>
+      <div class="game-teaser-content reveal-l">
+        <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+          <img src="assets/images/Xtremeversity.png" alt="Xtremeversity Icon" style="width: 70px; height: 70px; border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.15); object-fit: cover;">
+          <span class="badge" style="background:var(--teal);color:var(--void);">Coming Soon · FPS Open World</span>
+        </div>
+        <h2 style="margin-top:0;">Xtremeversity</h2>
+        <p>Modernized warfare. Open-world freedom. Relentless tactical combat — all on mobile. Command military vehicles, lead squads, and dominate vast battlefields.</p>
+        <a href="xtremeversity.html" class="btn btn-ghost" style="margin-top:0.5rem;">Learn More →</a>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         WHAT MAKES US DIFFERENT
+    ═════════════════════════════════════ -->
+    <div class="editorial">
+      <div class="container">
+        <div class="label">Why Mimi Games</div>
+        <h2 class="reveal" style="margin-bottom:2.5rem;">What Makes Us<br><span style="color:var(--orange)">Different</span></h2>
+        <div class="glass-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+          <div class="g-card reveal">
+            <div class="g-card-icon">🎨</div>
+            <h3>Unique Visual Design</h3>
+            <p>Every title gets a bespoke art direction — no templates, no shortcuts. Visuals that feel alive and intentional.</p>
+          </div>
+          <div class="g-card reveal">
+            <div class="g-card-icon">⚙️</div>
+            <h3>Optimized Systems</h3>
+            <p>Game systems built for replayability and performance — clean architecture with efficient DOTween and JSON saving.</p>
+          </div>
+          <div class="g-card reveal">
+            <div class="g-card-icon">🧠</div>
+            <h3>Creative Storytelling</h3>
+            <p>Even casual games deserve a narrative heart. We embed creative storytelling into every genre we touch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         COMMUNITY / SOCIAL
+    ═════════════════════════════════════ -->
+    <div class="community">
+      <div class="container">
+        <div class="label">Join Us</div>
+        <div class="two-col" style="margin-top:0;align-items:center;gap:3rem;">
+          <h2 class="reveal-l">Join the<br>Community</h2>
+          <p class="reveal-r">Follow us across platforms for game updates, behind-the-scenes content, studio news, and early access announcements.</p>
+        </div>
+        <div class="social-big-grid">
+          <a href="https://www.youtube.com/@mimigames.2k24" class="social-big reveal" target="_blank">
+            <div class="social-big-icon">📺</div>
+            <div class="social-big-info">
+              <div class="social-big-name">YouTube</div>
+              <p class="social-big-desc">Gameplay trailers, dev vlogs & releases</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/mimi-game/" class="social-big reveal" target="_blank">
+            <div class="social-big-icon">💼</div>
+            <div class="social-big-info">
+              <div class="social-big-name">LinkedIn</div>
+              <p class="social-big-desc">Studio updates, careers & partnerships</p>
+            </div>
+          </a>
+          <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-big reveal" target="_blank">
+            <div class="social-big-icon">🎮</div>
+            <div class="social-big-info">
+              <div class="social-big-name">Google Play</div>
+              <p class="social-big-desc">Download our games — free to play</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════
+         FINAL CTA
+    ═════════════════════════════════════ -->
+    <div class="final-cta">
+      <div class="label" style="justify-content:center;">Ready to Play?</div>
+      <h2>Download.<br><span style="color:var(--orange)">Play.</span><br><span style="color:var(--teal)">Win.</span></h2>
+      <p>All Mimi Games titles are free on Android. No subscriptions. No paywalls. Just pure mobile gaming.</p>
+      <div class="final-cta-btns">
+        <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="btn btn-primary" target="_blank">▶ Google Play Store</a>
+        <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+      </div>
+    </div>
+
+  </main>
+
+  <mimi-footer></mimi-footer>
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
