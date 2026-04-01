@@ -17,7 +17,7 @@ class MimiHeader extends HTMLElement {
             <li><a href="values.html">Our Values</a></li>
             <li><a href="career.html">Career</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="privacy-policy.html">Privacy</a></li>
             <li><a href="xtremeversity.html">Xtremeversity</a></li>
           </ul>
         </div>
@@ -81,10 +81,10 @@ class MimiFooter extends HTMLElement {
               <span class="chevron"></span>
             </div>
             <ul class="accordion-content">
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="privacy.html">Terms of Use</a></li>
-              <li><a href="privacy.html">Cookies Policy</a></li>
-              <li><a href="privacy.html">EULA</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="privacy-policy.html">Terms of Use</a></li>
+              <li><a href="privacy-policy.html">Cookies Policy</a></li>
+              <li><a href="privacy-policy.html">EULA</a></li>
             </ul>
           </div>
           <div class="footer-column follow-column">
