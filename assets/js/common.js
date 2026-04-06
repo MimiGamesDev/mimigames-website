@@ -82,7 +82,7 @@ class MimiFooter extends HTMLElement {
             </div>
             <ul class="accordion-content">
               <li><a href="privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="privacy-policy.html">Terms of Use</a></li>
+              <li><a href="terms-of-use.html">Terms of Use</a></li>
               <li><a href="privacy-policy.html">Cookies Policy</a></li>
               <li><a href="privacy-policy.html">EULA</a></li>
             </ul>
