@@ -25,7 +25,7 @@ class MimiHeader extends HTMLElement {
     `;
 
     const toggle = this.querySelector('#navToggle');
-    const links  = this.querySelector('#navLinks');
+    const links = this.querySelector('#navLinks');
 
     toggle.addEventListener('click', () => {
       links.classList.toggle('active');
@@ -155,7 +155,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
   const parallaxBgs = document.querySelectorAll('.game-teaser-bg');
-  
+
   parallaxBgs.forEach(bg => {
     const rate = scrolled * 0.15;
     bg.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
@@ -174,7 +174,7 @@ function initTilt() {
       const centerY = rect.height / 2;
       const rotateX = ((y - centerY) / centerY) * -8;
       const rotateY = ((x - centerX) / centerX) * 8;
-      
+
       card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
     });
     card.addEventListener('mouseleave', () => {
@@ -190,11 +190,11 @@ function initParticles() {
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let particles = [];
-  
+
   function resize() { canvas.width = canvas.parentElement.clientWidth; canvas.height = canvas.parentElement.clientHeight; }
   window.addEventListener('resize', resize); resize();
-  
-  for(let i=0; i<40; i++) {
+
+  for (let i = 0; i < 40; i++) {
     particles.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -204,15 +204,15 @@ function initParticles() {
       opacity: Math.random() * 0.5 + 0.1
     });
   }
-  
+
   function draw() {
-    ctx.clearRect(0,0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     particles.forEach(p => {
       p.x += p.dx; p.y += p.dy;
-      if(p.x < 0 || p.x > canvas.width) p.dx *= -1;
-      if(p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
       ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(232, 124, 42, ' + p.opacity + ')';
       ctx.fill();
     });
@@ -228,7 +228,7 @@ const uiAudio = new Audio(base64Click);
 uiAudio.volume = 0.1;
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a.btn, button.btn').forEach(btn => {
-    btn.addEventListener('mouseenter', () => { if(window.innerWidth > 900) { uiAudio.currentTime = 0; uiAudio.play().catch(()=>{}); } });
+    btn.addEventListener('mouseenter', () => { if (window.innerWidth > 900) { uiAudio.currentTime = 0; uiAudio.play().catch(() => { }); } });
   });
 });
 
