@@ -12,7 +12,16 @@
 - [terms-of-use.html](file://terms-of-use.html)
 - [data-deletion.html](file://data-deletion.html)
 - [xtremeversity.html](file://xtremeversity.html)
+- [sitemap.xml](file://sitemap.xml)
+- [robots.txt](file://robots.txt)
 </cite>
+
+## Update Summary
+**Changes Made**
+- Updated Privacy Policy section to reflect expanded advertising ecosystem documentation
+- Added comprehensive third-party service listings with privacy policy links
+- Enhanced transparency documentation for user data handling
+- Updated component communication patterns to reflect privacy policy integration
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -30,6 +39,8 @@
 The Mimi Games website utilizes two core reusable custom elements that provide consistent navigation and footer functionality across all pages. These components are built as Web Components using the Custom Elements API, offering encapsulation, reusability, and maintainability for the entire website ecosystem.
 
 The components follow modern web standards and provide responsive behavior, accessibility features, and cross-browser compatibility. They are designed to be framework-agnostic and can be easily integrated into various page layouts while maintaining consistent user experience.
+
+**Updated** The website now includes comprehensive privacy policy documentation that details the expanded advertising ecosystem with detailed third-party service listings and privacy policy links for each partner, enhancing transparency and user trust.
 
 ## Project Structure
 
@@ -104,6 +115,8 @@ The MimiHeader component provides a responsive navigation bar with mobile hambur
 The MimiFooter component delivers an accordion-style mobile navigation, social media integration, back-to-top functionality, and comprehensive site map organization.
 
 Both components are implemented as ES6 classes extending HTMLElement, utilizing the Shadow DOM for encapsulation and providing robust interactivity through event listeners and DOM manipulation.
+
+**Updated** The components now seamlessly integrate with the enhanced privacy policy documentation, ensuring users can easily access comprehensive third-party service information and privacy policy links from any page.
 
 **Section sources**
 - [common.js:1-129](file://assets/js/common.js#L1-L129)
@@ -365,6 +378,8 @@ The components utilize several communication patterns:
 - **Consistent Styling**: Shared styles ensure visual consistency across components
 - **Template Reuse**: Similar structural patterns enable predictable behavior
 
+**Updated** The components now provide seamless integration with the enhanced privacy policy documentation, ensuring users can access comprehensive third-party service information and privacy policy links from any page.
+
 **Section sources**
 - [common.js:1-129](file://assets/js/common.js#L1-L129)
 - [style.css:20-42](file://assets/css/style.css#L20-L42)
@@ -389,6 +404,8 @@ subgraph "External Resources"
 Fonts[Google Fonts]
 Images[Asset Images]
 SVG[Inline SVG]
+PrivacyPolicy[Enhanced Privacy Policy]
+ThirdPartyServices[Third-Party Services]
 end
 MimiHeader --> DOM
 MimiHeader --> CSSOM
@@ -403,6 +420,10 @@ MimiHeader --> SVG
 MimiFooter --> Fonts
 MimiFooter --> Images
 MimiFooter --> SVG
+MimiHeader --> PrivacyPolicy
+MimiFooter --> PrivacyPolicy
+MimiHeader --> ThirdPartyServices
+MimiFooter --> ThirdPartyServices
 ```
 
 **Diagram sources**
@@ -419,6 +440,8 @@ The components are designed for broad browser compatibility:
 | CSS Variables | Chrome 49, Firefox 31, Safari 9.1 | Static values fallback |
 | Intersection Observer | Chrome 51, Firefox 55, Safari 10.1 | Manual scroll detection |
 | Transform 3D | Chrome 36, Firefox 16, Safari 9 | 2D transforms fallback |
+
+**Updated** The enhanced privacy policy documentation maintains full compatibility with all supported browsers, ensuring comprehensive third-party service transparency across all platforms.
 
 **Section sources**
 - [common.js:131-223](file://assets/js/common.js#L131-L223)
@@ -439,6 +462,8 @@ The components are designed for broad browser compatibility:
 - **Transform Properties**: Using transform3d for GPU acceleration
 - **Reduced Reflows**: Batched DOM updates through single innerHTML assignment
 - **Intersection Observer**: Efficient scroll-based animations without continuous polling
+
+**Updated** The enhanced privacy policy documentation is optimized for performance with lazy loading of third-party service information and efficient rendering of comprehensive service listings.
 
 ## Troubleshooting Guide
 
@@ -492,6 +517,18 @@ The components are designed for broad browser compatibility:
 2. Check browser console for rendering errors
 3. Ensure proper MIME type handling
 
+#### Privacy Policy Links Not Working
+**Symptoms**: Third-party service privacy policy links are broken
+**Causes**:
+- External service URL changes
+- Network connectivity issues
+- Browser security restrictions
+
+**Solutions**:
+1. Verify external URLs are accessible
+2. Check for network timeouts
+3. Test in different browsers and environments
+
 ### Debugging Techniques
 
 #### Component Inspection
@@ -509,6 +546,8 @@ The components are designed for broad browser compatibility:
 2. **Polyfill Implementation**: Consider adding Custom Elements polyfills for older browsers
 3. **CSS Grid Fallbacks**: Ensure flexbox alternatives for older browsers
 
+**Updated** Enhanced debugging techniques for privacy policy integration, including verification of third-party service URL accessibility and comprehensive testing of privacy policy link functionality across different browsers and network conditions.
+
 **Section sources**
 - [common.js:1-235](file://assets/js/common.js#L1-L235)
 
@@ -516,12 +555,15 @@ The components are designed for broad browser compatibility:
 
 The Mimi Games website's core reusable components demonstrate excellent implementation of modern web standards through Custom Elements. The MimiHeader and MimiFooter components provide consistent navigation and footer functionality across all pages while maintaining responsive behavior and accessibility compliance.
 
+**Updated** The website now features comprehensive privacy policy documentation that details the expanded advertising ecosystem with detailed third-party service listings and privacy policy links for each partner. This enhancement significantly improves transparency and user trust while maintaining the components' modular design and performance optimization.
+
 Key strengths of the implementation include:
 - **Modular Design**: Clean separation of concerns with encapsulated functionality
 - **Responsive Architecture**: Adaptive behavior through CSS media queries and JavaScript
 - **Performance Optimization**: Efficient DOM manipulation and hardware-accelerated animations
 - **Cross-Browser Compatibility**: Graceful degradation and feature detection
 - **Accessibility Compliance**: Proper ARIA attributes and keyboard navigation support
+- **Enhanced Transparency**: Comprehensive third-party service documentation with direct privacy policy links
 
 The components serve as a foundation for the entire website ecosystem, enabling easy maintenance and consistent user experience across all pages. Their implementation provides valuable patterns for other web projects requiring reusable, accessible, and performant UI components.
 
@@ -530,3 +572,4 @@ Future enhancements could include:
 - Additional customization options through CSS custom properties
 - Integration with modern build tools and module bundlers
 - Progressive enhancement for improved user experience
+- Expanded privacy policy automation and real-time service status monitoring
