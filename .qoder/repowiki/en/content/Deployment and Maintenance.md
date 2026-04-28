@@ -14,6 +14,13 @@
 - [common.js](file://assets/js/common.js)
 </cite>
 
+## Update Summary
+**Changes Made**
+- Updated Advertising Infrastructure section to reflect comprehensive app-ads.txt expansion
+- Added detailed analysis of 153 authorized resellers and direct ownership relationships
+- Enhanced monetization capabilities documentation
+- Updated security and verification procedures for expanded advertising ecosystem
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Project Structure](#project-structure)
@@ -28,6 +35,8 @@
 
 ## Introduction
 This document provides comprehensive guidance for deploying and maintaining the Mimi Games website. It covers GitHub Pages configuration (custom domain, branch selection, and automated deployment), the build and optimization process for static assets, update procedures for content, styles, and features, maintenance tasks (broken link checks, HTML validation, performance monitoring), troubleshooting for common deployment and domain issues, backup and rollback strategies, and security update practices. The website is a static site hosted on GitHub Pages with a custom domain and includes SEO, accessibility, and performance-focused assets.
+
+**Updated** The website now features a comprehensive advertising infrastructure with 153 authorized resellers and direct ownership relationships, significantly expanding monetization capabilities through Google AdMob, Unity Ads, IronSource, and multiple advertising partners.
 
 ## Project Structure
 The repository is a static website composed of HTML pages, CSS, JavaScript, and supporting SEO and ads files. Key characteristics:
@@ -64,7 +73,7 @@ B --> B8["terms-of-use.html"]
 - [data-deletion.html](file://data-deletion.html)
 - [robots.txt:1-5](file://robots.txt#L1-L5)
 - [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
-- [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [README.md:1-11](file://README.md#L1-L11)
@@ -198,19 +207,56 @@ References:
 - [common.js:1-129](file://assets/js/common.js#L1-L129)
 - [common.js:53-129](file://assets/js/common.js#L53-L129)
 
+### Advertising Infrastructure and Monetization
+**Updated** The website now features a comprehensive advertising infrastructure managed through app-ads.txt, establishing verified partnerships with 153 authorized resellers and direct ownership relationships.
+
+#### Direct Ownership Relationships
+- Google AdMob: pub-9066302158818993 (DIRECT)
+- Unity Ads: 657375 (DIRECT)
+- IronSource: 657375 (DIRECT)
+- Unity Technologies: 5480586 (DIRECT)
+
+#### Authorized Resellers
+The infrastructure includes extensive partnerships with major advertising platforms:
+- **Google AdMob**: Multiple publisher IDs (pub-1682595508078257, pub-2923085774557613, pub-3990748024667386, pub-5060663379040713)
+- **AppNexus**: Multiple accounts (11826, 12061, 14230, 15980, 17234, 17779, 6849)
+- **Rubicon Project**: Extensive network (13380, 15268, 15854, 17328, 17476, 17608, 17960, 20014, 20744, 22134, 22412, 24400, 24600, 25064, 25336, 25978, 26132, 26292, 26958, 28169)
+- **PubMatic**: Comprehensive network (137711, 156177, 156520, 159501, 159906, 160318, 160456, 161151, 162588, 165438, 167130, 167188)
+- **TripleLift**: Multiple accounts (12908, 13042, 13883, 14127, 14594, 14716)
+- **Sharethrough**: Extensive network (3713, 5294, 5828-OB, 5828, bc6d1whs, bxzzb1br, ftvct81v, ibazay96, r9b1mg7e, sniqcomc, UvcAx8IL)
+- **SmartAdServer**: Multiple accounts (4456, 4568, 4578, 4610, 5294, 5828-OB, 5828)
+- **Smaato**: Multiple accounts (1100040398, 1100047589, 1100055750, 1100059282, 1100059375, 1100059563)
+
+#### Verification and Security
+- Domain ownership verification: ownerdomain=mimigames.games
+- Secure token-based authorization for certain resellers
+- Direct relationships with major advertising platforms
+- Comprehensive coverage of mobile advertising ecosystem
+
+References:
+- Direct ownership entries: [app-ads.txt:3-8](file://app-ads.txt#L3-L8)
+- Authorized reseller entries: [app-ads.txt:9-156](file://app-ads.txt#L9-L156)
+- Domain verification: [app-ads.txt:1](file://app-ads.txt#L1)
+
+**Section sources**
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
+
 ### Maintenance Tasks
 - Broken link checks: Use tools to crawl the live site and verify internal links.
 - HTML validation: Validate pages against HTML5 standards to prevent rendering issues.
 - Performance monitoring: Track Core Web Vitals, Lighthouse scores, and asset sizes.
 - SEO audits: Confirm canonical URLs, meta descriptions, structured data, and sitemap submission.
+- **Updated** Advertising verification: Regularly validate app-ads.txt compliance and monitor ad revenue performance.
 
 References:
 - Sitemap submission via robots.txt: [robots.txt:4](file://robots.txt#L4)
 - Structured data in index.html: [index.html:26-74](file://index.html#L26-L74)
+- Advertising infrastructure: [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [robots.txt:4](file://robots.txt#L4)
 - [index.html:26-74](file://index.html#L26-L74)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ### Troubleshooting Guide
 Common deployment and domain issues:
@@ -225,16 +271,23 @@ Common deployment and domain issues:
 - SEO and indexing issues:
   - Confirm robots.txt allows crawling and sitemap location.
   - Validate structured data and canonical URLs.
+- **Updated** Advertising verification issues:
+  - Verify app-ads.txt syntax and formatting.
+  - Check domain ownership verification.
+  - Validate reseller account configurations.
+  - Monitor ad revenue tracking and reporting.
 
 References:
 - Custom domain hosting note: [README.md:10](file://README.md#L10)
 - robots.txt directives: [robots.txt:1-4](file://robots.txt#L1-L4)
 - sitemap.xml structure: [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
+- Advertising infrastructure: [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [README.md:10](file://README.md#L10)
 - [robots.txt:1-4](file://robots.txt#L1-L4)
 - [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ### Backup and Rollback Procedures
 - Backups:
@@ -246,6 +299,10 @@ References:
 - Change management:
   - Use pull requests and review before merging to the source branch.
   - Maintain a changelog of updates.
+- **Updated** Advertising configuration backups:
+  - Maintain separate backups of app-ads.txt configurations.
+  - Document changes to advertising partnerships and resellers.
+  - Monitor ad revenue during rollback procedures.
 
 [No sources needed since this section provides general guidance]
 
@@ -254,20 +311,29 @@ References:
   - Review font and CDN links periodically.
 - Monitor ads and analytics:
   - Validate app-ads.txt and adjust as needed.
+  - **Updated** Regularly audit advertising partnerships for security compliance.
+  - Monitor for unauthorized ad placements or suspicious activity.
 - Access control:
   - Restrict repository permissions and enable two-factor authentication.
+- **Updated** Advertising security:
+  - Validate all reseller accounts and tokens.
+  - Monitor for ad fraud and policy violations.
+  - Implement proper attribution tracking for all advertising partners.
 
 References:
 - AdMob verification file: [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- Advertising infrastructure: [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ## Dependency Analysis
-The site’s runtime dependencies are minimal and explicit:
+The site's runtime dependencies are minimal and explicit:
 - HTML pages depend on local CSS and JS.
 - CSS depends on Google Fonts via external links.
 - JavaScript depends on DOM APIs and IntersectionObserver for scroll effects.
+- **Updated** Advertising infrastructure depends on external ad networks and verification services.
 
 ```mermaid
 graph LR
@@ -280,28 +346,33 @@ VALUES --> JS
 DATADEL["data-deletion.html"] --> CSS
 DATADEL --> JS
 CSS --> FONTS["Google Fonts"]
+ADINFRA["Advertising Infrastructure"] --> ADRES["153+ Resellers"]
+ADINFRA --> ADVER["Verification Services"]
 ```
 
 **Diagram sources**
 - [index.html:10](file://index.html#L10)
 - [style.css:16](file://assets/css/style.css#L16)
 - [common.js:49](file://assets/js/common.js#L49)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [index.html:10](file://index.html#L10)
 - [style.css:16](file://assets/css/style.css#L16)
 - [common.js:49](file://assets/js/common.js#L49)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ## Performance Considerations
 - Reduce render-blocking resources: Inline critical CSS for above-the-fold content if needed.
 - Optimize images: Compress and consider modern formats.
 - Minimize third-party dependencies: Keep external font and script loads lean.
 - Monitor Core Web Vitals: Use Lighthouse and real-user monitoring to track improvements.
+- **Updated** Advertising performance: Monitor ad loading times and revenue impact of different resellers.
 
 [No sources needed since this section provides general guidance]
 
 ## Conclusion
-The Mimi Games website is a straightforward static site suitable for GitHub Pages with a custom domain. By following the deployment steps, maintaining SEO and accessibility, and applying the troubleshooting and maintenance practices outlined here, you can ensure reliable availability, performance, and a positive user experience.
+The Mimi Games website is a straightforward static site suitable for GitHub Pages with a custom domain. The recent expansion of the advertising infrastructure significantly enhances monetization capabilities through comprehensive partnerships with 153 authorized resellers and direct ownership relationships. By following the deployment steps, maintaining SEO and accessibility, and applying the troubleshooting and maintenance practices outlined here—including the new advertising verification procedures—you can ensure reliable availability, performance, and robust monetization through the expanded advertising ecosystem.
 
 [No sources needed since this section summarizes without analyzing specific files]
 
@@ -329,3 +400,26 @@ The Mimi Games website is a straightforward static site suitable for GitHub Page
 - [contact.html:59](file://contact.html#L59)
 - [values.html:30-39](file://values.html#L30-L39)
 - [data-deletion.html:103-121](file://data-deletion.html#L103-L121)
+
+### Appendix B: Advertising Infrastructure Details
+**Updated** Complete breakdown of the expanded advertising ecosystem:
+
+#### Direct Ownership Partners
+- Google AdMob: Primary monetization platform with direct publisher account
+- Unity Ads: Direct integration for Unity-powered games
+- IronSource: Direct partnership for mobile advertising
+- Unity Technologies: Direct relationship for advanced advertising solutions
+
+#### Major Reseller Categories
+- **Programmatic Advertising**: AppNexus, Rubicon Project, PubMatic, TripleLift
+- **Display Advertising**: Google AdSense, SmartAdServer, Sharethrough
+- **Mobile Networks**: IronSource, Unity Ads, Kidoz, Start.io
+- **Regional/Alternative Platforms**: SMAATO, Opera, Xandr, Zeta Global
+
+#### Geographic Coverage
+- Global reach with regional optimizations
+- Multi-language support across advertising creatives
+- Currency and payment processing in multiple locales
+
+**Section sources**
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)

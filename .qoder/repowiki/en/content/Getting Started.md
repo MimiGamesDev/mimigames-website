@@ -15,6 +15,13 @@
 - [app-ads.txt](file://app-ads.txt)
 </cite>
 
+## Update Summary
+**Changes Made**
+- Updated app-ads.txt section to reflect the comprehensive advertising partner relationships
+- Enhanced SEO documentation to include detailed ad verification setup
+- Added information about direct ownership and authorized reseller relationships
+- Updated deployment documentation to reflect current advertising infrastructure
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Prerequisites](#prerequisites)
@@ -51,7 +58,7 @@ Follow these steps to run the site locally:
    - Python 3: python -m http.server 8000
    - Python 2: python -m SimpleHTTPServer 8000
    - Node.js (with http-server): npx http-server
-   - PHP: php -S localhost:8000
+   - PHP: php -s localhost:8000
 4. Visit http://localhost:8000 in your browser.
 
 Notes:
@@ -120,7 +127,7 @@ J --- K
 - [assets/js/common.js:1-235](file://assets/js/common.js#L1-L235)
 - [robots.txt:1-5](file://robots.txt#L1-L5)
 - [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
-- [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 **Section sources**
 - [README.md:1-11](file://README.md#L1-L11)
@@ -129,7 +136,7 @@ J --- K
 - [assets/js/common.js:1-235](file://assets/js/common.js#L1-L235)
 - [robots.txt:1-5](file://robots.txt#L1-L5)
 - [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
-- [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ## Architecture Overview
 The site uses a modular approach:
@@ -235,6 +242,29 @@ Examples:
 - [career.html:1-100](file://career.html#L1-L100)
 - [xtremeversity.html:1-91](file://xtremeversity.html#L1-L91)
 
+### Advertising Verification Infrastructure
+The app-ads.txt file establishes comprehensive advertising partner relationships for monetization verification:
+
+**Direct Ownership Relationships:**
+- Google AdMob: Direct ownership with publisher ID `pub-9066302158818993`
+- Unity Ads: Direct ownership with ID `657375`
+- IronSource: Direct ownership with ID `657375`
+- Unity.com: Direct ownership with ID `5480586`
+
+**Authorized Reseller Network:**
+The file includes 153 advertising partners across major platforms:
+- Google AdSense: Multiple publisher accounts (`pub-1682595508078257`, `pub-2923085774557613`, etc.)
+- AppNexus: Multiple accounts (`11826`, `12061`, `14230`, etc.)
+- PubMatic: Extensive network (`137711`, `156177`, `156520`, etc.)
+- Rubicon Project: Multiple accounts (`13380`, `15268`, `15854`, etc.)
+- Sharethrough: Various configurations (`3713`, `5294`, `5828-OB`, etc.)
+- SMAATO: Multiple accounts (`1100040398`, `1100047589`, `1100055750`, etc.)
+- SmartAdserver: Multiple configurations
+- TripleLift: Multiple accounts (`12908`, `13042`, `13883`, etc.)
+
+**Section sources**
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
+
 ## Dependency Analysis
 The HTML pages depend on the shared stylesheet and script. The script depends on the DOM and browser APIs. The footer references external social profiles and stores a link to the Google Play developer page.
 
@@ -329,16 +359,23 @@ The site is hosted via GitHub Pages with a custom domain. Follow these steps:
    - Ensure DNS records point to GitHub Pages.
 4. Verify robots.txt and sitemap.xml are present so crawlers can index the site.
 
-Files involved:
-- robots.txt: Allows indexing and points to sitemap.xml.
-- sitemap.xml: Lists URLs with priorities and change frequencies.
-- app-ads.txt: AdMob verification file.
+**Enhanced SEO Configuration:**
+The site includes comprehensive SEO infrastructure:
+- robots.txt: Allows indexing and points to sitemap.xml
+- sitemap.xml: Lists all URLs with priorities and change frequencies
+- app-ads.txt: Contains 156 lines of advertising partner relationships for monetization verification
+
+**Advertising Partner Verification:**
+The app-ads.txt file establishes trust with major advertising platforms:
+- Direct ownership verification for Google, Unity, and IronSource
+- Authorized reseller relationships with 153+ advertising partners
+- Comprehensive coverage across major ad networks and platforms
 
 **Section sources**
 - [README.md:10](file://README.md#L10)
 - [robots.txt:1-5](file://robots.txt#L1-L5)
 - [sitemap.xml:1-52](file://sitemap.xml#L1-L52)
-- [app-ads.txt:1-2](file://app-ads.txt#L1-L2)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ## Troubleshooting Guide
 Common issues and resolutions:
@@ -359,6 +396,10 @@ Common issues and resolutions:
   - Confirm the script runs after the DOM is ready.
 - Preloader not hiding:
   - Verify the load event fires and the preloader element exists.
+- Advertising verification issues:
+  - Ensure app-ads.txt is accessible at the root level
+  - Verify all advertising partner entries follow the correct format
+  - Check that domain ownership matches the ownerdomain entry
 
 **Section sources**
 - [assets/js/common.js:131-142](file://assets/js/common.js#L131-L142)
@@ -366,6 +407,7 @@ Common issues and resolutions:
 - [assets/js/common.js:154-163](file://assets/js/common.js#L154-L163)
 - [assets/js/common.js:165-186](file://assets/js/common.js#L165-L186)
 - [assets/js/common.js:187-223](file://assets/js/common.js#L187-L223)
+- [app-ads.txt:1-156](file://app-ads.txt#L1-L156)
 
 ## Conclusion
-With a simple local HTTP server, you can preview and modify the Mimi Games website. The shared CSS variables and JavaScript components enable consistent theming and behavior across pages. For deployment, GitHub Pages with a custom domain is already configured, and SEO files (robots.txt, sitemap.xml) are included. Use the troubleshooting tips to resolve common issues quickly.
+With a simple local HTTP server, you can preview and modify the Mimi Games website. The shared CSS variables and JavaScript components enable consistent theming and behavior across pages. For deployment, GitHub Pages with a custom domain is already configured, and SEO files (robots.txt, sitemap.xml, app-ads.txt) are included with comprehensive advertising partner relationships. The app-ads.txt file now contains 156 lines establishing direct ownership with major platforms and authorized reseller relationships with 153 advertising partners, providing robust monetization verification infrastructure. Use the troubleshooting tips to resolve common issues quickly, particularly around advertising verification and SEO configuration.
