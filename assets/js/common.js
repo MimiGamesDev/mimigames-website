@@ -1,15 +1,10 @@
 class MimiHeader extends HTMLElement {
   connectedCallback() {
-    // Smart path detection: pages in /blog/ need ../ prefix
-    const depth = window.location.pathname.split('/').filter(Boolean).length;
-    const isSubdir = depth >= 2 && !window.location.pathname.endsWith('/');
-    const root = isSubdir ? '../' : '';
-
     this.innerHTML = `
       <nav class="navbar">
         <div class="nav-container">
-          <a href="${root}index.html" class="nav-logo">
-            <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
+          <a href="/" class="nav-logo">
+            <img src="/assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
             <span>Mimi Games</span>
           </a>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -18,12 +13,12 @@ class MimiHeader extends HTMLElement {
             <span class="bar"></span>
           </button>
           <ul class="nav-links" id="navLinks">
-            <li><a href="${root}index.html">Home</a></li>
-            <li><a href="${root}blog/">Blog</a></li>
-            <li><a href="${root}values.html">Our Values</a></li>
-            <li><a href="${root}career.html">Career</a></li>
-            <li><a href="${root}contact.html">Contact</a></li>
-            <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/values.html">Our Values</a></li>
+            <li><a href="/career.html">Career</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/xtremeversity.html">Xtremeversity</a></li>
           </ul>
         </div>
       </nav>
@@ -44,11 +39,11 @@ class MimiHeader extends HTMLElement {
       });
     });
 
-    // Set Active Nav Link
+    // Set Active Nav Link using absolute pathname matching
     const currentPath = window.location.pathname;
     this.querySelectorAll('.nav-links a').forEach(link => {
       const href = link.getAttribute('href');
-      if (href && currentPath.includes(href.replace('../', '').replace('./', ''))) {
+      if (href === '/' ? currentPath === '/' : currentPath.startsWith(href)) {
         link.classList.add('active-nav');
       }
     });
@@ -58,15 +53,11 @@ customElements.define('mimi-header', MimiHeader);
 
 class MimiFooter extends HTMLElement {
   connectedCallback() {
-    const depth = window.location.pathname.split('/').filter(Boolean).length;
-    const isSubdir = depth >= 2 && !window.location.pathname.endsWith('/');
-    const root = isSubdir ? '../' : '';
-
     this.innerHTML = `
       <div class="premium-footer">
         <div class="footer-top">
           <div class="footer-logo">
-            <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
+            <img src="/assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
             <span>Mimi Games</span>
           </div>
         </div>
@@ -78,12 +69,12 @@ class MimiFooter extends HTMLElement {
               <span class="chevron"></span>
             </div>
             <ul class="accordion-content">
-              <li><a href="${root}index.html">Home</a></li>
-              <li><a href="${root}blog/">Blog</a></li>
-              <li><a href="${root}career.html">Careers</a></li>
-              <li><a href="${root}values.html">Our Values</a></li>
-              <li><a href="${root}contact.html">Contact Us</a></li>
-              <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/career.html">Careers</a></li>
+              <li><a href="/values.html">Our Values</a></li>
+              <li><a href="/contact.html">Contact Us</a></li>
+              <li><a href="/xtremeversity.html">Xtremeversity</a></li>
             </ul>
           </div>
           <div class="footer-column accordion-item">
@@ -92,11 +83,11 @@ class MimiFooter extends HTMLElement {
               <span class="chevron"></span>
             </div>
             <ul class="accordion-content">
-              <li><a href="${root}privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="${root}data-deletion.html">Data Deletion Request</a></li>
-              <li><a href="${root}terms-of-use.html">Terms of Use</a></li>
-              <li><a href="${root}privacy-policy.html">Cookies Policy</a></li>
-              <li><a href="${root}privacy-policy.html">EULA</a></li>
+              <li><a href="/privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="/data-deletion.html">Data Deletion Request</a></li>
+              <li><a href="/terms-of-use.html">Terms of Use</a></li>
+              <li><a href="/privacy-policy.html">Cookies Policy</a></li>
+              <li><a href="/privacy-policy.html">EULA</a></li>
             </ul>
           </div>
           <div class="footer-column follow-column">
@@ -105,7 +96,7 @@ class MimiFooter extends HTMLElement {
               <a href="https://www.linkedin.com/company/mimi-game/" class="social-icon li" target="_blank" aria-label="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>
               </a>
-              <a href="https://youtube.com/@mimigames.2k24" class="social-icon yt" target="_blank" aria-label="YouTube">
+              <a href="https://youtube.com/@mimigames_studio" class="social-icon yt" target="_blank" aria-label="YouTube">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" fill="currentColor"/></svg>
               </a>
               <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-icon gp" target="_blank" aria-label="Google Play">
