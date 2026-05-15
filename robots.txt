@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Disallow: /.git/
+Disallow: /.qoder/
 
+# Block legal/policy pages from wasting crawl budget
+Disallow: /data-deletion.html
+Disallow: /privacy-policy.html
+Disallow: /terms-of-use.html
+
+# Sitemap
 Sitemap: https://www.mimigames.games/sitemap.xml
+
+# Crawl-delay (be polite)
+Crawl-delay: 1

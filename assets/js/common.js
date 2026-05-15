@@ -1,10 +1,15 @@
 class MimiHeader extends HTMLElement {
   connectedCallback() {
+    // Smart path detection: pages in /blog/ need ../ prefix
+    const depth = window.location.pathname.split('/').filter(Boolean).length;
+    const isSubdir = depth >= 2 && !window.location.pathname.endsWith('/');
+    const root = isSubdir ? '../' : '';
+
     this.innerHTML = `
       <nav class="navbar">
         <div class="nav-container">
-          <a href="index.html" class="nav-logo">
-            <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
+          <a href="${root}index.html" class="nav-logo">
+            <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
             <span>Mimi Games</span>
           </a>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -13,12 +18,12 @@ class MimiHeader extends HTMLElement {
             <span class="bar"></span>
           </button>
           <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="values.html">Our Values</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy-policy.html">Privacy</a></li>
-            <li><a href="xtremeversity.html">Xtremeversity</a></li>
+            <li><a href="${root}index.html">Home</a></li>
+            <li><a href="${root}blog/">Blog</a></li>
+            <li><a href="${root}values.html">Our Values</a></li>
+            <li><a href="${root}career.html">Career</a></li>
+            <li><a href="${root}contact.html">Contact</a></li>
+            <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
           </ul>
         </div>
       </nav>
@@ -40,9 +45,10 @@ class MimiHeader extends HTMLElement {
     });
 
     // Set Active Nav Link
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const currentPath = window.location.pathname;
     this.querySelectorAll('.nav-links a').forEach(link => {
-      if (link.getAttribute('href') === currentPath) {
+      const href = link.getAttribute('href');
+      if (href && currentPath.includes(href.replace('../', '').replace('./', ''))) {
         link.classList.add('active-nav');
       }
     });
@@ -52,11 +58,15 @@ customElements.define('mimi-header', MimiHeader);
 
 class MimiFooter extends HTMLElement {
   connectedCallback() {
+    const depth = window.location.pathname.split('/').filter(Boolean).length;
+    const isSubdir = depth >= 2 && !window.location.pathname.endsWith('/');
+    const root = isSubdir ? '../' : '';
+
     this.innerHTML = `
       <div class="premium-footer">
         <div class="footer-top">
           <div class="footer-logo">
-            <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
+            <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
             <span>Mimi Games</span>
           </div>
         </div>
@@ -68,11 +78,12 @@ class MimiFooter extends HTMLElement {
               <span class="chevron"></span>
             </div>
             <ul class="accordion-content">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="career.html">Careers</a></li>
-              <li><a href="values.html">Our Values</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="xtremeversity.html">Xtremeversity</a></li>
+              <li><a href="${root}index.html">Home</a></li>
+              <li><a href="${root}blog/">Blog</a></li>
+              <li><a href="${root}career.html">Careers</a></li>
+              <li><a href="${root}values.html">Our Values</a></li>
+              <li><a href="${root}contact.html">Contact Us</a></li>
+              <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
             </ul>
           </div>
           <div class="footer-column accordion-item">
@@ -81,11 +92,11 @@ class MimiFooter extends HTMLElement {
               <span class="chevron"></span>
             </div>
             <ul class="accordion-content">
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="data-deletion.html">Data Deletion Request</a></li>
-              <li><a href="terms-of-use.html">Terms of Use</a></li>
-              <li><a href="privacy-policy.html">Cookies Policy</a></li>
-              <li><a href="privacy-policy.html">EULA</a></li>
+              <li><a href="${root}privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="${root}data-deletion.html">Data Deletion Request</a></li>
+              <li><a href="${root}terms-of-use.html">Terms of Use</a></li>
+              <li><a href="${root}privacy-policy.html">Cookies Policy</a></li>
+              <li><a href="${root}privacy-policy.html">EULA</a></li>
             </ul>
           </div>
           <div class="footer-column follow-column">
@@ -109,7 +120,7 @@ class MimiFooter extends HTMLElement {
         </button>
 
         <div class="footer-bottom">
-          <span>&copy; 2025 Mimi Games. All rights reserved.</span>
+          <span>&copy; 2026 Mimi Games. All rights reserved.</span>
           <span>Made in Pakistan 🇵🇰</span>
         </div>
       </div>
