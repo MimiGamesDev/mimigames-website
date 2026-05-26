@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mimigames.catapultbrawl",
+      "sha256_cert_fingerprints": [
+        "F2:10:9D:06:08:F2:3F:87:33:FB:57:0C:BA:91:5B:13:88:53:F1:8C:19:FB:61:3D:01:A8:81:0B:02:63:6B:D9"
+      ]
+    }
+  }
+]
