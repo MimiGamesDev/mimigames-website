@@ -5,8 +5,6 @@ Disallow: /.qoder/
 
 # Block legal/policy pages from wasting crawl budget
 Disallow: /data-deletion.html
-Disallow: /privacy-policy.html
-Disallow: /terms-of-use.html
 
 # Sitemap
 Sitemap: https://www.mimigames.games/sitemap.xml

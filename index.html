@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="index, follow" />
-  <title>Mimi Games | Mobile Game Studio Pakistan</title>
-  <meta name="description" content="Mimi Games is an independent mobile game studio from Pakistan crafting high-quality, free Android games including Rogue Wheel: Catapult Thrower.">
+  <title>Mimi Games – Mobile Game Studio Pakistan | Free Android Games</title>
+  <meta name="description" content="Mimi Games is an independent mobile game studio from Pakistan creating free, high-quality Android games. Play Rogue Wheel: Catapult Thrower and discover our upcoming titles.">
   <link rel="canonical" href="https://www.mimigames.games/" />
   <meta name="theme-color" content="#0a0a0a" />
 
@@ -21,12 +21,13 @@
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/favicon.png">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="keywords" content="free android games, catapult game android, rogue lite game, physics game android, free mobile games Pakistan, Mimi Games, Rogue Wheel, catapult thrower, indie game Pakistan, best free android games 2025, mimi games, mimigames">
+  <meta name="keywords" content="Mimi Games, mimigames, Mimi Games Pakistan, free android games, catapult game android, rogue lite game, physics game android, free mobile games Pakistan, Rogue Wheel, catapult thrower, indie game Pakistan, best free android games 2025, mobile game studio Pakistan">
   <meta name="author" content="Mimi Games">
+  <meta name="application-name" content="Mimi Games">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Mimi Games | Mobile Game Studio Pakistan">
-  <meta property="og:description" content="Mimi Games is an independent mobile game studio from Pakistan crafting high-quality, free Android games.">
+  <meta property="og:title" content="Mimi Games – Mobile Game Studio Pakistan">
+  <meta property="og:description" content="Mimi Games is an independent mobile game studio from Pakistan creating free, high-quality Android games. Play Rogue Wheel: Catapult Thrower now.">
   <meta property="og:image" content="https://www.mimigames.games/assets/images/Rogue%20Wheel.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -53,16 +54,43 @@
     gtag('config', 'G-SPLYMMEDFJ');
   </script>
 
+  <!-- SCHEMA.ORG JSON-LD — WebSite (enables Google Sitelinks & brand recognition) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mimi Games",
+    "alternateName": ["MimiGames", "mimigames", "Mimi Games Pakistan"],
+    "url": "https://www.mimigames.games/",
+    "description": "Mimi Games is an independent mobile game studio from Pakistan creating free, high-quality Android games.",
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.mimigames.games/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <!-- SCHEMA.ORG JSON-LD — Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://www.mimigames.games/#organization",
     "url": "https://www.mimigames.games",
-    "logo": "https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg",
+      "width": 512,
+      "height": 512
+    },
     "name": "Mimi Games",
     "alternateName": ["MimiGames", "Mimi Games Pakistan", "mimigames"],
-    "description": "Mobile game studio from Pakistan creating free high-quality Android games including Rogue Wheel: Catapult Thrower.",
+    "description": "Mimi Games is an independent mobile game studio from Pakistan creating free, high-quality Android games including Rogue Wheel: Catapult Thrower.",
     "foundingDate": "2024",
     "founders": [{"@type": "Person", "name": "Musa Warraich"}],
     "contactPoint": {
@@ -82,6 +110,26 @@
       "addressRegion": "Punjab",
       "addressCountry": "PK"
     }
+  }
+  </script>
+
+  <!-- SCHEMA.ORG JSON-LD — SiteNavigationElement (helps Google identify sitelinks pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Mimi Games Navigation",
+    "itemListElement": [
+      {
+        "@type": "SiteLinksSearchBox",
+        "url": "https://www.mimigames.games/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.mimigames.games/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
   }
   </script>
 
@@ -175,12 +223,26 @@
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Mimi Games",
-      "item": "https://www.mimigames.games/"
-    }]
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Mimi Games",
+        "item": "https://www.mimigames.games/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Games",
+        "item": "https://www.mimigames.games/#games"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "About Mimi Games",
+        "item": "https://www.mimigames.games/#about"
+      }
+    ]
   }
   </script>
 </head>
