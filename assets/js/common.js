@@ -118,7 +118,7 @@ class MimiFooter extends HTMLElement {
 
         <div class="footer-bottom">
           <span>&copy; 2026 Mimi Games. All rights reserved.</span>
-          <span>Made in Pakistan 🇵🇰</span>
+          <span>Made in Pakistan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width: 1.25rem; height: auto; display: inline-block; vertical-align: middle; border-radius: 2px; margin-left: 5px; margin-bottom: 2px; border: 1px solid rgba(255,255,255,0.1);"><rect width="300" height="200" fill="#01411C"/><rect width="75" height="200" fill="#FFF"/><circle cx="187.5" cy="100" r="60" fill="#FFF"/><circle cx="202.5" cy="85" r="60" fill="#01411C"/><polygon points="202.5,72.5 206.2,84 218,84 208.5,91 212.2,102.5 202.5,95.5 192.8,102.5 196.5,91 187,84 198.8,84" fill="#FFF"/></svg></span>
         </div>
       </div>
     `;
