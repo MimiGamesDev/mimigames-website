@@ -10,9 +10,39 @@
     <!-- BLOG — high priority, fresh content -->
     <url>
         <loc>https://www.mimigames.games/blog/</loc>
-        <lastmod>2026-06-25</lastmod>
+        <lastmod>2026-07-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.mimigames.games/blog/gaming-studios-in-pakistan.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://www.mimigames.games/blog/best-mobile-game-studios-pakistan.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.mimigames.games/blog/hire-game-developers-pakistan.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.mimigames.games/blog/pakistani-indie-game-developers-2026.html</loc>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.mimigames.games/blog/android-gaming-trends-2026.html</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://www.mimigames.games/blog/rogue-wheel-catapult-game-android.html</loc>
