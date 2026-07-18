@@ -75,6 +75,7 @@ class MimiFooter extends HTMLElement {
             <ul class="accordion-content">
               <li><a href="${root}index.html">Home</a></li>
               <li><a href="${root}services.html">Services</a></li>
+              <li><a href="${root}blog/">Blog</a></li>
               <li><a href="${root}career.html">Careers</a></li>
               <li><a href="${root}values.html">Our Values</a></li>
               <li><a href="${root}contact.html">Contact Us</a></li>
