@@ -34,7 +34,6 @@
 
 <body>
 
-    <!-- Preloader -->
     <div id="preloader">
         <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
         <div class="preloader-bar-wrap">
@@ -44,285 +43,255 @@
 
     <mimi-header></mimi-header>
 
-    <div class="hero"
-        style="min-height: 300px; padding: 6rem 5% 3rem;">
-        <div class="hero-content">
-            <div class="hero-eyebrow">Privacy & Safety</div>
-            <h1>Data Deletion Request</h1>
-            <p class="hero-sub" style="margin-bottom: 0;">Effective Date: April 21, 2026<br>Last Updated: April 21, 2026
-            </p>
-        </div>
+    <div class="policy-hero">
+        <div class="hero-eyebrow">Privacy &amp; Safety</div>
+        <h1>Data Deletion Request</h1>
+        <p class="policy-dates">Effective Date: April 21, 2026<br>Last Updated: April 21, 2026</p>
     </div>
 
-    <div class="editorial" style="padding-top: 4rem;">
-        <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; color: var(--text-body); font-size: 0.95rem;">
+    <div class="policy-body">
 
+        <!-- POLICY OVERVIEW -->
+        <h3>Policy Overview</h3>
+        <p>
+            <strong>Mimi Games</strong> (developed by Muhammad Ahsen) is committed to your privacy.
+            This page explains exactly what data categories exist, how each can be deleted or managed,
+            and how long each is retained. It covers four distinct data domains:
+            <strong>Advertising &amp; Analytics</strong>,
+            <strong>In-App Purchases (Google Play Billing)</strong>,
+            <strong>Google Play Games Services (Leaderboards &amp; Achievements)</strong>, and
+            <strong>Technical Diagnostics</strong>.
+        </p>
+        <p>
+            Where Mimi Games holds data on its own systems, we will respond to verified deletion
+            requests within <strong>30 days</strong>. Where data is held exclusively by a third party
+            (Google, Unity, etc.), we provide the direct self-service path to delete it.
+        </p>
 
-                <!-- ═══ POLICY OVERVIEW ════════════════════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    Policy Overview</h3>
-                <p>
-                    <strong>Mimi Games</strong> (developed by Muhammad Ahsen) is committed to your privacy.
-                    This page explains exactly what data categories exist, how each can be deleted or managed,
-                    and how long each is retained. It covers four distinct data domains:
-                    <strong>Advertising &amp; Analytics</strong>,
-                    <strong>In-App Purchases (Google Play Billing)</strong>,
-                    <strong>Google Play Games Services (Leaderboards &amp; Achievements)</strong>, and
-                    <strong>Technical Diagnostics</strong>.
-                </p>
-                <p>
-                    Where Mimi Games holds data on its own systems, we will respond to verified deletion
-                    requests within <strong>30 days</strong>. Where data is held exclusively by a third party
-                    (Google, Unity, etc.), we provide the direct self-service path to delete it.
-                </p>
-
-                <!-- ═══ 1. ADVERTISING ID ════════════════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    1. Advertising ID &amp; Ad-Partner Data</h3>
-                <p>
-                    Data collected by our advertising partners (AdMob, Unity LevelPlay, InMobi, etc.) is
-                    linked to your device's <strong>Advertising ID (AAID)</strong>. You can delete this at
-                    any time:
-                </p>
-                <div
-                    style="background: var(--surface-2); border-left: 4px solid var(--teal); padding: 1.5rem; margin: 1.5rem 0; border-radius: 4px;">
-                    <p style="color:var(--teal); font-size:1rem; font-weight:600; margin:0 0 0.75rem; letter-spacing:0.5px; text-transform:uppercase;">Android</p>
-                    <ol style="margin: 0; padding-left: 1.2rem; color: var(--text);">
-                        <li style="margin-bottom: 0.6rem;">Open <strong>Settings</strong> on your device.</li>
-                        <li style="margin-bottom: 0.6rem;">Go to <strong>Google &gt; Ads</strong>.</li>
-                        <li>Tap <strong>"Delete advertising ID"</strong> — takes effect immediately.</li>
-                    </ol>
-                </div>
-
-                <!-- ═══ 2. ANALYTICS & ACTIVITY DATA ═════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    2. Analytics &amp; Activity Data</h3>
-                <p>
-                    Activity data (session length, levels completed, events) collected by
-                    <strong>Firebase Analytics</strong> and <strong>Unity Analytics</strong> is used
-                    anonymously to improve gameplay. To stop collection and delete associated identifiers:
-                </p>
-                <div
-                    style="background: var(--surface-2); border-left: 4px solid var(--teal); padding: 1.5rem; margin: 1.5rem 0; border-radius: 4px;">
-                    <ol style="margin: 0; padding-left: 1.2rem; color: var(--text);">
-                        <li style="margin-bottom: 0.6rem;">Go to <strong>Settings &gt; Apps &gt; [Game Name]</strong>.</li>
-                        <li style="margin-bottom: 0.6rem;">Tap <strong>Storage &gt; Clear Cache</strong> and <strong>Clear Data</strong>.</li>
-                        <li>Alternatively, <strong>reset your Advertising ID</strong> (see Section 1 above).</li>
-                    </ol>
-                </div>
-
-                <!-- ═══ 3. TECHNICAL DIAGNOSTICS ══════════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    3. Technical Diagnostics</h3>
-                <p>
-                    Crash logs and app-performance data are collected anonymously and are not linked to any
-                    specific user identity. Because of this, they <strong>cannot be manually deleted</strong>
-                    but are automatically purged by our service providers according to their standard
-                    retention schedules (typically <strong>90 days</strong>).
-                </p>
-
-                <!-- ═══ 4. IN-APP PURCHASES (GOOGLE PLAY BILLING) ═════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    4. In-App Purchases &amp; Google Play Billing</h3>
-                <p>
-                    When you make an in-app purchase, the Google Play Billing API generates transaction
-                    records — including a <strong>purchase token</strong>, Order ID, product SKU, and
-                    timestamp. Mimi Games receives only this anonymised confirmation data; your payment
-                    credentials are held exclusively by Google.
-                </p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Restore Purchases</h4>
-                <p>Non-consumable entitlements are automatically restored when you sign in with the same
-                    Google account on any device via Google Play Billing — no manual action required.</p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Cancel a Subscription &amp; Stop Auto-Renewal</h4>
-                <div
-                    style="background: var(--surface-2); border-left: 4px solid var(--teal); padding: 1.5rem; margin: 1rem 0; border-radius: 4px;">
-                    <ol style="margin: 0; padding-left: 1.2rem; color: var(--text);">
-                        <li style="margin-bottom: 0.6rem;">Open the <strong>Google Play Store</strong> app.</li>
-                        <li style="margin-bottom: 0.6rem;">Tap your <strong>Profile icon</strong> → <em>Payments &amp; subscriptions</em> → <em>Subscriptions</em>.</li>
-                        <li style="margin-bottom: 0.6rem;">Select the relevant game subscription and tap <strong>Cancel subscription</strong>.</li>
-                        <li>Cancellation takes effect at the end of the current paid period — no further charges will be made.</li>
-                    </ol>
-                </div>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Request a Refund</h4>
-                <p>Refunds are processed by Google in accordance with the
-                    <a href="https://support.google.com/googleplay/answer/2479637"
-                        style="color:var(--teal);" target="_blank">Google Play refund policy</a>.
-                    To request one, visit
-                    <a href="https://play.google.com/store/account/orderhistory"
-                        style="color:var(--teal);" target="_blank">play.google.com/store/account/orderhistory</a>,
-                    locate the order, and select <em>Request a refund</em>.
-                    For additional help, email us at
-                    <a href="mailto:developer@mimigames.games" style="color:var(--teal);">developer@mimigames.games</a>.
-                </p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Delete Purchase Records Held by Mimi Games</h4>
-                <p>Purchase tokens and entitlement records that Mimi Games holds are retained for as long
-                    as your installation is active (for entitlement validation) and up to
-                    <strong>7 years</strong> for tax / accounting records as required by law. To request
-                    deletion of all non-legally-required purchase records:</p>
-                <div
-                    style="background: var(--surface-2); border-left: 4px solid var(--teal); padding: 1.5rem; margin: 1rem 0; border-radius: 4px;">
-                    <ol style="margin: 0; padding-left: 1.2rem; color: var(--text);">
-                        <li style="margin-bottom: 0.6rem;">Email <a href="mailto:developer@mimigames.games" style="color:var(--teal);">developer@mimigames.games</a> with the subject line <strong>"IAP Data Deletion Request"</strong>.</li>
-                        <li style="margin-bottom: 0.6rem;">Include your Google Play Order ID(s) or approximate purchase date(s) to help us locate your records.</li>
-                        <li>We will confirm deletion within <strong>30 days</strong>. Note that financial records legally required for tax purposes (up to 7 years) cannot be deleted before that period expires.</li>
-                    </ol>
-                </div>
-                <p>Your Google-side order history can be reviewed at
-                    <a href="https://myaccount.google.com/payments-and-subscriptions"
-                        style="color:var(--teal);" target="_blank">myaccount.google.com/payments-and-subscriptions</a>.
-                </p>
-
-                <!-- ═══ 5. GOOGLE PLAY GAMES SERVICES ════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    5. Google Play Games Services (Leaderboards &amp; Achievements)</h3>
-                <p>
-                    When you sign in to Google Play Games Services (GPGS) in our games, your
-                    <strong>GPGS Player ID</strong>, high scores, achievement progress, and cloud-saved game
-                    state are stored by Google. Mimi Games does not independently hold this data; it exists
-                    within your Google account.
-                </p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Manage Profile Visibility</h4>
-                <p>Open the <strong>Google Play Games app</strong> → tap your profile icon → <em>Settings</em>
-                    → adjust who can see your display name and scores (Public / Friends / Only you).</p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Opt Out of Leaderboards</h4>
-                <p>In the Google Play Games app → <em>Settings</em>, you can disable leaderboard
-                    participation so your scores are no longer visible to other players.</p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Sign Out of Google Play Games</h4>
-                <p>You can sign out of GPGS from within each game's settings menu. After signing out, no
-                    further data will be transmitted to Google Play Games from that session.</p>
-
-                <h4 style="color:var(--teal); font-size:1.05rem; margin: 1.5rem 0 0.5rem;">Permanently Delete Your Google Play Games Profile</h4>
-                <div
-                    style="background: var(--surface-2); border-left: 4px solid var(--accent); padding: 1.5rem; margin: 1rem 0; border-radius: 4px;">
-                    <p style="color:var(--accent); font-size:0.95rem; font-weight:600; margin:0 0 0.75rem; letter-spacing:0.5px; text-transform:uppercase;">Permanent — Cannot Be Undone</p>
-                    <ol style="margin: 0; padding-left: 1.2rem; color: var(--text);">
-                        <li style="margin-bottom: 0.6rem;">Open the <strong>Google Play Games app</strong>.</li>
-                        <li style="margin-bottom: 0.6rem;">Tap your <strong>profile icon</strong> → <em>Settings</em>.</li>
-                        <li style="margin-bottom: 0.6rem;">Tap <strong>"Delete Play Games account &amp; data"</strong>.</li>
-                        <li>Confirm deletion. This permanently removes your GPGS profile, all leaderboard scores, achievement records, and cloud-saved game data from Google's servers.</li>
-                    </ol>
-                </div>
-                <p>For a full export or deletion of data held in your Google Account (including GPGS data),
-                    visit <a href="https://myaccount.google.com/data-and-privacy" style="color:var(--teal);"
-                        target="_blank">myaccount.google.com/data-and-privacy</a>.</p>
-
-                <!-- ═══ SUMMARY TABLE ════════════════════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    Data Deletion Summary</h3>
-
-                <div style="overflow-x: auto; margin-bottom: 3rem;">
-                    <table style="width: 100%; border-collapse: collapse; color: var(--text); font-size: 0.88rem;">
-                        <tr style="background: var(--border);">
-                            <th style="padding: 0.85rem 1rem; text-align: left; border: 1px solid var(--border); color: var(--teal);">Data Type</th>
-                            <th style="padding: 0.85rem 1rem; text-align: left; border: 1px solid var(--border); color: var(--teal);">Held By</th>
-                            <th style="padding: 0.85rem 1rem; text-align: left; border: 1px solid var(--border); color: var(--teal);">Deletion Method</th>
-                            <th style="padding: 0.85rem 1rem; text-align: left; border: 1px solid var(--border); color: var(--teal);">Retention Period</th>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Personal Data / Accounts</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">None</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Not collected</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">N/A</td>
-                        </tr>
-                        <tr style="background: rgba(255,255,255,0.02);">
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Advertising ID (AdMob / InMobi)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google / Ad Partners</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Settings → Google → Ads → Delete</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Instant on reset</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Activity Data (Firebase / Unity)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google / Unity</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Clear App Cache &amp; Data</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Until cleared by user</td>
-                        </tr>
-                        <tr style="background: rgba(255,255,255,0.02);">
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Crash Logs / Diagnostics</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google / Unity</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Auto-purged (not user-deletable)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">~90 days</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">IAP Purchase Tokens &amp; Entitlements</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Mimi Games + Google Play</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Email deletion request (see §4)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Active account lifetime; 30 days post-request</td>
-                        </tr>
-                        <tr style="background: rgba(255,255,255,0.02);">
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">IAP Financial / Tax Records</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Mimi Games + Google Play</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Legally required — cannot be deleted early</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Up to 7 years (legal obligation)</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">IAP Subscriptions</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google Play</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google Play → Profile → Subscriptions → Cancel</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Ends at current period close</td>
-                        </tr>
-                        <tr style="background: rgba(255,255,255,0.02);">
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">GPGS Player ID / Scores / Achievements</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google (GPGS)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">GPGS App → Settings → Delete Play Games account &amp; data</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Permanent on deletion</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">GPGS Cloud Saves / Game State</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Google (GPGS)</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">GPGS App → Settings → Delete Play Games account &amp; data</td>
-                            <td style="padding: 0.85rem 1rem; border: 1px solid var(--border);">Permanent on deletion</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!-- ═══ SPECIFIC INQUIRIES ═══════════════════════════════════ -->
-                <h3
-                    style="color:var(--accent); font-size:1.4rem; letter-spacing:1px; margin: 3rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem;">
-                    Specific Inquiries &amp; Formal Requests</h3>
-                <p>
-                    If you have a specific inquiry regarding data handling, or wish to make a formal data
-                    deletion request (including for IAP purchase records or GPGS data), please contact us at:
-                    <a href="mailto:developer@mimigames.games"
-                        style="color:var(--teal); font-weight: 500;">developer@mimigames.games</a>.
-                </p>
-                <p>
-                    Please include in your email:
-                </p>
-                <ul style="border-top:1px solid var(--border); padding-top:1rem; margin-bottom:1.5rem;">
-                    <li style="border-bottom:none; padding:0.3rem 0;">The type of data you want deleted (Advertising ID data, IAP records, GPGS data, etc.).</li>
-                    <li style="border-bottom:none; padding:0.3rem 0;">Your Google Play Order ID(s) (for IAP requests) or GPGS Player ID (for GPGS requests), if available.</li>
-                    <li style="border-bottom:none; padding:0.3rem 0;">The game(s) the request relates to.</li>
-                </ul>
-                <p>
-                    We are committed to responding to all legitimate requests within <strong>30 days</strong>.
-                </p>
-
-                <div style="margin-top: 4rem; padding: 2rem; border-top: 1px solid var(--border); text-align: center;">
-                    <p style="font-style: italic; opacity: 0.8;">
-                        This page is designed to comply with Google Play Console Data Safety policies,
-                        Google Play Billing API requirements for apps offering digital transactions, and
-                        Google Play Games Services (GPGS) integration requirements — regarding user data
-                        deletion and retention. Last updated: July 2, 2026.
-                    </p>
-                </div>
-
-            </div>
+        <!-- 1. ADVERTISING ID -->
+        <h3>1. Advertising ID &amp; Ad-Partner Data</h3>
+        <p>
+            Data collected by our advertising partners (AdMob, Unity LevelPlay, InMobi, etc.) is
+            linked to your device's <strong>Advertising ID (AAID)</strong>. You can delete this at
+            any time:
+        </p>
+        <div class="policy-callout">
+            <span class="policy-callout-label">Android</span>
+            <ol>
+                <li>Open <strong>Settings</strong> on your device.</li>
+                <li>Go to <strong>Google &gt; Ads</strong>.</li>
+                <li>Tap <strong>"Delete advertising ID"</strong> — takes effect immediately.</li>
+            </ol>
         </div>
+
+        <!-- 2. ANALYTICS & ACTIVITY DATA -->
+        <h3>2. Analytics &amp; Activity Data</h3>
+        <p>
+            Activity data (session length, levels completed, events) collected by
+            <strong>Firebase Analytics</strong> and <strong>Unity Analytics</strong> is used
+            anonymously to improve gameplay. To stop collection and delete associated identifiers:
+        </p>
+        <div class="policy-callout">
+            <ol>
+                <li>Go to <strong>Settings &gt; Apps &gt; [Game Name]</strong>.</li>
+                <li>Tap <strong>Storage &gt; Clear Cache</strong> and <strong>Clear Data</strong>.</li>
+                <li>Alternatively, <strong>reset your Advertising ID</strong> (see Section 1 above).</li>
+            </ol>
+        </div>
+
+        <!-- 3. TECHNICAL DIAGNOSTICS -->
+        <h3>3. Technical Diagnostics</h3>
+        <p>
+            Crash logs and app-performance data are collected anonymously and are not linked to any
+            specific user identity. Because of this, they <strong>cannot be manually deleted</strong>
+            but are automatically purged by our service providers according to their standard
+            retention schedules (typically <strong>90 days</strong>).
+        </p>
+
+        <!-- 4. IN-APP PURCHASES (GOOGLE PLAY BILLING) -->
+        <h3>4. In-App Purchases &amp; Google Play Billing</h3>
+        <p>
+            When you make an in-app purchase, the Google Play Billing API generates transaction
+            records — including a <strong>purchase token</strong>, Order ID, product SKU, and
+            timestamp. Mimi Games receives only this anonymised confirmation data; your payment
+            credentials are held exclusively by Google.
+        </p>
+
+        <h4>Restore Purchases</h4>
+        <p>Non-consumable entitlements are automatically restored when you sign in with the same
+            Google account on any device via Google Play Billing — no manual action required.</p>
+
+        <h4>Cancel a Subscription &amp; Stop Auto-Renewal</h4>
+        <div class="policy-callout">
+            <ol>
+                <li>Open the <strong>Google Play Store</strong> app.</li>
+                <li>Tap your <strong>Profile icon</strong> → <em>Payments &amp; subscriptions</em> → <em>Subscriptions</em>.</li>
+                <li>Select the relevant game subscription and tap <strong>Cancel subscription</strong>.</li>
+                <li>Cancellation takes effect at the end of the current paid period — no further charges will be made.</li>
+            </ol>
+        </div>
+
+        <h4>Request a Refund</h4>
+        <p>Refunds are processed by Google in accordance with the
+            <a href="https://support.google.com/googleplay/answer/2479637"
+                target="_blank">Google Play refund policy</a>.
+            To request one, visit
+            <a href="https://play.google.com/store/account/orderhistory"
+                target="_blank">play.google.com/store/account/orderhistory</a>,
+            locate the order, and select <em>Request a refund</em>.
+            For additional help, email us at
+            <a href="mailto:developer@mimigames.games">developer@mimigames.games</a>.
+        </p>
+
+        <h4>Delete Purchase Records Held by Mimi Games</h4>
+        <p>Purchase tokens and entitlement records that Mimi Games holds are retained for as long
+            as your installation is active (for entitlement validation) and up to
+            <strong>7 years</strong> for tax / accounting records as required by law. To request
+            deletion of all non-legally-required purchase records:</p>
+        <div class="policy-callout">
+            <ol>
+                <li>Email <a href="mailto:developer@mimigames.games">developer@mimigames.games</a> with the subject line <strong>"IAP Data Deletion Request"</strong>.</li>
+                <li>Include your Google Play Order ID(s) or approximate purchase date(s) to help us locate your records.</li>
+                <li>We will confirm deletion within <strong>30 days</strong>. Note that financial records legally required for tax purposes (up to 7 years) cannot be deleted before that period expires.</li>
+            </ol>
+        </div>
+        <p>Your Google-side order history can be reviewed at
+            <a href="https://myaccount.google.com/payments-and-subscriptions"
+                target="_blank">myaccount.google.com/payments-and-subscriptions</a>.
+        </p>
+
+        <!-- 5. GOOGLE PLAY GAMES SERVICES -->
+        <h3>5. Google Play Games Services (Leaderboards &amp; Achievements)</h3>
+        <p>
+            When you sign in to Google Play Games Services (GPGS) in our games, your
+            <strong>GPGS Player ID</strong>, high scores, achievement progress, and cloud-saved game
+            state are stored by Google. Mimi Games does not independently hold this data; it exists
+            within your Google account.
+        </p>
+
+        <h4>Manage Profile Visibility</h4>
+        <p>Open the <strong>Google Play Games app</strong> → tap your profile icon → <em>Settings</em>
+            → adjust who can see your display name and scores (Public / Friends / Only you).</p>
+
+        <h4>Opt Out of Leaderboards</h4>
+        <p>In the Google Play Games app → <em>Settings</em>, you can disable leaderboard
+            participation so your scores are no longer visible to other players.</p>
+
+        <h4>Sign Out of Google Play Games</h4>
+        <p>You can sign out of GPGS from within each game's settings menu. After signing out, no
+            further data will be transmitted to Google Play Games from that session.</p>
+
+        <h4>Permanently Delete Your Google Play Games Profile</h4>
+        <div class="policy-callout">
+            <span class="policy-callout-label">Permanent — Cannot Be Undone</span>
+            <ol>
+                <li>Open the <strong>Google Play Games app</strong>.</li>
+                <li>Tap your <strong>profile icon</strong> → <em>Settings</em>.</li>
+                <li>Tap <strong>"Delete Play Games account &amp; data"</strong>.</li>
+                <li>Confirm deletion. This permanently removes your GPGS profile, all leaderboard scores, achievement records, and cloud-saved game data from Google's servers.</li>
+            </ol>
+        </div>
+        <p>For a full export or deletion of data held in your Google Account (including GPGS data),
+            visit <a href="https://myaccount.google.com/data-and-privacy" target="_blank">myaccount.google.com/data-and-privacy</a>.</p>
+
+        <!-- SUMMARY TABLE -->
+        <h3>Data Deletion Summary</h3>
+
+        <div class="policy-table-wrap">
+            <table class="policy-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Held By</th>
+                        <th>Deletion Method</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Personal Data / Accounts</td>
+                        <td>None</td>
+                        <td>Not collected</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Advertising ID (AdMob / InMobi)</td>
+                        <td>Google / Ad Partners</td>
+                        <td>Settings → Google → Ads → Delete</td>
+                        <td>Instant on reset</td>
+                    </tr>
+                    <tr>
+                        <td>Activity Data (Firebase / Unity)</td>
+                        <td>Google / Unity</td>
+                        <td>Clear App Cache &amp; Data</td>
+                        <td>Until cleared by user</td>
+                    </tr>
+                    <tr>
+                        <td>Crash Logs / Diagnostics</td>
+                        <td>Google / Unity</td>
+                        <td>Auto-purged (not user-deletable)</td>
+                        <td>~90 days</td>
+                    </tr>
+                    <tr>
+                        <td>IAP Purchase Tokens &amp; Entitlements</td>
+                        <td>Mimi Games + Google Play</td>
+                        <td>Email deletion request (see §4)</td>
+                        <td>Active account lifetime; 30 days post-request</td>
+                    </tr>
+                    <tr>
+                        <td>IAP Financial / Tax Records</td>
+                        <td>Mimi Games + Google Play</td>
+                        <td>Legally required — cannot be deleted early</td>
+                        <td>Up to 7 years (legal obligation)</td>
+                    </tr>
+                    <tr>
+                        <td>IAP Subscriptions</td>
+                        <td>Google Play</td>
+                        <td>Google Play → Profile → Subscriptions → Cancel</td>
+                        <td>Ends at current period close</td>
+                    </tr>
+                    <tr>
+                        <td>GPGS Player ID / Scores / Achievements</td>
+                        <td>Google (GPGS)</td>
+                        <td>GPGS App → Settings → Delete Play Games account &amp; data</td>
+                        <td>Permanent on deletion</td>
+                    </tr>
+                    <tr>
+                        <td>GPGS Cloud Saves / Game State</td>
+                        <td>Google (GPGS)</td>
+                        <td>GPGS App → Settings → Delete Play Games account &amp; data</td>
+                        <td>Permanent on deletion</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SPECIFIC INQUIRIES -->
+        <h3>Specific Inquiries &amp; Formal Requests</h3>
+        <p>
+            If you have a specific inquiry regarding data handling, or wish to make a formal data
+            deletion request (including for IAP purchase records or GPGS data), please contact us at:
+            <a href="mailto:developer@mimigames.games">developer@mimigames.games</a>.
+        </p>
+        <p>
+            Please include in your email:
+        </p>
+        <ul>
+            <li>The type of data you want deleted (Advertising ID data, IAP records, GPGS data, etc.).</li>
+            <li>Your Google Play Order ID(s) (for IAP requests) or GPGS Player ID (for GPGS requests), if available.</li>
+            <li>The game(s) the request relates to.</li>
+        </ul>
+        <p>
+            We are committed to responding to all legitimate requests within <strong>30 days</strong>.
+        </p>
+
+        <div class="policy-footer-note">
+            <p>This page is designed to comply with Google Play Console Data Safety policies,
+                Google Play Billing API requirements for apps offering digital transactions, and
+                Google Play Games Services (GPGS) integration requirements — regarding user data
+                deletion and retention. Last updated: July 2, 2026.</p>
+        </div>
+
     </div>
 
     <mimi-footer></mimi-footer>
