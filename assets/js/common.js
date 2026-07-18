@@ -17,11 +17,10 @@ class MimiHeader extends HTMLElement {
           </button>
           <ul class="nav-links" id="navLinks">
             <li><a href="${root}index.html">Home</a></li>
-            <li><a href="${root}blog/">Blog</a></li>
+            <li><a href="${root}services.html">Services</a></li>
             <li><a href="${root}values.html">Our Values</a></li>
             <li><a href="${root}career.html">Career</a></li>
             <li><a href="${root}contact.html">Contact</a></li>
-            <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
           </ul>
         </div>
       </nav>
@@ -42,7 +41,6 @@ class MimiHeader extends HTMLElement {
       });
     });
 
-    // Set Active Nav Link
     const currentPath = window.location.pathname;
     this.querySelectorAll('.nav-links a').forEach(link => {
       const href = link.getAttribute('href');
@@ -76,11 +74,11 @@ class MimiFooter extends HTMLElement {
             </div>
             <ul class="accordion-content">
               <li><a href="${root}index.html">Home</a></li>
-              <li><a href="${root}blog/">Blog</a></li>
+              <li><a href="${root}services.html">Services</a></li>
               <li><a href="${root}career.html">Careers</a></li>
               <li><a href="${root}values.html">Our Values</a></li>
               <li><a href="${root}contact.html">Contact Us</a></li>
-              <li><a href="${root}xtremeversity.html">Xtremeversity</a></li>
+              <li><a href="${root}faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-column accordion-item">
@@ -102,8 +100,23 @@ class MimiFooter extends HTMLElement {
               <a href="https://www.linkedin.com/company/mimi-game/" class="social-icon li" target="_blank" aria-label="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>
               </a>
+              <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-icon fb" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://x.com/mimigames2k24" class="social-icon x" target="_blank" aria-label="X">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+              </a>
               <a href="https://youtube.com/@mimigames_studio" class="social-icon yt" target="_blank" aria-label="YouTube">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://www.tiktok.com/@mimigames_studio" class="social-icon tt" target="_blank" aria-label="TikTok">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://www.threads.com/@mimigames_studio" class="social-icon threads" target="_blank" aria-label="Threads">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.59 12c.025 3.086.718 5.496 2.057 7.164 1.432 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.34-.776-.963-1.394-1.803-1.79-.128 2.754-1.19 5.074-3.188 6.928-2.085 1.93-4.708 2.522-7.178 2.533h-.002c-1.88-.008-3.666-.47-4.882-1.307-.033.378-.053.756-.06 1.135.06 3.471.87 6.227 2.518 8.255C6.65 22.633 9.195 23.6 12.186 23.98V24zm6.145-8.273c-.178 0-.36-.007-.543-.021 0-2.358.002-4.716-.003-7.075-.005-2.37-.01-4.74-.013-7.11h2c.004 2.357.01 4.715.013 7.072.005 2.37.003 4.74.003 7.11l-.457.024z" fill="currentColor"/></svg>
+              </a>
+              <a href="https://discord.gg/pd7Gk5mbT" class="social-icon dc" target="_blank" aria-label="Discord">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/></svg>
               </a>
               <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-icon gp" target="_blank" aria-label="Google Play">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 20.5v-17l14.5 8.5-14.5 8.5zm2-14.125v11.25l9.584-5.625-9.584-5.625z" fill="currentColor"/></svg>
@@ -136,107 +149,51 @@ class MimiFooter extends HTMLElement {
 }
 customElements.define('mimi-footer', MimiFooter);
 
-/* ── Scroll Reveal ── */
 function initReveal() {
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('v'); io.unobserve(e.target); }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => io.observe(el));
 }
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initReveal); }
 else { setTimeout(initReveal, 80); }
 
-
-/* ── Preloader ── */
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    // Add a slight delay to ensure fonts/CSS are fully painted
-    setTimeout(() => preloader.classList.add('loaded'), 400);
-    setTimeout(() => preloader.remove(), 1300);
+    setTimeout(() => preloader.classList.add('loaded'), 350);
+    setTimeout(() => preloader.remove(), 1100);
   }
 });
 
-/* ── Parallax ── */
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
-  const parallaxBgs = document.querySelectorAll('.game-teaser-bg');
 
+  // Nav blur + shadow on scroll
+  if (navbar) {
+    if (scrolled > 40) {
+      navbar.style.background = 'rgba(0,0,0,0.85)';
+      navbar.style.backdropFilter = 'blur(20px)';
+      navbar.style.webkitBackdropFilter = 'blur(20px)';
+      navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.2)';
+    } else {
+      navbar.style.background = '';
+      navbar.style.backdropFilter = '';
+      navbar.style.webkitBackdropFilter = '';
+      navbar.style.boxShadow = '';
+    }
+  }
+
+  // Parallax on game teasers
+  const parallaxBgs = document.querySelectorAll('.game-teaser-bg');
   parallaxBgs.forEach(bg => {
-    const rate = scrolled * 0.15;
+    const rate = scrolled * 0.08;
     bg.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
   });
+
+  lastScroll = scrolled;
 });
-
-/* ── 3D Card Tilt Effect ── */
-function initTilt() {
-  const cards = document.querySelectorAll('.g-card, .feature-card, .social-big');
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      const rotateX = ((y - centerY) / centerY) * -8;
-      const rotateY = ((x - centerX) / centerX) * 8;
-
-      card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.02, 1.02, 1.02)';
-    });
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
-    });
-  });
-}
-if (window.innerWidth > 900) { setTimeout(initTilt, 500); }
-
-/* ── Canvas Particle Background ── */
-function initParticles() {
-  const canvas = document.getElementById('particles-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let particles = [];
-
-  function resize() { canvas.width = canvas.parentElement.clientWidth; canvas.height = canvas.parentElement.clientHeight; }
-  window.addEventListener('resize', resize); resize();
-
-  for (let i = 0; i < 40; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      r: Math.random() * 2 + 0.5,
-      dx: (Math.random() - 0.5) * 0.4,
-      dy: (Math.random() - 0.5) * 0.4,
-      opacity: Math.random() * 0.5 + 0.1
-    });
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particles.forEach(p => {
-      p.x += p.dx; p.y += p.dy;
-      if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-      if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(232, 124, 42, ' + p.opacity + ')';
-      ctx.fill();
-    });
-    requestAnimationFrame(draw);
-  }
-  draw();
-}
-window.addEventListener('load', initParticles);
-
-/* ── UI Cyber Sound ── */
-const base64Click = "data:audio/mp3;base64,//NExAAAAANIAAAAAExBTUUzLjEwMKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//NExDQA/4cBAAcEAAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//NExHgT9mcoAMcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
-const uiAudio = new Audio(base64Click);
-uiAudio.volume = 0.1;
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('a.btn, button.btn').forEach(btn => {
-    btn.addEventListener('mouseenter', () => { if (window.innerWidth > 900) { uiAudio.currentTime = 0; uiAudio.play().catch(() => { }); } });
-  });
-});
-

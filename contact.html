@@ -7,16 +7,15 @@
     <title>Contact Mimi Games – Mobile Game Studio Support | Pakistan</title>
     <meta name="description" content="Contact Mimi Games, a mobile game studio from Sargodha, Pakistan. Reach our support, business, or developer team. Get in touch today.">
     <link rel="canonical" href="https://www.mimigames.games/contact.html" />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#0c0c0e" />
     <meta name="keywords" content="Mimi Games contact, game studio Pakistan, Android game support, contact game developer Pakistan, Sargodha game studio">
     <meta name="author" content="Mimi Games">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="apple-touch-icon" href="assets/images/favicon.png">
-    <!-- Open Graph -->
     <meta property="og:title" content="Contact Mimi Games | Mobile Game Studio Pakistan">
     <meta property="og:description" content="Get in touch with Mimi Games — Android game studio from Sargodha, Pakistan. Support, business and developer contact.">
     <meta property="og:image" content="https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg">
@@ -24,12 +23,10 @@
     <meta property="og:url" content="https://www.mimigames.games/contact.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mimi Games">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact Mimi Games | Mobile Game Studio Pakistan">
     <meta name="twitter:description" content="Get in touch with Mimi Games — Android game studio from Pakistan.">
     <meta name="twitter:image" content="https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg">
-    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLYMMEDFJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,7 +34,6 @@
       gtag('js', new Date());
       gtag('config', 'G-SPLYMMEDFJ');
     </script>
-    <!-- Schema: Organization Contact -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,8 +44,6 @@
       "address": {"@type": "PostalAddress", "addressLocality": "Sargodha", "addressRegion": "Punjab", "addressCountry": "PK"}
     }
     </script>
-
-    <!-- SCHEMA.ORG JSON-LD — WebSite -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,19 +53,6 @@
       "url": "https://www.mimigames.games/"
     }
     </script>
-
-    <!-- SCHEMA.ORG JSON-LD — SiteNavigationElement -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SiteNavigationElement",
-      "name": "Contact Mimi Games",
-      "url": "https://www.mimigames.games/contact.html",
-      "description": "Get in touch with the Mimi Games team for support, business, or developer inquiries."
-    }
-    </script>
-
-    <!-- SCHEMA.ORG JSON-LD — BreadcrumbList -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -83,21 +64,41 @@
     }
     </script>
     <style>
-        .contact-form { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
-        .contact-form input, .contact-form textarea {
-            background: var(--glass); border: 1px solid var(--glass-b); color: var(--cream);
-            padding: 1rem 1.2rem; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 1rem;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .contact-form input:focus, .contact-form textarea:focus {
-            outline: none; border-color: var(--orange); box-shadow: 0 0 15px rgba(232,124,42,0.2);
-        }
-        .contact-form button { margin-top: 0.5rem; align-self: flex-start; }
+      .form-row { display: grid; gap: 14px; }
+      .form-row.cols-2 { grid-template-columns: 1fr 1fr; }
+      @media (max-width: 600px) { .form-row.cols-2 { grid-template-columns: 1fr; } }
+      .form-group { display: flex; flex-direction: column; gap: 6px; }
+      .form-label {
+        font-size: 12px; font-weight: 600; text-transform: uppercase;
+        letter-spacing: 1px; color: rgba(255,255,255,0.4);
+      }
+      .contact-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+        align-items: start;
+      }
+      @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 48px; } }
+      .contact-channels { list-style: none; padding: 0; }
+      .contact-channels li {
+        display: flex; align-items: center; gap: 16px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+      }
+      .contact-channels li:last-child { border-bottom: none; }
+      .ch-icon {
+        width: 44px; height: 44px; border-radius: 12px;
+        background: var(--accent-soft);
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+      }
+      .ch-icon svg { width: 20px; height: 20px; color: var(--accent); }
+      .ch-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-dim); margin-bottom: 2px; }
+      .ch-value { font-size: 15px; color: var(--text); font-weight: 500; }
+      .ch-value a { color: var(--accent); text-decoration: none; }
+      .ch-value a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-  <!-- Preloader -->
   <div id="preloader">
     <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
     <div class="preloader-bar-wrap">
@@ -105,91 +106,216 @@
     </div>
   </div>
 
-    <mimi-header></mimi-header>
+  <mimi-header></mimi-header>
 
-    <section class="hero" style="min-height: 400px; padding: 6rem 5% 4rem;">
-        <div class="hero-orb hero-orb-1" style="width: 300px; height: 300px; top: -10%;"></div>
-        <div class="hero-content">
-            <div class="hero-eyebrow">Get in Touch</div>
-            <h1>Contact Us</h1>
-            <p class="hero-sub" style="margin-bottom: 0;">We'd love to hear from you — whether you're a fan, a partner, or just curious about what we do.</p>
-        </div>
-    </section>
-
-    <div class="editorial">
-        <div class="container">
-            <div class="label">Connect</div>
-            <div class="two-col" style="margin-top: 0; align-items: start;">
-                <div class="reveal-l">
-                    <h2 style="margin-bottom: 2rem;">Drop a<br><span style="color:var(--orange);">Message</span></h2>
-                    <form action="https://formspree.io/f/mqkenbyj" method="POST" class="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="How can we help?" rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message →</button>
-                    </form>
-                </div>
-                <div class="reveal-r">
-                    <h2 style="margin-bottom: 2rem;">Direct<br><span style="color:var(--teal);">Lines</span></h2>
-                    <ul style="border-top: 1px solid var(--glass-b);">
-                        <li style="display:flex; gap:1rem; align-items:center; padding: 1.5rem 0;">
-                            <strong style="color:var(--cream); min-width:80px; font-family:'Barlow Condensed',sans-serif; letter-spacing:1.5px; text-transform:uppercase; font-size:1rem;">Phone</strong>
-                            <span style="color:var(--muted);">+92 304 4593186</span>
-                        </li>
-                        <li style="display:flex; gap:1rem; align-items:center; padding: 1.5rem 0;">
-                            <strong style="color:var(--cream); min-width:80px; font-family:'Barlow Condensed',sans-serif; letter-spacing:1.5px; text-transform:uppercase; font-size:1rem;">Support</strong>
-                            <a href="mailto:support@mimigames.games" style="color:var(--teal);">support@mimigames.games</a>
-                        </li>
-                        <li style="display:flex; gap:1rem; align-items:center; padding: 1.5rem 0;">
-                            <strong style="color:var(--cream); min-width:80px; font-family:'Barlow Condensed',sans-serif; letter-spacing:1.5px; text-transform:uppercase; font-size:1rem;">Dev</strong>
-                            <a href="mailto:developer@mimigames.games" style="color:var(--teal);">developer@mimigames.games</a>
-                        </li>
-                        <li style="display:flex; gap:1rem; align-items:center; padding: 1.5rem 0; border-bottom: none;">
-                            <strong style="color:var(--cream); min-width:80px; font-family:'Barlow Condensed',sans-serif; letter-spacing:1.5px; text-transform:uppercase; font-size:1rem;">Location</strong>
-                            <span style="color:var(--muted);">Sargodha, Punjab, Pakistan</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Get in Touch</h1>
+      <p class="hero-sub">Whether it's a game support request, business inquiry, or partnership idea — we'd love to hear from you.</p>
     </div>
+  </section>
 
-    <!-- ══════════════════════════════════
-         COMMUNITY / SOCIAL
-    ═════════════════════════════════════ -->
-    <div class="community">
-      <div class="container">
-        <div class="label">Social</div>
-        <div class="two-col" style="margin-top:0;align-items:center;gap:3rem;">
-          <h2 class="reveal-l">Join the<br>Community</h2>
+  <!-- CONTACT FORM -->
+  <div class="contact-dark-section">
+    <div class="contact-dark-card reveal">
+      <h2>Share Your Project</h2>
+      <p>Whether you're an IP holder, content creator, or fellow game developer — tell us about your vision.</p>
+      <form action="https://formspree.io/f/mqkenbyj" method="POST" style="display:flex; flex-direction:column; gap:14px;">
+        <div class="form-row cols-2">
+          <div class="form-group">
+            <label class="form-label">Name</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </div>
         </div>
-        <div class="social-big-grid">
-          <a href="https://youtube.com/@mimigames_studio" class="social-big reveal" target="_blank">
-            <div class="social-big-icon">📺</div>
-            <div class="social-big-info">
-              <div class="social-big-name">YouTube</div>
-              <p class="social-big-desc">Gameplay trailers & dev vlogs</p>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/company/mimi-game/" class="social-big reveal" target="_blank">
-            <div class="social-big-icon">💼</div>
-            <div class="social-big-info">
-              <div class="social-big-name">LinkedIn</div>
-              <p class="social-big-desc">Studio updates & careers</p>
-            </div>
-          </a>
-          <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-big reveal" target="_blank">
-            <div class="social-big-icon">🎮</div>
-            <div class="social-big-info">
-              <div class="social-big-name">Google Play</div>
-              <p class="social-big-desc">Download our games</p>
-            </div>
-          </a>
+        <div class="form-row cols-2">
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select name="category">
+              <option value="" disabled selected>Select category</option>
+              <option>Action</option>
+              <option>Adventure</option>
+              <option>Puzzle</option>
+              <option>Strategy</option>
+              <option>Kids</option>
+              <option>Education</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Budget (PKR)</label>
+            <input type="number" name="budget" placeholder="Approximate budget">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Project Details</label>
+          <textarea name="message" placeholder="Describe your project, timeline, and goals..." rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Document Link</label>
+          <input type="url" name="document" placeholder="Google Drive, Dropbox, etc.">
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self:flex-start; margin-top:4px;">Submit Project</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- BOOK AN APPOINTMENT -->
+  <div class="section-white" style="text-align:center;">
+    <div class="container reveal">
+      <h2 class="gradient-text" style="font-size:clamp(24px,3.5vw,36px); margin-bottom:12px;">Prefer a Scheduled Call?</h2>
+      <p style="color:var(--text-body); font-size:15px; max-width:45ch; margin:0 auto 28px;">Book a 30-minute slot and we'll be ready to discuss your project in detail.</p>
+      <a href="mailto:support@mimigames.games?subject=Appointment%20Request" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px;">
+        Book an Appointment
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- DIRECT LINES -->
+  <div class="section-white" style="background:var(--bg);">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Direct <span class="gradient-text">Lines</span></h2>
+        <p>We respond within 24 hours on business days.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal-l">
+          <h3 style="font-size:28px; font-weight:700; color:var(--text); margin-bottom:16px;">Reach Out to<br>the Right Team</h3>
+          <p style="font-size:15px; color:var(--text-body); line-height:1.7;">Pick the channel that fits your inquiry. For general questions, reach us on phone or email. For developer-related topics, use the dev line.</p>
+        </div>
+        <div class="reveal-r">
+          <ul class="contact-channels">
+            <li>
+              <div class="ch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="ch-label">Phone</div>
+                <div class="ch-value">+92 304 4593186</div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="ch-label">Support</div>
+                <div class="ch-value"><a href="mailto:support@mimigames.games">support@mimigames.games</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <div class="ch-label">Developer</div>
+                <div class="ch-value"><a href="mailto:developer@mimigames.games">developer@mimigames.games</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="ch-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="ch-label">Location</div>
+                <div class="ch-value">Sargodha, Punjab, Pakistan</div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
 
-    <mimi-footer></mimi-footer>
-    <script src="assets/js/common.js"></script>
+  <!-- COMMUNITY -->
+  <div class="community">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Join the <span class="gradient-text">Community</span></h2>
+        <p>Follow us for dev updates, behind-the-scenes content, and game announcements.</p>
+      </div>
+      <div class="social-big-grid">
+        <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">Facebook</div>
+            <p class="social-big-desc">Follow our page for updates</p>
+          </div>
+        </a>
+        <a href="https://x.com/mimigames2k24" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">X (Twitter)</div>
+            <p class="social-big-desc">Quick updates & game news</p>
+          </div>
+        </a>
+        <a href="https://discord.gg/pd7Gk5mbT" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/><path d="M15 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/><path d="M7.5 7.5c3.5-1 5.5-1 9 0"/><path d="M7 16.5c3.5 1 6.5 1 10 0"/><path d="M15.5 17c0 1 1.5 3 2 3 1.5 0 2.833-1.667 3.5-3 .667-1.667.5-5.833-1.5-11.5-1.457-1.015-3-1.34-4.5-1.5l-1 2"/><path d="M8.5 17c0 1-1.356 3-1.832 3-1.429 0-2.698-1.667-3.333-3-.635-1.667-.476-5.833 1.428-11.5C6.151 4.485 7.545 4.16 9 4l1 2"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">Discord</div>
+            <p class="social-big-desc">Join our player community</p>
+          </div>
+        </a>
+        <a href="https://www.tiktok.com/@mimigames_studio" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">TikTok</div>
+            <p class="social-big-desc">Short clips & behind the scenes</p>
+          </div>
+        </a>
+        <a href="https://www.threads.com/@mimigames_studio" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">Threads</div>
+            <p class="social-big-desc">Thoughts & community posts</p>
+          </div>
+        </a>
+        <a href="https://youtube.com/@mimigames_studio" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">YouTube</div>
+            <p class="social-big-desc">Gameplay trailers & dev vlogs</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/company/mimi-game/" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">LinkedIn</div>
+            <p class="social-big-desc">Studio updates & careers</p>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-big reveal" target="_blank">
+          <div class="social-big-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <div>
+            <div class="social-big-name">Google Play</div>
+            <p class="social-big-desc">Download our games</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <mimi-footer></mimi-footer>
+  <script src="assets/js/common.js"></script>
 </body>
 </html>
