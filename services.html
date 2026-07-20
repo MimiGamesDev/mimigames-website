@@ -56,8 +56,8 @@
     <style>
       /* ─── SERVICES PAGE ANIMATIONS ─────────────────── */
       .svc-card {
-        background: var(--white);
-        border: 1px solid rgba(0,0,0,0.06);
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.10);
         border-radius: 20px;
         padding: 48px 36px;
         transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -80,8 +80,8 @@
       .svc-card:nth-child(5)::before { background: radial-gradient(circle, rgba(232,124,42,0.06) 0%, transparent 70%); }
       .svc-card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 20px 56px rgba(0,0,0,0.08);
-        border-color: rgba(0,0,0,0.08);
+        box-shadow: 0 20px 56px rgba(0,0,0,0.35);
+        border-color: rgba(255,182,138,0.2);
       }
       .svc-card:hover::before {
         transform: scale(1.4) translate(-30px, 30px);
@@ -129,15 +129,15 @@
         position: relative;
         padding: 40px 20px;
         border-radius: 16px;
-        background: var(--bg);
-        border: 1px solid rgba(0,0,0,0.04);
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.08);
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .process-step:hover {
-        background: var(--white);
-        border-color: rgba(0,0,0,0.06);
+        background: rgba(255,255,255,0.10);
+        border-color: rgba(255,182,138,0.2);
         transform: translateY(-4px);
-        box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+        box-shadow: 0 12px 36px rgba(0,0,0,0.25);
       }
       .process-num {
         font-size: 40px; font-weight: 800;
@@ -164,8 +164,8 @@
       .tech-pill {
         display: inline-flex; align-items: center; gap: 8px;
         padding: 10px 20px;
-        background: var(--white);
-        border: 1px solid rgba(0,0,0,0.06);
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.10);
         border-radius: 50px;
         font-size: 14px; font-weight: 500; color: var(--text);
         transition: all 0.3s ease;
@@ -173,7 +173,7 @@
       .tech-pill:hover {
         border-color: var(--accent);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(232,124,42,0.08);
+        box-shadow: 0 4px 12px rgba(255,182,138,0.15);
       }
       .tech-pill svg { width: 18px; height: 18px; opacity: 0.7; }
 
@@ -217,22 +217,22 @@
 
         <!-- 1. Game Development -->
         <div class="svc-card reveal">
-          <div class="svc-icon" style="background:rgba(232,124,42,0.08);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#e87c2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="18" y1="2" x2="18" y2="6"/></svg>
+          <div class="svc-icon" style="background:rgba(255,182,138,0.12);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb68a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="18" y1="2" x2="18" y2="6"/></svg>
           </div>
           <h3>Game Development</h3>
           <p>Full-cycle mobile game development using Unity and custom engines. From physics-driven action to open-world exploration — we build, test, and ship polished titles for Android and beyond.</p>
-          <span class="svc-tag" style="background:rgba(232,124,42,0.08); color:#e87c2a;">Unity · Android · Cross-Platform</span>
+          <span class="svc-tag" style="background:rgba(255,182,138,0.12); color:#ffb68a;">Unity · Android · Cross-Platform</span>
         </div>
 
         <!-- 2. Art & Illustration -->
         <div class="svc-card reveal">
-          <div class="svc-icon" style="background:rgba(232,124,42,0.08);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#e87c2a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          <div class="svc-icon" style="background:rgba(255,182,138,0.12);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffb68a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
           </div>
           <h3>Art & Illustration</h3>
           <p>Character design, environment art, concept illustration, and visual development. We create distinctive art styles that define a game's world and leave lasting impressions on players.</p>
-          <span class="svc-tag" style="background:rgba(232,124,42,0.08); color:#e87c2a;">Concept Art · Characters · Worlds</span>
+          <span class="svc-tag" style="background:rgba(255,182,138,0.12); color:#ffb68a;">Concept Art · Characters · Worlds</span>
         </div>
 
         <!-- 3. Quality Assurance -->
@@ -280,7 +280,7 @@
   </div>
 
   <!-- PROCESS -->
-  <div class="section-white" style="background: var(--bg);">
+  <div class="section-white" style="background: transparent;">
     <div class="container">
       <div class="section-heading reveal">
         <h2>How We <span class="gradient-text">Work</span></h2>
@@ -336,7 +336,7 @@
   </div>
 
   <!-- CTA -->
-  <div class="section-white" style="background: var(--bg);">
+  <div class="section-white" style="background: transparent;">
     <div class="container" style="text-align:center;">
       <div class="reveal" style="max-width:600px; margin:0 auto;">
         <h2 class="gradient-text" style="font-size:clamp(28px,4vw,40px); margin-bottom:16px;">Ready to Start?</h2>

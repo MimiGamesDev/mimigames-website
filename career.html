@@ -109,8 +109,8 @@
     </script>
     <style>
       .job-card {
-        background: var(--white);
-        border: 1px solid rgba(0,0,0,0.06);
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.10);
         border-radius: 20px;
         padding: 36px 32px;
         display: flex; flex-direction: column;
@@ -119,8 +119,8 @@
       }
       .job-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 16px 48px rgba(0,0,0,0.08);
-        border-color: rgba(0,0,0,0.08);
+        box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+        border-color: rgba(255,182,138,0.2);
       }
       .job-card-head {
         display: flex; align-items: center; gap: 16px;
@@ -151,12 +151,12 @@
         display: inline-flex; align-items: center; gap: 5px;
         font-size: 12px; font-weight: 500; color: var(--text-body);
         padding: 5px 12px; border-radius: 50px;
-        background: var(--surface-2); border: 1px solid rgba(0,0,0,0.04);
+        background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
       }
       .job-salary {
         display: flex; align-items: center; justify-content: space-between; gap: 12px;
         padding-top: 20px;
-        border-top: 1px solid rgba(0,0,0,0.06);
+        border-top: 1px solid rgba(255,255,255,0.10);
         flex-wrap: wrap;
       }
       .job-salary-left {
@@ -171,14 +171,14 @@
       .job-apply {
         display: inline-flex; align-items: center; justify-content: center; gap: 8px;
         padding: 10px 22px; border-radius: 50px; border: none;
-        background: var(--text); color: #fff;
+        background: #fff; color: #5e281a;
         font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500;
         text-decoration: none; cursor: pointer; white-space: nowrap;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
       .job-apply:hover {
-        background: #222; transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0,0,0,0.18); color: #fff;
+        background: var(--accent); transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3); color: #fff;
       }
       @media (max-width: 480px) {
         .job-salary { flex-direction: column; align-items: flex-start; }
@@ -342,29 +342,29 @@
   </div>
 
   <!-- WHY JOIN US -->
-  <div class="section-white" style="background:var(--surface);">
+  <div class="section-white" style="background:transparent;">
     <div class="container">
       <div class="section-heading reveal">
         <h2>Why Join <span class="gradient-text">Mimi Games</span></h2>
         <p>We're building a studio where talented people do their best work.</p>
       </div>
       <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:20px; max-width:1000px; margin:0 auto;" class="why-grid">
-        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:var(--bg); border:1px solid rgba(0,0,0,0.04); transition: all 0.4s ease;">
+        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); transition: all 0.4s ease;">
           <div style="font-size:32px; font-weight:800; line-height:1; margin-bottom:12px;" class="gradient-text">01</div>
           <h4 style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">Remote-Friendly</h4>
           <p style="font-size:13px; color:var(--text-body); margin:0;">Work from anywhere in Pakistan while shipping global titles.</p>
         </div>
-        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:var(--bg); border:1px solid rgba(0,0,0,0.04); transition: all 0.4s ease;">
+        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); transition: all 0.4s ease;">
           <div style="font-size:32px; font-weight:800; line-height:1; margin-bottom:12px;" class="gradient-text">02</div>
           <h4 style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">Competitive Pay</h4>
           <p style="font-size:13px; color:var(--text-body); margin:0;">Transparent salary bands for every role and level.</p>
         </div>
-        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:var(--bg); border:1px solid rgba(0,0,0,0.04); transition: all 0.4s ease;">
+        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); transition: all 0.4s ease;">
           <div style="font-size:32px; font-weight:800; line-height:1; margin-bottom:12px;" class="gradient-text">03</div>
           <h4 style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">Flexible Hours</h4>
           <p style="font-size:13px; color:var(--text-body); margin:0;">Autonomy balanced with regular team sync-ups.</p>
         </div>
-        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:var(--bg); border:1px solid rgba(0,0,0,0.04); transition: all 0.4s ease;">
+        <div class="why-card reveal" style="text-align:center; padding:32px 20px; border-radius:16px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.08); transition: all 0.4s ease;">
           <div style="font-size:32px; font-weight:800; line-height:1; margin-bottom:12px;" class="gradient-text">04</div>
           <h4 style="font-size:15px; font-weight:700; color:var(--text); margin-bottom:6px;">Real Growth</h4>
           <p style="font-size:13px; color:var(--text-body); margin:0;">Learn new skills while shipping real products.</p>
@@ -391,8 +391,8 @@
     document.querySelectorAll('.why-card').forEach(card => {
       card.addEventListener('mouseenter', () => {
         card.style.transform = 'translateY(-4px)';
-        card.style.boxShadow = '0 12px 32px rgba(0,0,0,0.06)';
-        card.style.borderColor = 'rgba(0,0,0,0.06)';
+        card.style.boxShadow = '0 12px 32px rgba(0,0,0,0.3)';
+        card.style.borderColor = 'rgba(255,182,138,0.2)';
       });
       card.addEventListener('mouseleave', () => {
         card.style.transform = '';
