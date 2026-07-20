@@ -4,7 +4,7 @@ class MimiHeader extends HTMLElement {
     const root = isBlog ? '../' : './';
 
     this.innerHTML = `
-      <nav class="navbar">
+      <nav class="navbar" id="mainNav">
         <div class="nav-container">
           <a href="${root}index.html" class="nav-logo">
             <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
@@ -18,10 +18,14 @@ class MimiHeader extends HTMLElement {
           <ul class="nav-links" id="navLinks">
             <li><a href="${root}index.html">Home</a></li>
             <li><a href="${root}services.html">Services</a></li>
-            <li><a href="${root}values.html">Our Values</a></li>
+            <li><a href="${root}rogue-wheel.html">Games</a></li>
+            <li><a href="${root}services.html#art">Art</a></li>
+            <li><a href="${root}index.html#team">Team</a></li>
             <li><a href="${root}career.html">Career</a></li>
-            <li><a href="${root}contact.html">Contact</a></li>
           </ul>
+          <div class="nav-right">
+            <a href="${root}contact.html" class="nav-contact">Contact Us</a>
+          </div>
         </div>
       </nav>
     `;
@@ -170,21 +174,17 @@ window.addEventListener('load', () => {
 });
 
 let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
+const navbar = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
 
-  // Nav blur + shadow on scroll
+  // Nav background on scroll
   if (navbar) {
     if (scrolled > 40) {
-      navbar.style.background = 'rgba(0,0,0,0.85)';
-      navbar.style.backdropFilter = 'blur(20px)';
-      navbar.style.webkitBackdropFilter = 'blur(20px)';
-      navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.2)';
+      navbar.style.background = '#2c1d23';
+      navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
     } else {
-      navbar.style.background = '';
-      navbar.style.backdropFilter = '';
-      navbar.style.webkitBackdropFilter = '';
+      navbar.style.background = 'transparent';
       navbar.style.boxShadow = '';
     }
   }
