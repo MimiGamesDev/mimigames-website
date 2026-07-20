@@ -70,18 +70,18 @@
       .form-group { display: flex; flex-direction: column; gap: 6px; }
       .form-label {
         font-size: 12px; font-weight: 600; text-transform: uppercase;
-        letter-spacing: 1px; color: rgba(255,255,255,0.4);
+        letter-spacing: 1px; color: rgba(199,200,170,0.40);
       }
-      .contact-grid {
-        display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
+      .contact-split-grid {
+        display: grid; grid-template-columns: 1fr 1.3fr; gap: 72px;
         align-items: start;
       }
-      @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 48px; } }
+      @media (max-width: 900px) { .contact-split-grid { grid-template-columns: 1fr; gap: 48px; } }
       .contact-channels { list-style: none; padding: 0; }
       .contact-channels li {
         display: flex; align-items: center; gap: 16px;
         padding: 20px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.10);
+        border-bottom: 1px solid rgba(199,200,170,0.10);
       }
       .contact-channels li:last-child { border-bottom: none; }
       .ch-icon {
@@ -116,78 +116,15 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
-  <div class="contact-dark-section">
-    <div class="contact-dark-card reveal">
-      <h2>Share Your Project</h2>
-      <p>Whether you're an IP holder, content creator, or fellow game developer — tell us about your vision.</p>
-      <form action="https://formspree.io/f/xeeyayvp" method="POST" style="display:flex; flex-direction:column; gap:14px;">
-        <div class="form-row cols-2">
-          <div class="form-group">
-            <label class="form-label">Name</label>
-            <input type="text" name="name" placeholder="Your full name" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Email</label>
-            <input type="email" name="email" placeholder="you@example.com" required>
-          </div>
-        </div>
-        <div class="form-row cols-2">
-          <div class="form-group">
-            <label class="form-label">Category</label>
-            <select name="category">
-              <option value="" disabled selected>Select category</option>
-              <option>Action</option>
-              <option>Adventure</option>
-              <option>Puzzle</option>
-              <option>Strategy</option>
-              <option>Kids</option>
-              <option>Education</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Budget (PKR)</label>
-            <input type="number" name="budget" placeholder="Approximate budget">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Project Details</label>
-          <textarea name="message" placeholder="Describe your project, timeline, and goals..." rows="5" required></textarea>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Document Link</label>
-          <input type="url" name="document" placeholder="Google Drive, Dropbox, etc.">
-        </div>
-        <button type="submit" class="btn btn-primary" style="align-self:flex-start; margin-top:4px;">Submit Project</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- BOOK AN APPOINTMENT -->
-  <div class="section-white" style="text-align:center;">
-    <div class="container reveal">
-      <h2 class="gradient-text" style="font-size:clamp(24px,3.5vw,36px); margin-bottom:12px;">Prefer a Scheduled Call?</h2>
-      <p style="color:var(--text-body); font-size:15px; max-width:45ch; margin:0 auto 28px;">Book a 30-minute slot and we'll be ready to discuss your project in detail.</p>
-      <a href="mailto:support@mimigames.games?subject=Appointment%20Request" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px;">
-        Book an Appointment
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-  </div>
-
-  <!-- DIRECT LINES -->
+  <!-- CONTACT: FORM + DIRECT LINES SIDE BY SIDE -->
   <div class="section-white" style="background:transparent;">
     <div class="container">
-      <div class="section-heading reveal">
-        <h2>Direct <span class="gradient-text">Lines</span></h2>
-        <p>We respond within 24 hours on business days.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="reveal-l">
-          <h3 style="font-size:28px; font-weight:700; color:var(--text); margin-bottom:16px;">Reach Out to<br>the Right Team</h3>
-          <p style="font-size:15px; color:var(--text-body); line-height:1.7;">Pick the channel that fits your inquiry. For general questions, reach us on phone or email. For developer-related topics, use the dev line.</p>
-        </div>
-        <div class="reveal-r">
+      <div class="contact-split-grid">
+
+        <!-- DIRECT LINES -->
+        <div class="contact-split-left reveal-l">
+          <h3 style="font-size:28px; font-weight:700; color:var(--text); margin-bottom:12px;">Direct <span class="gradient-text">Lines</span></h3>
+          <p style="font-size:15px; color:var(--text-body); line-height:1.7; margin-bottom:24px;">We respond within 24 hours on business days. Pick the channel that fits your inquiry.</p>
           <ul class="contact-channels">
             <li>
               <div class="ch-icon">
@@ -227,6 +164,54 @@
             </li>
           </ul>
         </div>
+
+        <!-- SHARE YOUR PROJECT (Form) -->
+        <div class="contact-split-right reveal-r">
+          <div class="contact-dark-card" style="max-width:100%; margin:0;">
+            <h2>Share Your Project</h2>
+            <p>Whether you're an IP holder, content creator, or fellow game developer — tell us about your vision.</p>
+            <form action="https://formspree.io/f/xeeyayvp" method="POST" style="display:flex; flex-direction:column; gap:14px;">
+              <div class="form-row cols-2">
+                <div class="form-group">
+                  <label class="form-label">Name</label>
+                  <input type="text" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+              <div class="form-row cols-2">
+                <div class="form-group">
+                  <label class="form-label">Category</label>
+                  <select name="category">
+                    <option value="" disabled selected>Select category</option>
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Puzzle</option>
+                    <option>Strategy</option>
+                    <option>Kids</option>
+                    <option>Education</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Budget (PKR)</label>
+                  <input type="number" name="budget" placeholder="Approximate budget">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Project Details</label>
+                <textarea name="message" placeholder="Describe your project, timeline, and goals..." rows="4" required></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Document Link</label>
+                <input type="url" name="document" placeholder="Google Drive, Dropbox, etc.">
+              </div>
+              <button type="submit" class="btn btn-primary" style="align-self:flex-start; margin-top:4px;">Submit Project</button>
+            </form>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

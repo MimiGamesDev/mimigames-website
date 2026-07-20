@@ -16,12 +16,12 @@ class MimiHeader extends HTMLElement {
             <span class="bar"></span>
           </button>
           <ul class="nav-links" id="navLinks">
-            <li><a href="${root}index.html">Home</a></li>
-            <li><a href="${root}services.html">Services</a></li>
-            <li><a href="${root}rogue-wheel.html">Games</a></li>
-            <li><a href="${root}services.html#art">Art</a></li>
-            <li><a href="${root}index.html#team">Team</a></li>
-            <li><a href="${root}career.html">Career</a></li>
+            <li><a href="${root}index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
+            <li><a href="${root}services.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Services</a></li>
+            <li><a href="${root}rogue-wheel.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Games</a></li>
+            <li><a href="${root}services.html#art"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>Art</a></li>
+            <li><a href="${root}index.html#team"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Team</a></li>
+            <li><a href="${root}career.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Career</a></li>
           </ul>
           <div class="nav-right">
             <a href="${root}contact.html" class="nav-contact">Contact Us</a>
@@ -62,70 +62,121 @@ class MimiFooter extends HTMLElement {
     const root = isBlog ? '../' : './';
 
     this.innerHTML = `
-      <div class="premium-footer">
-        <div class="footer-top">
-          <div class="footer-logo">
-            <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
-            <span>Mimi Games</span>
+      <footer class="mimi-footer" id="siteFooter">
+        <div class="footer-main-wrap">
+          <div class="container">
+            <div class="footer-grid">
+
+              <!-- BRAND + CONTACT INFO -->
+              <div class="footer-brand">
+                <div class="footer-logo">
+                  <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games">
+                  <div>
+                    <span class="footer-brand-name">Mimi</span>
+                    <span class="footer-brand-accent">Games</span>
+                  </div>
+                </div>
+                <p class="footer-tagline">Crafting mobile games from Sargodha, Pakistan. Building worlds, shipping titles, and growing a global player community.</p>
+
+                <div class="footer-contact-list">
+                  <div class="footer-contact-row">
+                    <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+92 304 4593186</span>
+                  </div>
+                  <div class="footer-contact-row">
+                    <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>support@mimigames.games</span>
+                  </div>
+                  <div class="footer-contact-row">
+                    <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Sargodha, Punjab, Pakistan</span>
+                  </div>
+                </div>
+
+                <div class="footer-social-label">Follow Us</div>
+                <div class="footer-social">
+                  <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-icon" target="_blank" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://x.com/mimigames2k24" class="social-icon" target="_blank" aria-label="X">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/company/mimi-game/" class="social-icon" target="_blank" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://discord.gg/pd7Gk5mbT" class="social-icon" target="_blank" aria-label="Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://youtube.com/@mimigames_studio" class="social-icon" target="_blank" aria-label="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" fill="currentColor"/></svg>
+                  </a>
+                  <a href="https://www.tiktok.com/@mimigames_studio" class="social-icon" target="_blank" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- QUICK LINKS -->
+              <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><span class="footer-dot"></span><a href="${root}index.html">Home</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}services.html">Services</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}values.html">Our Values</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}career.html">Careers</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}blog/">Blog</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}faq.html">FAQ</a></li>
+                </ul>
+              </div>
+
+              <!-- OUR GAMES -->
+              <div class="footer-col">
+                <h4>Our Games</h4>
+                <ul>
+                  <li><span class="footer-dot"></span><a href="${root}rogue-wheel.html">Rogue Wheel</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}xtremeversity.html">Xtremeversity</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}puzzle-verse.html">Puzzle Verse</a></li>
+                  <li><span class="footer-dot"></span><a href="https://play.google.com/store/apps/dev?id=7588389315845065039" target="_blank">All Games on Play Store</a></li>
+                </ul>
+              </div>
+
+              <!-- OUR ART + NEWSLETTER -->
+              <div class="footer-col">
+                <h4>Our Art</h4>
+                <ul>
+                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Concept Art</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Character Design</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Environment Art</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}services.html#art">UI/UX Design</a></li>
+                </ul>
+
+                <div class="footer-newsletter-box">
+                  <div class="footer-newsletter-box-title">Stay Updated</div>
+                  <p class="footer-newsletter-box-desc">Get the latest on our games, studio news, and behind-the-scenes drops.</p>
+                  <form class="footer-newsletter-box-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!';">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
-        <div class="footer-main">
-          <div class="footer-column accordion-item">
-            <div class="accordion-header">
-              <h3>Visit</h3>
-              <span class="chevron"></span>
-            </div>
-            <ul class="accordion-content">
-              <li><a href="${root}index.html">Home</a></li>
-              <li><a href="${root}services.html">Services</a></li>
-              <li><a href="${root}blog/">Blog</a></li>
-              <li><a href="${root}career.html">Careers</a></li>
-              <li><a href="${root}values.html">Our Values</a></li>
-              <li><a href="${root}contact.html">Contact Us</a></li>
-              <li><a href="${root}faq.html">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="footer-column accordion-item">
-            <div class="accordion-header">
-              <h3>Legal</h3>
-              <span class="chevron"></span>
-            </div>
-            <ul class="accordion-content">
-              <li><a href="${root}privacy-policy.html">Privacy Policy</a></li>
-              <li><a href="${root}data-deletion.html">Data Deletion Request</a></li>
-              <li><a href="${root}terms-of-use.html">Terms of Use</a></li>
-              <li><a href="${root}privacy-policy.html">Cookies Policy</a></li>
-              <li><a href="${root}privacy-policy.html">EULA</a></li>
-            </ul>
-          </div>
-          <div class="footer-column follow-column">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/company/mimi-game/" class="social-icon li" target="_blank" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-icon fb" target="_blank" aria-label="Facebook">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://x.com/mimigames2k24" class="social-icon x" target="_blank" aria-label="X">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://youtube.com/@mimigames_studio" class="social-icon yt" target="_blank" aria-label="YouTube">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://www.tiktok.com/@mimigames_studio" class="social-icon tt" target="_blank" aria-label="TikTok">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://www.threads.com/@mimigames_studio" class="social-icon threads" target="_blank" aria-label="Threads">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.59 12c.025 3.086.718 5.496 2.057 7.164 1.432 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.34-.776-.963-1.394-1.803-1.79-.128 2.754-1.19 5.074-3.188 6.928-2.085 1.93-4.708 2.522-7.178 2.533h-.002c-1.88-.008-3.666-.47-4.882-1.307-.033.378-.053.756-.06 1.135.06 3.471.87 6.227 2.518 8.255C6.65 22.633 9.195 23.6 12.186 23.98V24zm6.145-8.273c-.178 0-.36-.007-.543-.021 0-2.358.002-4.716-.003-7.075-.005-2.37-.01-4.74-.013-7.11h2c.004 2.357.01 4.715.013 7.072.005 2.37.003 4.74.003 7.11l-.457.024z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://discord.gg/pd7Gk5mbT" class="social-icon dc" target="_blank" aria-label="Discord">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" fill="currentColor"/></svg>
-              </a>
-              <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-icon gp" target="_blank" aria-label="Google Play">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 20.5v-17l14.5 8.5-14.5 8.5zm2-14.125v11.25l9.584-5.625-9.584-5.625z" fill="currentColor"/></svg>
-              </a>
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom-bar">
+          <div class="container">
+            <div class="footer-bottom-inner">
+              <span>&copy; 2026 Mimi Games. All rights reserved.</span>
+              <div class="footer-bottom-links">
+                <a href="${root}privacy-policy.html">Privacy</a>
+                <a href="${root}terms-of-use.html">Terms</a>
+                <a href="${root}data-deletion.html">Data Deletion</a>
+              </div>
+              <span>Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="color:#a63d24;display:inline-block;vertical-align:middle;margin:0 2px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> in Pakistan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width:1.1rem;height:auto;display:inline-block;vertical-align:middle;border-radius:2px;margin-left:4px;border:1px solid rgba(199,200,170,0.12);"><rect width="300" height="200" fill="#01411C"/><rect width="75" height="200" fill="#FFF"/><circle cx="187.5" cy="100" r="60" fill="#FFF"/><circle cx="202.5" cy="85" r="60" fill="#01411C"/><polygon points="202.5,72.5 206.2,84 218,84 208.5,91 212.2,102.5 202.5,95.5 192.8,102.5 196.5,91 187,84 198.8,84" fill="#FFF"/></svg></span>
             </div>
           </div>
         </div>
@@ -134,18 +185,14 @@ class MimiFooter extends HTMLElement {
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"/></svg>
         </button>
 
-        <div class="footer-bottom">
-          <span>&copy; 2026 Mimi Games. All rights reserved.</span>
-          <span>Made in Pakistan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width: 1.25rem; height: auto; display: inline-block; vertical-align: middle; border-radius: 2px; margin-left: 5px; margin-bottom: 2px; border: 1px solid rgba(255,255,255,0.1);"><rect width="300" height="200" fill="#01411C"/><rect width="75" height="200" fill="#FFF"/><circle cx="187.5" cy="100" r="60" fill="#FFF"/><circle cx="202.5" cy="85" r="60" fill="#01411C"/><polygon points="202.5,72.5 206.2,84 218,84 208.5,91 212.2,102.5 202.5,95.5 192.8,102.5 196.5,91 187,84 198.8,84" fill="#FFF"/></svg></span>
-        </div>
-      </div>
-    `;
+      </footer>
 
-    this.querySelectorAll('.accordion-header').forEach(header => {
-      header.addEventListener('click', () => {
-        if (window.innerWidth <= 768) header.parentElement.classList.toggle('active');
-      });
-    });
+      <!-- FLOATING MESSAGE BUTTON -->
+      <a href="${root}contact.html" class="floating-msg-btn" aria-label="Contact Us" title="Message Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span class="floating-msg-label">Message Us</span>
+      </a>
+    `;
 
     this.querySelector('#backToTop').addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
