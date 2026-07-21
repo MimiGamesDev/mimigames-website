@@ -259,50 +259,60 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
+    <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
+    <div class="hero-characters">
+      <div class="character char-left">
+        <img src="assets/images/Floating%20Character%202.png" alt="Mimi Games Character Left">
+      </div>
+      <div class="character char-right">
+        <img src="assets/images/Floating%20Character%201.png" alt="Mimi Games Character Right">
+      </div>
+    </div>
     <div class="hero-content">
-      <h1 class="hero-title">Art, Illustration<br>& Game Development</h1>
+      <h1 class="hero-title">Art, Illustration<br><span style="white-space:nowrap">& Game Development</span></h1>
       <p class="hero-sub">Mimi Games is an independent art and illustration studio from Pakistan crafting free, high-quality mobile games. From physics-based action to open-world FPS, we create experiences that resonate with players worldwide.</p>
       <div class="hero-cta">
         <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="btn btn-primary" target="_blank">Play On Google Play</a>
-        <a href="games/rogue-wheel/" class="btn btn-ghost" target="_blank">Play in Browser</a>
-        <a href="#games" class="btn btn-ghost">Our Games</a>
+        <a href="#" class="btn btn-ghost">Our Artboard</a>
+        <a href="#" class="btn btn-ghost">Hire Us</a>
       </div>
     </div>
-  </section>
-
-  <!-- STATS -->
+    </div>
+    
+    <!-- STATS -->
   <div class="stats-section">
     <div class="stats-inner">
       <div class="stat-card reveal">
         <div class="stat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"></line><line x1="8" y1="10" x2="8" y2="14"></line><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line><path d="M22 10a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v4a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4v-4z"></path></svg>
         </div>
-        <span class="stat-number gradient">2+</span>
+        <span class="stat-number"><span class="counter" data-target="2">0</span>+</span>
         <div class="stat-label">Games Released</div>
       </div>
       <div class="stat-card reveal">
         <div class="stat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
-        <span class="stat-number">4</span>
-        <div class="stat-label">Team Members</div>
+        <span class="stat-number"><span class="counter" data-target="4">0</span>+</span>
+        <div class="stat-label">Creative Experts</div>
       </div>
       <div class="stat-card reveal">
         <div class="stat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
-        <span class="stat-number">100%</span>
-        <div class="stat-label">Android Optimized</div>
+        <span class="stat-number"><span class="counter" data-target="100">0</span>%</span>
+        <div class="stat-label">Original Content</div>
       </div>
       <div class="stat-card reveal">
         <div class="stat-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
         <span class="stat-number">PK</span>
-        <div class="stat-label">Born in Pakistan</div>
+        <div class="stat-label">Soul of Pakistan</div>
       </div>
     </div>
   </div>
+  </section>
 
   <main style="background:transparent;padding:0;">
 
@@ -490,5 +500,219 @@
 
   <mimi-footer></mimi-footer>
   <script src="assets/js/common.js"></script>
+  <script>
+    // Premium natural noisy particles, sparkles & objects animation
+    const canvas = document.getElementById('hero-particles');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const numParticles = window.innerWidth < 768 ? 120 : 240;
+      
+      function resize() {
+        if (!canvas.parentElement) return;
+        canvas.width = canvas.parentElement.clientWidth;
+        canvas.height = canvas.parentElement.clientHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      class Particle {
+        constructor() {
+          this.init(true);
+        }
+        
+        init(randomizeLife = false) {
+          // Spawn naturally across the entire canvas randomly
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          
+          // Noise offsets for natural wandering
+          this.noiseOffsetX = Math.random() * 1000;
+          this.noiseOffsetY = Math.random() * 1000;
+          
+          // Object types: 0 = soft circle, 1 = 4-point star, 2 = tiny dot, 3 = 5-point star, 4 = diamond, 5 = cross, 6 = triangle
+          const typeRand = Math.random();
+          if (typeRand < 0.22) this.type = 1; 
+          else if (typeRand < 0.36) this.type = 0; 
+          else if (typeRand < 0.50) this.type = 3; 
+          else if (typeRand < 0.64) this.type = 4;
+          else if (typeRand < 0.78) this.type = 5;
+          else if (typeRand < 0.90) this.type = 6;
+          else this.type = 2;
+          
+          // Sizes: make them a little small in size
+          this.size = Math.random() * 1.5 + 0.8;
+          
+          // Shinyless opacity: generally lower opacity but varied
+          this.baseOpacity = Math.random() * 0.15 + 0.05;
+          
+          this.life = randomizeLife ? Math.random() * 10 : 0;
+          this.maxLife = Math.random() * 8 + 5; // 5 to 13 seconds
+
+          const colors = [
+            '255, 215, 0',    // pure gold
+            '255, 223, 0',    // golden yellow
+            '218, 165, 32',   // goldenrod
+            '255, 235, 153',  // pale gold
+            '255, 183, 77',   // warm amber
+            '199, 200, 170',  // cream
+            '166, 61, 36'     // accent red
+          ];
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.glow = Math.random() > 0.35 && this.type !== 2;
+        }
+        
+        update() {
+          // Natural noisy drift
+          this.noiseOffsetX += 0.01;
+          this.noiseOffsetY += 0.01;
+          
+          const vx = Math.sin(this.noiseOffsetX) * 0.5;
+          const vy = Math.cos(this.noiseOffsetY) * 0.5 - 0.2; // Slight bias upwards
+          
+          this.x += vx;
+          this.y += vy;
+          
+          this.life += 0.016; // Assuming ~60fps
+          
+          if (this.life >= this.maxLife || 
+              this.x < -50 || this.x > canvas.width + 50 || 
+              this.y < -50 || this.y > canvas.height + 50) {
+            this.init(false);
+          }
+        }
+        
+        drawStar(cx, cy, spikes, outerRadius, innerRadius) {
+          let rot = Math.PI / 2 * 3;
+          let x = cx;
+          let y = cy;
+          let step = Math.PI / spikes;
+
+          ctx.beginPath();
+          ctx.moveTo(cx, cy - outerRadius);
+          for (let i = 0; i < spikes; i++) {
+            x = cx + Math.cos(rot) * outerRadius;
+            y = cy + Math.sin(rot) * outerRadius;
+            ctx.lineTo(x, y);
+            rot += step;
+
+            x = cx + Math.cos(rot) * innerRadius;
+            y = cy + Math.sin(rot) * innerRadius;
+            ctx.lineTo(x, y);
+            rot += step;
+          }
+          ctx.lineTo(cx, cy - outerRadius);
+          ctx.closePath();
+          ctx.fill();
+        }
+        
+        draw() {
+          // Smooth fade in and out
+          let currentOpacity = this.baseOpacity;
+          const fadeDuration = 2.0;
+          if (this.life < fadeDuration) {
+            currentOpacity = this.baseOpacity * (this.life / fadeDuration);
+          } else if (this.life > this.maxLife - fadeDuration) {
+            currentOpacity = this.baseOpacity * ((this.maxLife - this.life) / fadeDuration);
+          }
+          
+          if (currentOpacity < 0) currentOpacity = 0;
+
+          ctx.fillStyle = `rgba(${this.color}, ${currentOpacity})`;
+          
+          if (this.glow) {
+            ctx.shadowBlur = (this.type === 1 || this.type === 3) ? 20 : 12;
+            ctx.shadowColor = `rgba(${this.color}, ${currentOpacity})`;
+          } else {
+            ctx.shadowBlur = 0;
+          }
+          
+          if (this.type === 1 || this.type === 3) {
+            this.drawStar(this.x, this.y, this.type === 3 ? 5 : 4, this.size * 2.5, this.size * 0.6);
+          } else if (this.type === 4) {
+            // Diamond
+            ctx.beginPath();
+            ctx.moveTo(this.x, this.y - this.size * 2.5);
+            ctx.lineTo(this.x + this.size * 1.5, this.y);
+            ctx.lineTo(this.x, this.y + this.size * 2.5);
+            ctx.lineTo(this.x - this.size * 1.5, this.y);
+            ctx.closePath();
+            ctx.fill();
+          } else if (this.type === 5) {
+            // Cross / plus
+            const s = this.size * 2;
+            const t = this.size * 0.5;
+            ctx.beginPath();
+            ctx.moveTo(this.x - t, this.y - s);
+            ctx.lineTo(this.x + t, this.y - s);
+            ctx.lineTo(this.x + t, this.y - t);
+            ctx.lineTo(this.x + s, this.y - t);
+            ctx.lineTo(this.x + s, this.y + t);
+            ctx.lineTo(this.x + t, this.y + t);
+            ctx.lineTo(this.x + t, this.y + s);
+            ctx.lineTo(this.x - t, this.y + s);
+            ctx.lineTo(this.x - t, this.y + t);
+            ctx.lineTo(this.x - s, this.y + t);
+            ctx.lineTo(this.x - s, this.y - t);
+            ctx.lineTo(this.x - t, this.y - t);
+            ctx.closePath();
+            ctx.fill();
+          } else if (this.type === 6) {
+            // Triangle
+            const s = this.size * 2.5;
+            ctx.beginPath();
+            ctx.moveTo(this.x, this.y - s);
+            ctx.lineTo(this.x + s * 0.866, this.y + s * 0.5);
+            ctx.lineTo(this.x - s * 0.866, this.y + s * 0.5);
+            ctx.closePath();
+            ctx.fill();
+          } else {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+      }
+      
+      for(let i = 0; i < numParticles; i++) {
+        particles.push(new Particle());
+      }
+      
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    // Stats Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = +entry.target.getAttribute('data-target');
+          let count = 0;
+          const duration = 1200;
+          const startTime = performance.now();
+          const animate = (now) => {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            count = Math.round(eased * target);
+            entry.target.innerText = count;
+            if (progress < 1) requestAnimationFrame(animate);
+          };
+          requestAnimationFrame(animate);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    
+    counters.forEach(counter => observer.observe(counter));
+  </script>
 </body>
 </html>

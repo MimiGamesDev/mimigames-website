@@ -231,7 +231,7 @@ window.addEventListener('scroll', () => {
       navbar.style.background = '#2c1d23';
       navbar.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
     } else {
-      navbar.style.background = 'transparent';
+      navbar.style.background = '';
       navbar.style.boxShadow = '';
     }
   }
