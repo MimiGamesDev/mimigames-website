@@ -8,7 +8,10 @@ class MimiHeader extends HTMLElement {
         <div class="nav-container">
           <a href="${root}index.html" class="nav-logo">
             <img src="${root}assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games Logo">
-            <span>Mimi Games</span>
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Mimi</span>
+              <span class="nav-logo-accent">Games</span>
+            </div>
           </a>
           <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
             <span class="bar"></span>
