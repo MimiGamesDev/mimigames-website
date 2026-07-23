@@ -66,7 +66,7 @@
 <body>
 
   <div id="preloader">
-    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
+    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo" loading="lazy" decoding="async">
     <div class="preloader-bar-wrap">
       <div class="preloader-bar"></div>
     </div>
@@ -74,15 +74,15 @@
 
     <mimi-header></mimi-header>
 
-    <div class="game-teaser" id="rogue-wheel" style="min-height: 80vh; border-bottom: none;">
-      <div class="game-teaser-bg" style="background-image: linear-gradient(90deg, rgba(26,16,22,0.95) 35%, rgba(26,16,22,0.7) 70%, rgba(26,16,22,0.3) 100%), url('assets/images/Rogue Wheel Title image.png');"></div>
+    <div class="game-teaser" id="rogue-wheel" style="border-bottom: none;">
+      <div class="game-teaser-bg" style="background-image: linear-gradient(90deg, rgba(26,16,22,0.92) 30%, rgba(26,16,22,0.65) 65%, rgba(26,16,22,0.25) 100%), url('assets/images/Rogue%20Wheel%20Title%20image.png'); background-position: center center;"></div>
       <div class="game-teaser-content reveal-l">
         <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
-          <img src="assets/images/Rogue Wheel.png" alt="Rogue Wheel Icon" style="width: 80px; height: 80px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 0 1px rgba(199,200,170,0.15); object-fit: cover;">
-          <span class="badge" style="background:var(--accent-soft);color:var(--accent);">Casual Physics</span>
+          <img src="assets/images/Rogue%20Wheel.png" alt="Rogue Wheel Icon" style="width: 80px; height: 80px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 0 1px rgba(199,200,170,0.15); object-fit: cover;" loading="lazy" decoding="async">
+          <span class="badge" style="background:rgba(196,77,46,0.2);color:var(--accent);backdrop-filter:blur(8px);border:1px solid rgba(196,77,46,0.3);">Casual Physics</span>
         </div>
-        <h1 style="margin-top:0; font-size: clamp(3.5rem, 8vw, 7rem); line-height: 0.95;">Rogue Wheel</h1>
-        <p style="font-size: 1.15rem; margin-top: 1.25rem;">Fling, launch, and brawl. A chaotic physics-based casual game where every catapult shot changes the battle. Master angles, timing, and pure mayhem.</p>
+        <h1 style="margin-top:0;">Rogue Wheel</h1>
+        <p>Fling, launch, and brawl. A chaotic physics-based casual game where every catapult shot changes the battle. Master angles, timing, and pure mayhem.</p>
         <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
           <a href="https://play.google.com/store/apps/details?id=com.mimigames.catapultbrawl" class="btn btn-primary" target="_blank">Get on Google Play</a>
           <a href="games/rogue-wheel/" class="btn btn-secondary" target="_blank">Play in Browser</a>

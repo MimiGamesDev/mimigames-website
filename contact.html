@@ -100,7 +100,7 @@
 <body>
 
   <div id="preloader">
-    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
+    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo" loading="lazy" decoding="async">
     <div class="preloader-bar-wrap">
       <div class="preloader-bar"></div>
     </div>
@@ -109,8 +109,9 @@
   <mimi-header></mimi-header>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
+  <section class="sub-page-hero studio-hero-relative" id="hero">
+    <div class="studio-pattern-repeat"></div>
+    <div class="hero-content" style="position:relative; z-index:2;">
       <h1 class="hero-title">Get in Touch</h1>
       <p class="hero-sub">Whether it's a game support request, business inquiry, or partnership idea — we'd love to hear from you.</p>
     </div>
@@ -224,7 +225,7 @@
         <p>Follow us for dev updates, behind-the-scenes content, and game announcements.</p>
       </div>
       <div class="social-big-grid">
-        <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-big reveal" target="_blank">
+        <a href="https://web.facebook.com/profile.php?id=61564734203871" class="social-big reveal" target="_blank" data-platform="facebook">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </div>
@@ -233,7 +234,7 @@
             <p class="social-big-desc">Follow our page for updates</p>
           </div>
         </a>
-        <a href="https://x.com/mimigames2k24" class="social-big reveal" target="_blank">
+        <a href="https://x.com/mimigames2k24" class="social-big reveal" target="_blank" data-platform="x">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
           </div>
@@ -242,7 +243,7 @@
             <p class="social-big-desc">Quick updates & game news</p>
           </div>
         </a>
-        <a href="https://discord.gg/pd7Gk5mbT" class="social-big reveal" target="_blank">
+        <a href="https://discord.gg/pd7Gk5mbT" class="social-big reveal" target="_blank" data-platform="discord">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/><path d="M15 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/><path d="M7.5 7.5c3.5-1 5.5-1 9 0"/><path d="M7 16.5c3.5 1 6.5 1 10 0"/><path d="M15.5 17c0 1 1.5 3 2 3 1.5 0 2.833-1.667 3.5-3 .667-1.667.5-5.833-1.5-11.5-1.457-1.015-3-1.34-4.5-1.5l-1 2"/><path d="M8.5 17c0 1-1.356 3-1.832 3-1.429 0-2.698-1.667-3.333-3-.635-1.667-.476-5.833 1.428-11.5C6.151 4.485 7.545 4.16 9 4l1 2"/></svg>
           </div>
@@ -251,7 +252,7 @@
             <p class="social-big-desc">Join our player community</p>
           </div>
         </a>
-        <a href="https://www.tiktok.com/@mimigames_studio" class="social-big reveal" target="_blank">
+        <a href="https://www.tiktok.com/@mimigames_studio" class="social-big reveal" target="_blank" data-platform="tiktok">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
           </div>
@@ -260,7 +261,7 @@
             <p class="social-big-desc">Short clips & behind the scenes</p>
           </div>
         </a>
-        <a href="https://www.threads.com/@mimigames_studio" class="social-big reveal" target="_blank">
+        <a href="https://www.threads.com/@mimigames_studio" class="social-big reveal" target="_blank" data-platform="threads">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M8 12c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4"/></svg>
           </div>
@@ -269,7 +270,7 @@
             <p class="social-big-desc">Thoughts & community posts</p>
           </div>
         </a>
-        <a href="https://youtube.com/@mimigames_studio" class="social-big reveal" target="_blank">
+        <a href="https://youtube.com/@mimigames_studio" class="social-big reveal" target="_blank" data-platform="youtube">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
           </div>
@@ -278,7 +279,7 @@
             <p class="social-big-desc">Gameplay trailers & dev vlogs</p>
           </div>
         </a>
-        <a href="https://www.linkedin.com/company/mimi-game/" class="social-big reveal" target="_blank">
+        <a href="https://www.linkedin.com/company/mimi-game/" class="social-big reveal" target="_blank" data-platform="linkedin">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </div>
@@ -287,7 +288,7 @@
             <p class="social-big-desc">Studio updates & careers</p>
           </div>
         </a>
-        <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-big reveal" target="_blank">
+        <a href="https://play.google.com/store/apps/dev?id=7588389315845065039" class="social-big reveal" target="_blank" data-platform="googleplay">
           <div class="social-big-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           </div>

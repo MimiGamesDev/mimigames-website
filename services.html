@@ -70,18 +70,18 @@
         top: -120px; right: -120px;
         width: 240px; height: 240px;
         border-radius: 50%;
-        background: radial-gradient(circle, rgba(166,61,36,0.06) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(196,77,46,0.06) 0%, transparent 70%);
         transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         pointer-events: none;
       }
-      .svc-card:nth-child(2)::before { background: radial-gradient(circle, rgba(166,61,36,0.06) 0%, transparent 70%); }
-      .svc-card:nth-child(3)::before { background: radial-gradient(circle, rgba(166,61,36,0.06) 0%, transparent 70%); }
-      .svc-card:nth-child(4)::before { background: radial-gradient(circle, rgba(166,61,36,0.06) 0%, transparent 70%); }
-      .svc-card:nth-child(5)::before { background: radial-gradient(circle, rgba(166,61,36,0.06) 0%, transparent 70%); }
+      .svc-card:nth-child(2)::before { background: radial-gradient(circle, rgba(196,77,46,0.06) 0%, transparent 70%); }
+      .svc-card:nth-child(3)::before { background: radial-gradient(circle, rgba(196,77,46,0.06) 0%, transparent 70%); }
+      .svc-card:nth-child(4)::before { background: radial-gradient(circle, rgba(196,77,46,0.06) 0%, transparent 70%); }
+      .svc-card:nth-child(5)::before { background: radial-gradient(circle, rgba(196,77,46,0.06) 0%, transparent 70%); }
       .svc-card:hover {
         transform: translateY(-6px);
         box-shadow: 0 20px 56px rgba(0,0,0,0.45);
-        border-color: rgba(166,61,36,0.25);
+        border-color: rgba(196,77,46,0.25);
       }
       .svc-card:hover::before {
         transform: scale(1.4) translate(-30px, 30px);
@@ -135,7 +135,7 @@
       }
       .process-step:hover {
         background: rgba(199,200,170,0.08);
-        border-color: rgba(166,61,36,0.25);
+        border-color: rgba(196,77,46,0.25);
         transform: translateY(-4px);
         box-shadow: 0 12px 36px rgba(0,0,0,0.35);
       }
@@ -173,7 +173,7 @@
       .tech-pill:hover {
         border-color: var(--accent);
         transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(166,61,36,0.15);
+        box-shadow: 0 4px 12px rgba(196,77,46,0.15);
       }
       .tech-pill svg { width: 18px; height: 18px; opacity: 0.7; }
 
@@ -190,7 +190,7 @@
 <body>
 
   <div id="preloader">
-    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo">
+    <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo" loading="lazy" decoding="async">
     <div class="preloader-bar-wrap">
       <div class="preloader-bar"></div>
     </div>
@@ -199,8 +199,9 @@
   <mimi-header></mimi-header>
 
   <!-- HERO -->
-  <section class="sub-page-hero" id="hero">
-    <div class="hero-content">
+  <section class="sub-page-hero studio-hero-relative" id="hero">
+    <div class="studio-pattern-bg studio-pattern-services"></div>
+    <div class="hero-content" style="position:relative; z-index:2;">
       <h1 class="hero-title">Our Services</h1>
       <p class="hero-sub">From concept art to deployment — we craft every layer of digital experiences with precision, creativity, and technical depth.</p>
     </div>
@@ -217,22 +218,22 @@
 
         <!-- 1. Game Development -->
         <div class="svc-card reveal">
-          <div class="svc-icon" style="background:rgba(166,61,36,0.12);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#a63d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="18" y1="2" x2="18" y2="6"/></svg>
+          <div class="svc-icon" style="background:rgba(196,77,46,0.12);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c44d2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><line x1="6" y1="2" x2="6" y2="6"/><line x1="18" y1="2" x2="18" y2="6"/></svg>
           </div>
           <h3>Game Development</h3>
           <p>Full-cycle mobile game development using Unity and custom engines. From physics-driven action to open-world exploration — we build, test, and ship polished titles for Android and beyond.</p>
-          <span class="svc-tag" style="background:rgba(166,61,36,0.12); color:#a63d24;">Unity · Android · Cross-Platform</span>
+          <span class="svc-tag" style="background:rgba(196,77,46,0.12); color:#c44d2e;">Unity · Android · Cross-Platform</span>
         </div>
 
         <!-- 2. Art & Illustration -->
         <div class="svc-card reveal">
-          <div class="svc-icon" style="background:rgba(166,61,36,0.12);">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#a63d24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          <div class="svc-icon" style="background:rgba(196,77,46,0.12);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#c44d2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
           </div>
           <h3>Art & Illustration</h3>
           <p>Character design, environment art, concept illustration, and visual development. We create distinctive art styles that define a game's world and leave lasting impressions on players.</p>
-          <span class="svc-tag" style="background:rgba(166,61,36,0.12); color:#a63d24;">Concept Art · Characters · Worlds</span>
+          <span class="svc-tag" style="background:rgba(196,77,46,0.12); color:#c44d2e;">Concept Art · Characters · Worlds</span>
         </div>
 
         <!-- 3. Quality Assurance -->

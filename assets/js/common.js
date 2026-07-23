@@ -21,10 +21,11 @@ class MimiHeader extends HTMLElement {
           <ul class="nav-links" id="navLinks">
             <li><a href="${root}index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a></li>
             <li><a href="${root}services.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>Services</a></li>
-            <li><a href="${root}rogue-wheel.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Games</a></li>
-            <li><a href="${root}services.html#art"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>Art</a></li>
+            <li><a href="${root}index.html#games"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>Games</a></li>
+            <li><a href="${root}art.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>Art</a></li>
             <li><a href="${root}index.html#team"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Team</a></li>
             <li><a href="${root}career.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Career</a></li>
+            <li><a href="${root}blog/"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>Blog</a></li>
           </ul>
           <div class="nav-right">
             <a href="${root}contact.html" class="nav-contact">Contact Us</a>
@@ -147,10 +148,10 @@ class MimiFooter extends HTMLElement {
               <div class="footer-col">
                 <h4>Our Art</h4>
                 <ul>
-                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Concept Art</a></li>
-                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Character Design</a></li>
-                  <li><span class="footer-dot"></span><a href="${root}services.html#art">Environment Art</a></li>
-                  <li><span class="footer-dot"></span><a href="${root}services.html#art">UI/UX Design</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}concept-art.html">Concept Art</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}character-design.html">Character Design</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}environment-art.html">Environment Art</a></li>
+                  <li><span class="footer-dot"></span><a href="${root}ui-ux-design.html">UI/UX Design</a></li>
                 </ul>
 
                 <div class="footer-newsletter-box">
@@ -179,7 +180,7 @@ class MimiFooter extends HTMLElement {
                 <a href="${root}terms-of-use.html">Terms</a>
                 <a href="${root}data-deletion.html">Data Deletion</a>
               </div>
-              <span>Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="color:#a63d24;display:inline-block;vertical-align:middle;margin:0 2px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> in Pakistan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width:1.1rem;height:auto;display:inline-block;vertical-align:middle;border-radius:2px;margin-left:4px;border:1px solid rgba(199,200,170,0.12);"><rect width="300" height="200" fill="#01411C"/><rect width="75" height="200" fill="#FFF"/><circle cx="187.5" cy="100" r="60" fill="#FFF"/><circle cx="202.5" cy="85" r="60" fill="#01411C"/><polygon points="202.5,72.5 206.2,84 218,84 208.5,91 212.2,102.5 202.5,95.5 192.8,102.5 196.5,91 187,84 198.8,84" fill="#FFF"/></svg></span>
+              <span>Made with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="color:#c44d2e;display:inline-block;vertical-align:middle;margin:0 2px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> in Pakistan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" style="width:1.1rem;height:auto;display:inline-block;vertical-align:middle;border-radius:2px;margin-left:4px;border:1px solid rgba(199,200,170,0.12);"><rect width="300" height="200" fill="#01411C"/><rect width="75" height="200" fill="#FFF"/><circle cx="187.5" cy="100" r="60" fill="#FFF"/><circle cx="202.5" cy="85" r="60" fill="#01411C"/><polygon points="202.5,72.5 206.2,84 218,84 208.5,91 212.2,102.5 202.5,95.5 192.8,102.5 196.5,91 187,84 198.8,84" fill="#FFF"/></svg></span>
             </div>
           </div>
         </div>
@@ -190,16 +191,45 @@ class MimiFooter extends HTMLElement {
 
       </footer>
 
-      <!-- FLOATING MESSAGE BUTTON -->
-      <a href="${root}contact.html" class="floating-msg-btn" aria-label="Contact Us" title="Message Us">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        <span class="floating-msg-label">Message Us</span>
-      </a>
+      <!-- FLOATING CONTACT BUTTON -->
+      <div class="floating-contact-wrap" id="floatingContact">
+        <div class="floating-contact-actions">
+          <a href="tel:+923044593186" class="floating-contact-action call-btn" title="Call Us">
+            <div class="fab-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <span class="fab-label">Call Us</span>
+          </a>
+          <a href="https://wa.me/923044593186?text=Hi%20Mimi%20Games!%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="floating-contact-action whatsapp-btn" target="_blank" title="WhatsApp Us">
+            <div class="fab-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <span class="fab-label">WhatsApp</span>
+          </a>
+        </div>
+        <button class="floating-contact-main" id="floatingContactBtn" aria-label="Contact Us" title="Contact Us">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span class="floating-contact-label">Contact Us</span>
+        </button>
+      </div>
     `;
 
     this.querySelector('#backToTop').addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    const floatingContact = document.getElementById('floatingContact');
+    const floatingContactBtn = document.getElementById('floatingContactBtn');
+    if (floatingContact && floatingContactBtn) {
+      floatingContactBtn.addEventListener('click', () => {
+        floatingContact.classList.toggle('open');
+      });
+      document.addEventListener('click', (e) => {
+        if (!floatingContact.contains(e.target)) {
+          floatingContact.classList.remove('open');
+        }
+      });
+    }
   }
 }
 customElements.define('mimi-footer', MimiFooter);
@@ -221,12 +251,23 @@ window.addEventListener('load', () => {
     setTimeout(() => preloader.classList.add('loaded'), 350);
     setTimeout(() => preloader.remove(), 1100);
   }
+  // Inject scroll progress bar
+  const bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  document.body.prepend(bar);
 });
 
 let lastScroll = 0;
 const navbar = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
+
+  // Scroll progress indicator
+  const scrollBar = document.querySelector('.scroll-progress');
+  if (scrollBar) {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    scrollBar.style.width = maxScroll > 0 ? (scrolled / maxScroll * 100) + '%' : '0%';
+  }
 
   // Nav background on scroll
   if (navbar) {
@@ -238,13 +279,6 @@ window.addEventListener('scroll', () => {
       navbar.style.boxShadow = '';
     }
   }
-
-  // Parallax on game teasers
-  const parallaxBgs = document.querySelectorAll('.game-teaser-bg');
-  parallaxBgs.forEach(bg => {
-    const rate = scrolled * 0.08;
-    bg.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
-  });
 
   lastScroll = scrolled;
 });

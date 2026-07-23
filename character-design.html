@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>Character Design | Mimi Games Studio</title>
+    <meta name="description" content="Character design and visual development by Mimi Games Studio. Creating memorable characters with personality, depth, and visual appeal.">
+    <link rel="canonical" href="https://www.mimigames.games/character-design.html" />
+    <meta name="theme-color" content="#0c0c0e" />
+    <meta name="author" content="Mimi Games">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/favicon.png">
+    <meta property="og:title" content="Character Design — Mimi Games Studio">
+    <meta property="og:description" content="Creating memorable characters with personality, depth, and visual appeal. Every hero, villain, and creature gets a unique identity.">
+    <meta property="og:image" content="https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg">
+    <meta property="og:url" content="https://www.mimigames.games/character-design.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mimi Games">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLYMMEDFJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SPLYMMEDFJ');
+    </script>
+    <style>
+      .art-hero-bg {
+        position: absolute; inset: 0; z-index: 0;
+        background: linear-gradient(180deg, rgba(12,12,14,0.85) 0%, rgba(12,12,14,0.96) 100%),
+                    url('assets/images/character_design_cover.png');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.40;
+      }
+      .art-showcase-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .art-showcase-item {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+        background: rgba(199,200,170,0.04);
+        border: 1px solid rgba(199,200,170,0.08);
+        display: flex; align-items: center; justify-content: center;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+      .art-showcase-item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+      }
+      .art-showcase-item img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+      }
+      .art-showcase-item:hover img { transform: scale(1.05); }
+      .art-showcase-label {
+        position: absolute; bottom: 0; left: 0; right: 0;
+        padding: 16px 20px;
+        background: linear-gradient(transparent, rgba(12,12,14,0.9));
+        font-size: 14px; font-weight: 600; color: var(--text);
+      }
+      @media (max-width: 700px) {
+        .art-showcase-grid { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games" class="preloader-logo" loading="lazy" decoding="async">
+        <div class="preloader-bar-wrap">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+  <mimi-header></mimi-header>
+  <section class="sub-page-hero" id="hero" style="position:relative; overflow:hidden;">
+    <div class="art-hero-bg"></div>
+    <div class="hero-content" style="position:relative; z-index:2;">
+      <h1 class="hero-title">Character Design</h1>
+      <p class="hero-sub">Creating memorable characters with personality, depth, and visual appeal. Every hero, villain, and creature gets a unique identity.</p>
+    </div>
+  </section>
+  <div class="section-white" style="background:transparent;">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Portfolio <span class="gradient-text">Highlights</span></h2>
+        <p>A selection of our work in this discipline.</p>
+      </div>
+      <div class="art-showcase-grid">
+        <div class="art-showcase-item reveal">
+          <img src="assets/images/xtremeversity_art.png" alt="Xtremeversity — Soldier Design" loading="lazy" decoding="async">
+          <div class="art-showcase-label">Xtremeversity — Soldier Design</div>
+        </div>
+        <div class="art-showcase-item reveal">
+          <img src="assets/images/Xtremeversity.png" alt="Xtremeversity — Character Lineup" loading="lazy" decoding="async">
+          <div class="art-showcase-label">Xtremeversity — Character Lineup</div>
+        </div>
+        <div class="art-showcase-item reveal">
+          <img src="assets/images/Rogue Wheel.png" alt="Rogue Wheel — Character Art" loading="lazy" decoding="async">
+          <div class="art-showcase-label">Rogue Wheel — Character Art</div>
+        </div>
+        <div class="art-showcase-item reveal">
+          <img src="assets/images/MIMI GAMES LOGO.jpg" alt="Mimi Games — Mascot Design" loading="lazy" decoding="async">
+          <div class="art-showcase-label">Mimi Games — Mascot Design</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-white" style="background: transparent;">
+    <div class="container" style="text-align:center;">
+      <div class="reveal" style="max-width:600px; margin:0 auto;">
+        <h2 class="gradient-text" style="font-size:clamp(28px,4vw,40px); margin-bottom:16px;">Want This for Your Project?</h2>
+        <p style="color:var(--text-body); font-size:16px; margin-bottom:32px;">We bring creative visions to life. Let's talk about your game, brand, or project.</p>
+        <a href="contact.html" class="btn btn-primary" style="display:inline-flex; align-items:center; gap:8px;">
+          Get in Touch
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <mimi-footer></mimi-footer>
+  <script src="assets/js/common.js"></script>
+</body>
+</html>
