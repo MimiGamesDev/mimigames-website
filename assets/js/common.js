@@ -37,16 +37,33 @@ class MimiHeader extends HTMLElement {
     const toggle = this.querySelector('#navToggle');
     const links = this.querySelector('#navLinks');
 
+    const closeMenu = () => {
+      links.classList.remove('active');
+      toggle.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
     toggle.addEventListener('click', () => {
-      links.classList.toggle('active');
-      toggle.classList.toggle('open');
+      const isOpen = links.classList.contains('active');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        links.classList.add('active');
+        toggle.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
     });
 
     this.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        links.classList.remove('active');
-        toggle.classList.remove('open');
-      });
+      link.addEventListener('click', () => closeMenu());
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && links.classList.contains('active')) closeMenu();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (links.classList.contains('active') && !e.target.closest('.navbar')) closeMenu();
     });
 
     const currentPath = window.location.pathname;
