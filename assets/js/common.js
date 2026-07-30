@@ -139,7 +139,7 @@ class MimiFooter extends HTMLElement {
 
               <!-- QUICK LINKS -->
               <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h4>Quick Links <span class="footer-accordion-icon">+</span></h4>
                 <ul>
                   <li><span class="footer-dot"></span><a href="${root}index.html">Home</a></li>
                   <li><span class="footer-dot"></span><a href="${root}services.html">Services</a></li>
@@ -152,7 +152,7 @@ class MimiFooter extends HTMLElement {
 
               <!-- OUR GAMES -->
               <div class="footer-col">
-                <h4>Our Games</h4>
+                <h4>Our Games <span class="footer-accordion-icon">+</span></h4>
                 <ul>
                   <li><span class="footer-dot"></span><a href="${root}rogue-wheel.html">Rogue Wheel</a></li>
                   <li><span class="footer-dot"></span><a href="${root}xtremeversity.html">Xtremeversity</a></li>
@@ -163,7 +163,7 @@ class MimiFooter extends HTMLElement {
 
               <!-- OUR ART + NEWSLETTER -->
               <div class="footer-col">
-                <h4>Our Art</h4>
+                <h4>Our Art <span class="footer-accordion-icon">+</span></h4>
                 <ul>
                   <li><span class="footer-dot"></span><a href="${root}concept-art.html">Concept Art</a></li>
                   <li><span class="footer-dot"></span><a href="${root}character-design.html">Character Design</a></li>
@@ -247,6 +247,15 @@ class MimiFooter extends HTMLElement {
         }
       });
     }
+
+    this.querySelectorAll('.footer-col h4').forEach(heading => {
+      heading.addEventListener('click', () => {
+        const col = heading.closest('.footer-col');
+        if (col) {
+          col.classList.toggle('active');
+        }
+      });
+    });
   }
 }
 customElements.define('mimi-footer', MimiFooter);
