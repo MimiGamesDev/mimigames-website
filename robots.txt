@@ -1,13 +1,26 @@
+# ─────────────────────────────────────────────
+# robots.txt — Mimi Games (mimigames.games)
+# Optimized for crawl efficiency & budget
+# ─────────────────────────────────────────────
+
 User-agent: *
+
+# Allow all useful content (default)
 Allow: /
+
+# ── Block internal / non-public directories ──
 Disallow: /.git/
 Disallow: /.qoder/
+Disallow: /.well-known/
+Disallow: /games/rogue-wheel/Build/
+Disallow: /games/rogue-wheel/TemplateData/
 
-# Block legal/policy pages from wasting crawl budget
+# ── Block noindex legal pages ──
+# These pages have <meta noindex> — blocking them here
+# saves crawl budget for indexed pages.
 Disallow: /data-deletion.html
+Disallow: /terms-of-use.html
+Disallow: /pre-registration-terms.html
 
-# Sitemap
+# ── Sitemaps ──
 Sitemap: https://www.mimigames.games/sitemap.xml
-
-# Crawl-delay (be polite)
-Crawl-delay: 1
