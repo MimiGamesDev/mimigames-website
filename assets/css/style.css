@@ -2354,12 +2354,12 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
 .studio-pattern-bg {
   position: absolute;
   inset: 0;
-  z-index: 0;
-  background-size: auto 130%;
+  z-index: 100;
+  background-size: auto 85%; 
   background-position: right bottom;
   background-repeat: no-repeat;
-  pointer-events: none;
-  opacity: 0.35;
+  pointer-events: visibleStroke;
+  opacity: 0.45;
 }
 
 .studio-pattern-repeat {
@@ -2394,6 +2394,16 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
                     url('../images/Page%20Header/character%20design%20bg.png');
 }
 
+.studio-pattern-conceptart {
+  background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
+                    url('../images/Page%20Header/ConceptArtBg.png');
+}
+
+.studio-pattern-environmentart {
+  background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
+                    url('../images/Page%20Header/environmentArtBg.png');
+}
+
 .studio-pattern-contact {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
                     url('../images/Page%20Header/contact%20us.png');
@@ -2408,6 +2418,22 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
                     url('../images/Page%20Header/blog.png');
 }
+
+.studio-pattern-art {
+  background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
+                    url('../images/Page%20Header/artBg.png');
+}
+
+.studio-pattern-2dAnimation {
+  background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
+                    url('../images/Page%20Header/2dAnimation.png');
+}
+
+.studio-pattern-uiux {
+  background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
+                    url('../images/Page%20Header/uiux.png');
+}
+
 
 /* Premium Visual Feature Cards */
 .premium-visual-card {
