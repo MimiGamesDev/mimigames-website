@@ -1903,6 +1903,22 @@ section.hero h1 {
   .form-row.cols-2 { grid-template-columns: 1fr; }
 }
 
+/* ─── SERVICE CARDS (shared across services + art discipline pages) ─── */
+.svc-card {
+  background: rgba(199,200,170,0.05);
+  border: 1px solid rgba(199,200,170,0.10);
+  border-radius: 20px;
+  padding: 36px 32px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.svc-card h3 { margin: 0 0 10px; }
+.svc-card p { margin: 0; }
+.svc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.35);
+  border-color: rgba(196,77,46,0.25);
+}
+
 /* ─── GENERIC SECTION OVERRIDE (sub-pages) ──────────── */
 section {
   padding: 80px 24px; border-bottom: 1px solid rgba(199,200,170,0.08);
@@ -2256,6 +2272,45 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
   .sub-page-hero { padding: 100px 5% 36px; min-height: 200px; }
   .sub-page-hero::before { top: 50px; left: 5%; }
 }
+
+/* ─── RELATED POSTS ─────────────────────────────────────── */
+.related-posts {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(199,200,170,0.10);
+}
+.related-posts .label { margin-bottom: 1.25rem; }
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.related-card {
+  display: flex; flex-direction: column; gap: .5rem;
+  background: rgba(199,200,170,0.05);
+  border: 1px solid rgba(199,200,170,0.10);
+  border-radius: 14px;
+  padding: 1.25rem 1.25rem;
+  text-decoration: none;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+  border-color: rgba(196,77,46,0.25);
+}
+.related-card .related-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: .7rem; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--orange);
+}
+.related-card h3 {
+  font-size: 1rem; color: var(--cream); margin: 0; line-height: 1.35;
+}
+.related-card p {
+  color: var(--muted); font-size: .85rem; line-height: 1.6; margin: 0; flex: 1;
+}
+.related-card .read-more { font-size: .85rem; }
 
 /* ─── COMING SOON BADGE ─────────────────────────────────── */
 .coming-soon-badge {

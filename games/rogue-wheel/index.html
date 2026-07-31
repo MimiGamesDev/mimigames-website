@@ -5,6 +5,19 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes">
     <title>Rogue Wheel WebGL | Mimi Games</title>
+    <meta name="description" content="Play Rogue Wheel: Catapult Brawl in your browser. Free physics-based rogue-lite catapult game by Mimi Games — no download required.">
+    <meta name="author" content="Mimi Games">
+    <meta property="og:title" content="Rogue Wheel WebGL | Play in Browser">
+    <meta property="og:description" content="Play Rogue Wheel: Catapult Brawl in your browser. Free physics-based rogue-lite catapult game by Mimi Games.">
+    <meta property="og:image" content="https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg">
+    <meta property="og:image:alt" content="Mimi Games Studio Logo">
+    <meta property="og:url" content="https://www.mimigames.games/games/rogue-wheel/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mimi Games">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rogue Wheel WebGL | Play in Browser">
+    <meta name="twitter:description" content="Play Rogue Wheel: Catapult Brawl in your browser. Free physics-based rogue-lite catapult game by Mimi Games.">
+    <meta name="twitter:image" content="https://www.mimigames.games/assets/images/MIMI%20GAMES%20LOGO.jpg">
     <link rel="canonical" href="https://www.mimigames.games/games/rogue-wheel/">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
@@ -47,9 +60,50 @@
         visibility: hidden !important;
         overflow: hidden !important;
       }
+      /* Accessible content + discreet back link */
+      .sr-only {
+        position: absolute;
+        width: 1px; height: 1px;
+        margin: -1px; padding: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .webgl-back {
+        position: fixed;
+        top: 12px; left: 12px;
+        z-index: 100;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 13px; font-weight: 600;
+        color: #fff;
+        background: rgba(20, 20, 22, 0.7);
+        border: 1px solid rgba(199, 200, 170, 0.3);
+        border-radius: 999px;
+        padding: 8px 14px;
+        text-decoration: none;
+        backdrop-filter: blur(6px);
+        opacity: 0.35;
+        transition: opacity 0.25s ease;
+      }
+      .webgl-back:hover { opacity: 1; }
     </style>
   </head>
   <body>
+    <header class="sr-only">
+      <h1>Rogue Wheel: Catapult Brawl — Play in Browser</h1>
+      <p>Free physics-based rogue-lite catapult game by Mimi Games. Play directly in your browser, no download required, and no energy system.</p>
+      <nav><a href="../../rogue-wheel.html">Rogue Wheel details and Google Play download</a></nav>
+    </header>
+    <a class="webgl-back" href="../../rogue-wheel.html" aria-label="Back to Rogue Wheel page">&larr; Rogue Wheel</a>
+    <noscript>
+      <div style="position:fixed;top:0;left:0;right:0;bottom:0;z-index:999;background:#231F20;color:#fff;font-family:Inter,system-ui,sans-serif;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;">
+        <div>
+          <p style="font-size:18px;font-weight:600;margin:0 0 8px;">JavaScript is required to play Rogue Wheel in your browser.</p>
+          <p style="margin:0 0 16px;color:rgba(255,255,255,0.7);">You can still get the free game on <a href="https://play.google.com/store/apps/details?id=com.mimigames.catapultbrawl" style="color:#fff;">Google Play</a> or <a href="../../rogue-wheel.html" style="color:#fff;">learn more about Rogue Wheel</a>.</p>
+        </div>
+      </div>
+    </noscript>
     <div id="unity-container">
       <canvas id="unity-canvas" tabindex="-1"></canvas>
       <div id="unity-loading-bar">

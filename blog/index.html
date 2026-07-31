@@ -30,7 +30,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPLYMMEDFJ"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SPLYMMEDFJ');</script>
   <style>
-    .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem;}
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem;}
     .blog-card{background:var(--glass);border:1px solid var(--glass-b);border-radius:16px;padding:2rem;transition:transform .3s,box-shadow .3s;text-decoration:none;display:flex;flex-direction:column;gap:.75rem;}
     .blog-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.5);}
     .blog-tag{font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--orange);}
@@ -38,7 +38,32 @@
     .blog-card p{color:var(--muted);font-size:.95rem;line-height:1.7;margin:0;flex:1;}
     .read-more{color:var(--teal);font-size:.9rem;font-weight:600;letter-spacing:1px;}
     .blog-date{color:var(--muted);font-size:.8rem;}
+    .blog-topic{display:flex;flex-direction:column;gap:.25rem;margin-top:3.5rem;}
+    .blog-topic h2{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin:0;}
+    .blog-topic p{color:var(--muted);font-size:.9rem;margin:0 0 1rem;max-width:70ch;}
+    .blog-topic + .blog-grid{border-top:1px solid var(--glass-b);padding-top:2rem;}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Mimi Games Blog",
+    "description": "Android game guides, rogue-lite tips, and indie game development insights from Mimi Games, a mobile game studio in Pakistan.",
+    "url": "https://www.mimigames.games/blog/",
+    "numberOfItems": 8,
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Gaming Studios in Pakistan: Growth, Challenges, and Opportunities", "url": "https://www.mimigames.games/blog/gaming-studios-in-pakistan.html"},
+      {"@type": "ListItem", "position": 2, "name": "Best Mobile Game Studios in Pakistan 2026", "url": "https://www.mimigames.games/blog/best-mobile-game-studios-pakistan.html"},
+      {"@type": "ListItem", "position": 3, "name": "How to Hire Game Developers in Pakistan", "url": "https://www.mimigames.games/blog/hire-game-developers-pakistan.html"},
+      {"@type": "ListItem", "position": 4, "name": "Pakistani Indie Game Developers 2026", "url": "https://www.mimigames.games/blog/pakistani-indie-game-developers-2026.html"},
+      {"@type": "ListItem", "position": 5, "name": "Android Gaming Trends 2026: What Indie Devs Should Focus On", "url": "https://www.mimigames.games/blog/android-gaming-trends-2026.html"},
+      {"@type": "ListItem", "position": 6, "name": "Rogue Wheel: Catapult Brawl Complete Android Guide", "url": "https://www.mimigames.games/blog/rogue-wheel-catapult-game-android.html"},
+      {"@type": "ListItem", "position": 7, "name": "5 Best Rogue-Lite Mobile Games for Android", "url": "https://www.mimigames.games/blog/best-rogue-lite-mobile-games.html"},
+      {"@type": "ListItem", "position": 8, "name": "Building an Indie Game Studio in Pakistan: The Mimi Games Story", "url": "https://www.mimigames.games/blog/indie-game-studio-pakistan.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div id="preloader">
@@ -59,64 +84,83 @@
 
   <div class="editorial">
     <div class="container">
-      <div class="label">Latest Posts</div>
-      <div class="blog-grid">
-        <a href="gaming-studios-in-pakistan.html" class="blog-card reveal">
-          <span class="blog-tag">Industry Guide</span>
-          <span class="blog-date">July 2026</span>
-          <h2>Gaming Studios in Pakistan: Growth, Challenges, and Opportunities</h2>
-          <p>Discover how gaming studios in Pakistan are growing, what local developers need, and why the country is ready for more game industry success.</p>
-          <span class="read-more">Read Guide →</span>
-        </a>
-        <a href="best-mobile-game-studios-pakistan.html" class="blog-card reveal">
-          <span class="blog-tag">Studio Rankings</span>
-          <span class="blog-date">July 2026</span>
-          <h2>Best Mobile Game Studios in Pakistan 2026 | Top Developers</h2>
-          <p>Discover the top game development studios in Pakistan creating professional, high-quality mobile games.</p>
-          <span class="read-more">Read Rankings →</span>
-        </a>
-        <a href="hire-game-developers-pakistan.html" class="blog-card reveal">
-          <span class="blog-tag">Outsourcing Guide</span>
-          <span class="blog-date">July 2026</span>
-          <h2>Hire Game Developers Pakistan | Work with Pakistani Studios</h2>
-          <p>A practical guide to finding, vetting, and working with talented game developers from Pakistan.</p>
-          <span class="read-more">Read Guide →</span>
-        </a>
-        <a href="pakistani-indie-game-developers-2026.html" class="blog-card reveal">
-          <span class="blog-tag">Scene Spotlight</span>
-          <span class="blog-date">July 2026</span>
-          <h2>Pakistani Indie Game Developers 2026 | Emerging Talent & Studios</h2>
-          <p>Meet the rising Pakistani indie game developers creating games and building a local dev community in 2026.</p>
-          <span class="read-more">Read Story →</span>
-        </a>
-        <a href="android-gaming-trends-2026.html" class="blog-card reveal">
-          <span class="blog-tag">Trending</span>
-          <span class="blog-date">July 2026</span>
-          <h2>Android Gaming Trends 2026: What Indie Devs Should Focus On</h2>
-          <p>Learn the latest Google Play and Android trends that can help indie games win visibility in 2026.</p>
-          <span class="read-more">Read Trending Guide →</span>
-        </a>
-        <a href="rogue-wheel-catapult-game-android.html" class="blog-card reveal">
-          <span class="blog-tag">Game Guide</span>
-          <span class="blog-date">May 2026</span>
-          <h2>Rogue Wheel Catapult Game: Complete Android Guide</h2>
-          <p>Everything you need — gameplay mechanics, upgrade tips, booster strategies, and how to survive the longest rogue runs.</p>
-          <span class="read-more">Read Guide →</span>
-        </a>
-        <a href="best-rogue-lite-mobile-games.html" class="blog-card reveal">
-          <span class="blog-tag">Top List</span>
-          <span class="blog-date">May 2026</span>
-          <h2>5 Best Rogue-Lite Mobile Games for Android in 2025</h2>
-          <p>A curated list of the best rogue-lite games on Android — from Hades-inspired titles to physics-based rogues like Rogue Wheel.</p>
-          <span class="read-more">Read Article →</span>
-        </a>
-        <a href="indie-game-studio-pakistan.html" class="blog-card reveal">
-          <span class="blog-tag">Studio Story</span>
-          <span class="blog-date">May 2026</span>
-          <h2>Building a Mobile Game Studio in Pakistan: The Mimi Games Story</h2>
-          <p>How a small team from Sargodha, Punjab built their first Unity game and put Pakistani indie game dev on the map.</p>
-          <span class="read-more">Read Story →</span>
-        </a>
+      <div class="label">Explore by Topic</div>
+
+      <div class="blog-topic">
+        <h2>Pakistan Game Industry</h2>
+        <p>Studio guides, developer spotlights, and hiring insights for the Pakistani game development scene.</p>
+        <div class="blog-grid">
+          <a href="gaming-studios-in-pakistan.html" class="blog-card reveal">
+            <span class="blog-tag">Industry Guide</span>
+            <span class="blog-date">July 2026</span>
+            <h2>Gaming Studios in Pakistan: Growth, Challenges, and Opportunities</h2>
+            <p>Discover how gaming studios in Pakistan are growing, what local developers need, and why the country is ready for more game industry success.</p>
+            <span class="read-more">Read Guide →</span>
+          </a>
+          <a href="best-mobile-game-studios-pakistan.html" class="blog-card reveal">
+            <span class="blog-tag">Studio Rankings</span>
+            <span class="blog-date">July 2026</span>
+            <h2>Best Mobile Game Studios in Pakistan 2026 | Top Developers</h2>
+            <p>Discover the top game development studios in Pakistan creating professional, high-quality mobile games.</p>
+            <span class="read-more">Read Rankings →</span>
+          </a>
+          <a href="hire-game-developers-pakistan.html" class="blog-card reveal">
+            <span class="blog-tag">Outsourcing Guide</span>
+            <span class="blog-date">July 2026</span>
+            <h2>Hire Game Developers Pakistan | Work with Pakistani Studios</h2>
+            <p>A practical guide to finding, vetting, and working with talented game developers from Pakistan.</p>
+            <span class="read-more">Read Guide →</span>
+          </a>
+          <a href="pakistani-indie-game-developers-2026.html" class="blog-card reveal">
+            <span class="blog-tag">Scene Spotlight</span>
+            <span class="blog-date">July 2026</span>
+            <h2>Pakistani Indie Game Developers 2026 | Emerging Talent & Studios</h2>
+            <p>Meet the rising Pakistani indie game developers creating games and building a local dev community in 2026.</p>
+            <span class="read-more">Read Story →</span>
+          </a>
+          <a href="indie-game-studio-pakistan.html" class="blog-card reveal">
+            <span class="blog-tag">Studio Story</span>
+            <span class="blog-date">May 2026</span>
+            <h2>Building an Indie Game Studio in Pakistan: The Mimi Games Story</h2>
+            <p>How a small team from Sargodha, Punjab built their first Unity game and put Pakistani indie game dev on the map.</p>
+            <span class="read-more">Read Story →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-topic">
+        <h2>Game Guides &amp; Genre Content</h2>
+        <p>Deep-dive guides into our games and the mobile genres that matter to players.</p>
+        <div class="blog-grid">
+          <a href="rogue-wheel-catapult-game-android.html" class="blog-card reveal">
+            <span class="blog-tag">Game Guide</span>
+            <span class="blog-date">May 2026</span>
+            <h2>Rogue Wheel Catapult Game: Complete Android Guide</h2>
+            <p>Everything you need — gameplay mechanics, upgrade tips, booster strategies, and how to survive the longest rogue runs.</p>
+            <span class="read-more">Read Guide →</span>
+          </a>
+          <a href="best-rogue-lite-mobile-games.html" class="blog-card reveal">
+            <span class="blog-tag">Top List</span>
+            <span class="blog-date">May 2026</span>
+            <h2>5 Best Rogue-Lite Mobile Games for Android in 2026</h2>
+            <p>A curated list of the best rogue-lite games on Android — from Hades-inspired titles to physics-based rogues like Rogue Wheel.</p>
+            <span class="read-more">Read Article →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-topic">
+        <h2>Android Trends &amp; Marketing</h2>
+        <p>Platform updates and growth tactics for indie mobile developers.</p>
+        <div class="blog-grid">
+          <a href="android-gaming-trends-2026.html" class="blog-card reveal">
+            <span class="blog-tag">Trending</span>
+            <span class="blog-date">July 2026</span>
+            <h2>Android Gaming Trends 2026: What Indie Devs Should Focus On</h2>
+            <p>Learn the latest Google Play and Android trends that can help indie games win visibility in 2026.</p>
+            <span class="read-more">Read Trending Guide →</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
