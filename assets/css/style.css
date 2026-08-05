@@ -3,8 +3,6 @@
    Pixel-perfect match of gamedistrict.co
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -2437,7 +2435,7 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
   inset: 0;
   z-index: 0;
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/pattern_studio_hero.png');
+                    url('../images/pattern_studio_hero.webp');
   background-repeat: repeat;
   background-size: 500px 500px;
   pointer-events: none;
@@ -2446,62 +2444,62 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
 
 .studio-pattern-services {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/services%20bg.png');
+                    url('../images/Page%20Header/services%20bg.webp');
 }
 
 .studio-pattern-career {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/career.png');
+                    url('../images/Page%20Header/career.webp');
 }
 
 .studio-pattern-values {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/visual%20development%20bg.png');
+                    url('../images/Page%20Header/visual%20development%20bg.webp');
 }
 
 .studio-pattern-character {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/character%20design%20bg.png');
+                    url('../images/Page%20Header/character%20design%20bg.webp');
 }
 
 .studio-pattern-conceptart {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/ConceptArtBg.png');
+                    url('../images/Page%20Header/ConceptArtBg.webp');
 }
 
 .studio-pattern-environmentart {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.80) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/environmentArtBg.png');
+                    url('../images/Page%20Header/environmentArtBg.webp');
 }
 
 .studio-pattern-contact {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/contact%20us.png');
+                    url('../images/Page%20Header/contact%20us.webp');
 }
 
 .studio-pattern-faq {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/faqs.png');
+                    url('../images/Page%20Header/faqs.webp');
 }
 
 .studio-pattern-blog {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/blog.png');
+                    url('../images/Page%20Header/blog.webp');
 }
 
 .studio-pattern-art {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/artBg.png');
+                    url('../images/Page%20Header/artBg.webp');
 }
 
 .studio-pattern-2dAnimation {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/2dAnimation.png');
+                    url('../images/Page%20Header/2dAnimation.webp');
 }
 
 .studio-pattern-uiux {
   background-image: linear-gradient(180deg, rgba(26,16,22,0.82) 0%, rgba(26,16,22,0.96) 100%),
-                    url('../images/Page%20Header/uiux.png');
+                    url('../images/Page%20Header/uiux.webp');
 }
 
 
@@ -2582,5 +2580,37 @@ section h2 { background: none; -webkit-text-fill-color: var(--text); color: var(
 .icon-badge-box svg {
   width: 24px;
   height: 24px;
+}
+
+/* ============================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================ */
+
+/* Cheaply skip rendering of the footer until scrolled to (no reveal animations inside) */
+.mimi-footer {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
+}
+
+/* Mobile: cheaper glass blur (backdrop-filter is GPU heavy on low-end devices) */
+@media (max-width: 768px) {
+  :root {
+    --blur: 8px;
+    --blur-sm: 5px;
+  }
+}
+
+/* Respect users who prefer reduced motion: kill continuous decorative animation */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .char-left, .char-right, .hero-orb, .hero-title, .hero-sub, .hero-cta,
+  .preloader-logo, .preloader-bar {
+    animation: none !important;
+  }
 }
 

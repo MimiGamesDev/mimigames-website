@@ -19,8 +19,15 @@
   <link rel="dns-prefetch" href="https://play.google.com" />
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/Floating%20Character%201.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/Floating%20Character%202.webp" fetchpriority="high">
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  </noscript>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
@@ -271,12 +278,12 @@
     <canvas id="hero-particles" class="hero-particles-canvas"></canvas>
     <div class="hero-characters">
       <div class="character char-left">
-        <img src="assets/images/Floating%20Character%202.png" alt="Mimi Games Character Left" decoding="async"
-          fetchpriority="high">
+        <img src="assets/images/Floating%20Character%202.webp" alt="Mimi Games Character Left" width="467"
+          height="700" decoding="async" fetchpriority="high">
       </div>
       <div class="character char-right">
-        <img src="assets/images/Floating%20Character%201.png" alt="Mimi Games Character Right" decoding="async"
-          fetchpriority="high">
+        <img src="assets/images/Floating%20Character%201.webp" alt="Mimi Games Character Right" width="700"
+          height="467" decoding="async" fetchpriority="high">
       </div>
     </div>
     <div class="hero-content">
@@ -361,12 +368,12 @@
         <div class="game-grid">
           <!-- Game Card 1 -->
           <a href="rogue-wheel.html" class="game-card reveal" style="text-decoration:none;">
-            <div class="game-card-bg" style="background-image: url('assets/images/Rogue%20Wheel%20Game%20Card.png');">
+            <div class="game-card-bg" style="background-image: url('assets/images/Rogue%20Wheel%20Game%20Card.webp');">
             </div>
             <div class="game-card-content">
               <div class="game-icon-wrapper">
-                <img src="assets/images/Rogue%20Wheel.png" alt="Rogue Wheel Icon" class="game-icon" loading="lazy"
-                  decoding="async">
+                <img src="assets/images/Rogue%20Wheel.webp" alt="Rogue Wheel Icon" class="game-icon" width="256"
+                  height="256" loading="lazy" decoding="async">
                 <span class="game-card-tag game-tag-orange">ROGUE-LITE • ACTION</span>
               </div>
               <div class="game-card-body">
@@ -378,12 +385,12 @@
 
           <!-- Game Card 2 -->
           <a href="xtremeversity.html" class="game-card reveal" style="text-decoration:none;">
-            <div class="game-card-bg" style="background-image: url('assets/images/Xtremeversity%20Game%20Card.png');">
+            <div class="game-card-bg" style="background-image: url('assets/images/Xtremeversity%20Game%20Card.webp');">
             </div>
             <div class="game-card-content">
               <div class="game-icon-wrapper">
-                <img src="assets/images/Xtremeversity.png" alt="Xtremeversity Icon" class="game-icon" loading="lazy"
-                  decoding="async">
+                <img src="assets/images/Xtremeversity.webp" alt="Xtremeversity Icon" class="game-icon" width="256"
+                  height="256" loading="lazy" decoding="async">
                 <span class="game-card-tag game-tag-blue">FPS • OPEN WORLD</span>
               </div>
               <div class="game-card-body">
@@ -395,12 +402,12 @@
 
           <!-- Game Card 3 -->
           <a href="puzzle-verse.html" class="game-card reveal" style="text-decoration:none;">
-            <div class="game-card-bg" style="background-image: url('assets/images/Puzzle%20Verse%20Game%20Card.png');">
+            <div class="game-card-bg" style="background-image: url('assets/images/Puzzle%20Verse%20Game%20Card.webp');">
             </div>
             <div class="game-card-content">
               <div class="game-icon-wrapper">
-                <img src="assets/images/Puzzle%20Verse.jpeg" alt="Puzzle Verse Icon" class="game-icon" loading="lazy"
-                  decoding="async">
+                <img src="assets/images/Puzzle%20Verse.webp" alt="Puzzle Verse Icon" class="game-icon" width="254"
+                  height="256" loading="lazy" decoding="async">
                 <span class="game-card-tag game-tag-purple">PUZZLE • CASUAL</span>
               </div>
               <div class="game-card-body">
@@ -538,7 +545,8 @@
         <div class="team-grid">
           <div class="team-card reveal">
             <div class="team-avatar">
-              <img src="assets/images/Profile/arslan.png" alt="Muhammad Ahsen" loading="lazy" decoding="async">
+              <img src="assets/images/Profile/arslan.webp" alt="Muhammad Ahsen" width="437" height="480"
+                loading="lazy" decoding="async">
             </div>
             <h3>Muhammad Ahsen</h3>
             <p class="team-role">Founder & Developer</p>
@@ -557,7 +565,8 @@
           </div>
           <div class="team-card reveal">
             <div class="team-avatar">
-              <img src="assets/images/Profile/minhal.png" alt="Minhal Ali" loading="lazy" decoding="async">
+              <img src="assets/images/Profile/minhal.webp" alt="Minhal Ali" width="386" height="480"
+                loading="lazy" decoding="async">
             </div>
             <h3>Minhal Ali</h3>
             <p class="team-role">Founder & Artist</p>
@@ -612,101 +621,87 @@
   <mimi-footer></mimi-footer>
   <script src="assets/js/common.js"></script>
   <script>
-    // Premium natural noisy particles, sparkles & objects animation
-    const canvas = document.getElementById('hero-particles');
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      let particles = [];
-      const numParticles = window.innerWidth < 768 ? 120 : 240;
+// Optimized low-power particle animations (no shadowBlur, pauses offscreen)
+    (function () {
+      var isMobile = window.innerWidth < 768;
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-      function resize() {
-        if (!canvas.parentElement) return;
-        canvas.width = canvas.parentElement.clientWidth;
-        canvas.height = canvas.parentElement.clientHeight;
-      }
-      window.addEventListener('resize', resize);
-      resize();
+      var COLORS = [
+        '255, 215, 0',    // pure gold
+        '255, 223, 0',    // golden yellow
+        '218, 165, 32',   // goldenrod
+        '255, 235, 153',  // pale gold
+        '255, 183, 77',   // warm amber
+        '199, 200, 170',  // cream
+        '166, 61, 36'     // accent red
+      ];
 
-      class Particle {
-        constructor() {
+      function startParticles(canvasId, opts) {
+        var canvas = document.getElementById(canvasId);
+        if (!canvas) return;
+        var ctx = canvas.getContext('2d');
+        var particles = [];
+        var running = false;
+        var rafId = 0;
+        var lastTime = 0;
+        var count = isMobile ? opts.mobile : opts.desktop;
+
+        function resize() {
+          var parent = canvas.parentElement;
+          if (!parent) return;
+          canvas.width = parent.clientWidth;
+          canvas.height = parent.clientHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        function Particle() {
           this.init(true);
         }
-
-        init(randomizeLife = false) {
-          // Spawn naturally across the entire canvas randomly
+        Particle.prototype.init = function (randomizeLife) {
           this.x = Math.random() * canvas.width;
           this.y = Math.random() * canvas.height;
-
-          // Noise offsets for natural wandering
           this.noiseOffsetX = Math.random() * 1000;
           this.noiseOffsetY = Math.random() * 1000;
 
-          // Object types: 0 = soft circle, 1 = 4-point star, 2 = tiny dot, 3 = 5-point star, 4 = diamond, 5 = cross, 6 = triangle
-          const typeRand = Math.random();
-          if (typeRand < 0.22) this.type = 1;
-          else if (typeRand < 0.36) this.type = 0;
-          else if (typeRand < 0.50) this.type = 3;
-          else if (typeRand < 0.64) this.type = 4;
-          else if (typeRand < 0.78) this.type = 5;
-          else if (typeRand < 0.90) this.type = 6;
+          var r = Math.random();
+          if (r < 0.22) this.type = 1;
+          else if (r < 0.36) this.type = 0;
+          else if (r < 0.50) this.type = 3;
+          else if (r < 0.64) this.type = 4;
+          else if (r < 0.78) this.type = 5;
+          else if (r < 0.90) this.type = 6;
           else this.type = 2;
 
-          // Sizes: make them a little small in size
-          this.size = Math.random() * 1.5 + 0.8;
-
-          // Shinyless opacity: generally lower opacity but varied
+          this.size = Math.random() * (isMobile ? 1.1 : 1.5) + 0.7;
           this.baseOpacity = Math.random() * 0.15 + 0.05;
-
           this.life = randomizeLife ? Math.random() * 10 : 0;
-          this.maxLife = Math.random() * 8 + 5; // 5 to 13 seconds
-
-          const colors = [
-            '255, 215, 0',    // pure gold
-            '255, 223, 0',    // golden yellow
-            '218, 165, 32',   // goldenrod
-            '255, 235, 153',  // pale gold
-            '255, 183, 77',   // warm amber
-            '199, 200, 170',  // cream
-            '166, 61, 36'     // accent red
-          ];
-          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.maxLife = Math.random() * 8 + 5;
+          this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
           this.glow = Math.random() > 0.35 && this.type !== 2;
-        }
-
-        update() {
-          // Natural noisy drift
+        };
+        Particle.prototype.update = function (dt) {
           this.noiseOffsetX += 0.01;
           this.noiseOffsetY += 0.01;
-
-          const vx = Math.sin(this.noiseOffsetX) * 0.5;
-          const vy = Math.cos(this.noiseOffsetY) * 0.5 - 0.2; // Slight bias upwards
-
-          this.x += vx;
-          this.y += vy;
-
-          this.life += 0.016; // Assuming ~60fps
-
+          this.x += Math.sin(this.noiseOffsetX) * 0.5 * dt;
+          this.y += (Math.cos(this.noiseOffsetY) * 0.5 - 0.2) * dt;
+          this.life += 0.016 * dt;
           if (this.life >= this.maxLife ||
             this.x < -50 || this.x > canvas.width + 50 ||
             this.y < -50 || this.y > canvas.height + 50) {
             this.init(false);
           }
-        }
-
-        drawStar(cx, cy, spikes, outerRadius, innerRadius) {
-          let rot = Math.PI / 2 * 3;
-          let x = cx;
-          let y = cy;
-          let step = Math.PI / spikes;
-
+        };
+        Particle.prototype.drawStar = function (cx, cy, spikes, outerRadius, innerRadius) {
+          var rot = Math.PI / 2 * 3;
+          var x, y, step = Math.PI / spikes;
           ctx.beginPath();
           ctx.moveTo(cx, cy - outerRadius);
-          for (let i = 0; i < spikes; i++) {
+          for (var i = 0; i < spikes; i++) {
             x = cx + Math.cos(rot) * outerRadius;
             y = cy + Math.sin(rot) * outerRadius;
             ctx.lineTo(x, y);
             rot += step;
-
             x = cx + Math.cos(rot) * innerRadius;
             y = cy + Math.sin(rot) * innerRadius;
             ctx.lineTo(x, y);
@@ -715,90 +710,103 @@
           ctx.lineTo(cx, cy - outerRadius);
           ctx.closePath();
           ctx.fill();
-        }
+        };
+        Particle.prototype.draw = function () {
+          var opacity = this.baseOpacity;
+          var fade = 2.0;
+          if (this.life < fade) opacity = this.baseOpacity * (this.life / fade);
+          else if (this.life > this.maxLife - fade) opacity = this.baseOpacity * ((this.maxLife - this.life) / fade);
+          if (opacity < 0) opacity = 0;
 
-        draw() {
-          // Smooth fade in and out
-          let currentOpacity = this.baseOpacity;
-          const fadeDuration = 2.0;
-          if (this.life < fadeDuration) {
-            currentOpacity = this.baseOpacity * (this.life / fadeDuration);
-          } else if (this.life > this.maxLife - fadeDuration) {
-            currentOpacity = this.baseOpacity * ((this.maxLife - this.life) / fadeDuration);
-          }
-
-          if (currentOpacity < 0) currentOpacity = 0;
-
-          ctx.fillStyle = `rgba(${this.color}, ${currentOpacity})`;
-
+          // Cheap soft halo instead of expensive ctx.shadowBlur
           if (this.glow) {
-            ctx.shadowBlur = (this.type === 1 || this.type === 3) ? 20 : 12;
-            ctx.shadowColor = `rgba(${this.color}, ${currentOpacity})`;
-          } else {
-            ctx.shadowBlur = 0;
+            ctx.fillStyle = 'rgba(' + this.color + ',' + (opacity * 0.35) + ')';
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
+            ctx.fill();
           }
 
+          ctx.fillStyle = 'rgba(' + this.color + ',' + opacity + ')';
+          var s = this.size;
           if (this.type === 1 || this.type === 3) {
-            this.drawStar(this.x, this.y, this.type === 3 ? 5 : 4, this.size * 2.5, this.size * 0.6);
+            this.drawStar(this.x, this.y, this.type === 3 ? 5 : 4, s * 2.5, s * 0.6);
           } else if (this.type === 4) {
-            // Diamond
             ctx.beginPath();
-            ctx.moveTo(this.x, this.y - this.size * 2.5);
-            ctx.lineTo(this.x + this.size * 1.5, this.y);
-            ctx.lineTo(this.x, this.y + this.size * 2.5);
-            ctx.lineTo(this.x - this.size * 1.5, this.y);
+            ctx.moveTo(this.x, this.y - s * 2.5);
+            ctx.lineTo(this.x + s * 1.5, this.y);
+            ctx.lineTo(this.x, this.y + s * 2.5);
+            ctx.lineTo(this.x - s * 1.5, this.y);
             ctx.closePath();
             ctx.fill();
           } else if (this.type === 5) {
-            // Cross / plus
-            const s = this.size * 2;
-            const t = this.size * 0.5;
+            var w = s * 2, t = s * 0.5;
             ctx.beginPath();
-            ctx.moveTo(this.x - t, this.y - s);
-            ctx.lineTo(this.x + t, this.y - s);
+            ctx.moveTo(this.x - t, this.y - w);
+            ctx.lineTo(this.x + t, this.y - w);
             ctx.lineTo(this.x + t, this.y - t);
-            ctx.lineTo(this.x + s, this.y - t);
-            ctx.lineTo(this.x + s, this.y + t);
+            ctx.lineTo(this.x + w, this.y - t);
+            ctx.lineTo(this.x + w, this.y + t);
             ctx.lineTo(this.x + t, this.y + t);
-            ctx.lineTo(this.x + t, this.y + s);
-            ctx.lineTo(this.x - t, this.y + s);
+            ctx.lineTo(this.x + t, this.y + w);
+            ctx.lineTo(this.x - t, this.y + w);
             ctx.lineTo(this.x - t, this.y + t);
-            ctx.lineTo(this.x - s, this.y + t);
-            ctx.lineTo(this.x - s, this.y - t);
+            ctx.lineTo(this.x - w, this.y + t);
+            ctx.lineTo(this.x - w, this.y - t);
             ctx.lineTo(this.x - t, this.y - t);
             ctx.closePath();
             ctx.fill();
           } else if (this.type === 6) {
-            // Triangle
-            const s = this.size * 2.5;
+            var r = s * 2.5;
             ctx.beginPath();
-            ctx.moveTo(this.x, this.y - s);
-            ctx.lineTo(this.x + s * 0.866, this.y + s * 0.5);
-            ctx.lineTo(this.x - s * 0.866, this.y + s * 0.5);
+            ctx.moveTo(this.x, this.y - r);
+            ctx.lineTo(this.x + r * 0.866, this.y + r * 0.5);
+            ctx.lineTo(this.x - r * 0.866, this.y + r * 0.5);
             ctx.closePath();
             ctx.fill();
           } else {
             ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.arc(this.x, this.y, s, 0, Math.PI * 2);
             ctx.fill();
           }
+        };
+
+        for (var i = 0; i < count; i++) particles.push(new Particle());
+
+        function animate(now) {
+          var dt = Math.min((now - lastTime) / 16.667, 2);
+          lastTime = now;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (var j = 0; j < particles.length; j++) {
+            particles[j].update(dt);
+            particles[j].draw();
+          }
+          rafId = requestAnimationFrame(animate);
+        }
+        function start() {
+          if (running) return;
+          running = true;
+          lastTime = performance.now();
+          rafId = requestAnimationFrame(animate);
+        }
+        function stop() {
+          running = false;
+          cancelAnimationFrame(rafId);
+        }
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) start(); else stop();
+            });
+          }, { rootMargin: '200px' });
+          io.observe(canvas);
+        } else {
+          start();
         }
       }
 
-      for (let i = 0; i < numParticles; i++) {
-        particles.push(new Particle());
-      }
-
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        particles.forEach(p => {
-          p.update();
-          p.draw();
-        });
-        requestAnimationFrame(animate);
-      }
-      animate();
-    }
+      startParticles('hero-particles', { desktop: 130, mobile: 45 });
+      startParticles('game-collection-particles', { desktop: 75, mobile: 28 });
+    })();
 
     // Stats Counter Animation
     const counters = document.querySelectorAll('.counter');
@@ -825,180 +833,6 @@
 
     counters.forEach(counter => observer.observe(counter));
 
-    // Game Collection Particles Animation
-    const gameCanvas = document.getElementById('game-collection-particles');
-    if (gameCanvas) {
-      const ctx = gameCanvas.getContext('2d');
-      let particles = [];
-      const numParticles = window.innerWidth < 768 ? 80 : 160;
-
-      function resizeGameCanvas() {
-        if (!gameCanvas.parentElement) return;
-        gameCanvas.width = gameCanvas.parentElement.clientWidth;
-        gameCanvas.height = gameCanvas.parentElement.clientHeight;
-      }
-      window.addEventListener('resize', resizeGameCanvas);
-      resizeGameCanvas();
-
-      class GameParticle {
-        constructor() {
-          this.init(true);
-        }
-
-        init(randomizeLife = false) {
-          this.x = Math.random() * gameCanvas.width;
-          this.y = Math.random() * gameCanvas.height;
-          this.noiseOffsetX = Math.random() * 1000;
-          this.noiseOffsetY = Math.random() * 1000;
-
-          const typeRand = Math.random();
-          if (typeRand < 0.25) this.type = 1;
-          else if (typeRand < 0.40) this.type = 0;
-          else if (typeRand < 0.55) this.type = 3;
-          else if (typeRand < 0.70) this.type = 4;
-          else if (typeRand < 0.85) this.type = 5;
-          else if (typeRand < 0.95) this.type = 6;
-          else this.type = 2;
-
-          this.size = Math.random() * 1.2 + 0.6;
-          this.baseOpacity = Math.random() * 0.12 + 0.04;
-          this.life = randomizeLife ? Math.random() * 10 : 0;
-          this.maxLife = Math.random() * 7 + 4;
-
-          const colors = [
-            '255, 215, 0',
-            '255, 223, 0',
-            '218, 165, 32',
-            '255, 235, 153',
-            '255, 183, 77',
-            '199, 200, 170',
-            '166, 61, 36'
-          ];
-          this.color = colors[Math.floor(Math.random() * colors.length)];
-          this.glow = Math.random() > 0.4 && this.type !== 2;
-        }
-
-        update() {
-          this.noiseOffsetX += 0.008;
-          this.noiseOffsetY += 0.008;
-
-          const vx = Math.sin(this.noiseOffsetX) * 0.4;
-          const vy = Math.cos(this.noiseOffsetY) * 0.4 - 0.15;
-
-          this.x += vx;
-          this.y += vy;
-
-          this.life += 0.016;
-
-          if (this.life >= this.maxLife ||
-            this.x < -50 || this.x > gameCanvas.width + 50 ||
-            this.y < -50 || this.y > gameCanvas.height + 50) {
-            this.init(false);
-          }
-        }
-
-        drawStar(cx, cy, spikes, outerRadius, innerRadius) {
-          let rot = Math.PI / 2 * 3;
-          let x = cx;
-          let y = cy;
-          let step = Math.PI / spikes;
-
-          ctx.beginPath();
-          ctx.moveTo(cx, cy - outerRadius);
-          for (let i = 0; i < spikes; i++) {
-            x = cx + Math.cos(rot) * outerRadius;
-            y = cy + Math.sin(rot) * outerRadius;
-            ctx.lineTo(x, y);
-            rot += step;
-
-            x = cx + Math.cos(rot) * innerRadius;
-            y = cy + Math.sin(rot) * innerRadius;
-            ctx.lineTo(x, y);
-            rot += step;
-          }
-          ctx.lineTo(cx, cy - outerRadius);
-          ctx.closePath();
-          ctx.fill();
-        }
-
-        draw() {
-          let currentOpacity = this.baseOpacity;
-          const fadeDuration = 1.8;
-          if (this.life < fadeDuration) {
-            currentOpacity = this.baseOpacity * (this.life / fadeDuration);
-          } else if (this.life > this.maxLife - fadeDuration) {
-            currentOpacity = this.baseOpacity * ((this.maxLife - this.life) / fadeDuration);
-          }
-
-          if (currentOpacity < 0) currentOpacity = 0;
-
-          ctx.fillStyle = `rgba(${this.color}, ${currentOpacity})`;
-
-          if (this.glow) {
-            ctx.shadowBlur = (this.type === 1 || this.type === 3) ? 16 : 10;
-            ctx.shadowColor = `rgba(${this.color}, ${currentOpacity})`;
-          } else {
-            ctx.shadowBlur = 0;
-          }
-
-          if (this.type === 1 || this.type === 3) {
-            this.drawStar(this.x, this.y, this.type === 3 ? 5 : 4, this.size * 2.2, this.size * 0.5);
-          } else if (this.type === 4) {
-            ctx.beginPath();
-            ctx.moveTo(this.x, this.y - this.size * 2.2);
-            ctx.lineTo(this.x + this.size * 1.3, this.y);
-            ctx.lineTo(this.x, this.y + this.size * 2.2);
-            ctx.lineTo(this.x - this.size * 1.3, this.y);
-            ctx.closePath();
-            ctx.fill();
-          } else if (this.type === 5) {
-            const s = this.size * 1.8;
-            const t = this.size * 0.4;
-            ctx.beginPath();
-            ctx.moveTo(this.x - t, this.y - s);
-            ctx.lineTo(this.x + t, this.y - s);
-            ctx.lineTo(this.x + t, this.y - t);
-            ctx.lineTo(this.x + s, this.y - t);
-            ctx.lineTo(this.x + s, this.y + t);
-            ctx.lineTo(this.x + t, this.y + t);
-            ctx.lineTo(this.x + t, this.y + s);
-            ctx.lineTo(this.x - t, this.y + s);
-            ctx.lineTo(this.x - t, this.y + t);
-            ctx.lineTo(this.x - s, this.y + t);
-            ctx.lineTo(this.x - s, this.y - t);
-            ctx.lineTo(this.x - t, this.y - t);
-            ctx.closePath();
-            ctx.fill();
-          } else if (this.type === 6) {
-            const s = this.size * 2.2;
-            ctx.beginPath();
-            ctx.moveTo(this.x, this.y - s);
-            ctx.lineTo(this.x + s * 0.866, this.y + s * 0.5);
-            ctx.lineTo(this.x - s * 0.866, this.y + s * 0.5);
-            ctx.closePath();
-            ctx.fill();
-          } else {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fill();
-          }
-        }
-      }
-
-      for (let i = 0; i < numParticles; i++) {
-        particles.push(new GameParticle());
-      }
-
-      function animateGameParticles() {
-        ctx.clearRect(0, 0, gameCanvas.width, gameCanvas.height);
-        particles.forEach(p => {
-          p.update();
-          p.draw();
-        });
-        requestAnimationFrame(animateGameParticles);
-      }
-      animateGameParticles();
-    }
   </script>
 </body>
 

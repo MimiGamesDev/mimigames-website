@@ -274,8 +274,8 @@ else { setTimeout(initReveal, 80); }
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    setTimeout(() => preloader.classList.add('loaded'), 350);
-    setTimeout(() => preloader.remove(), 1100);
+    setTimeout(() => preloader.classList.add('loaded'), 120);
+    setTimeout(() => preloader.remove(), 700);
   }
   // Inject scroll progress bar
   const bar = document.createElement('div');
