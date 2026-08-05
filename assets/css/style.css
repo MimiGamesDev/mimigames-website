@@ -346,6 +346,9 @@ section.hero h1 {
 /* Hamburger - hidden on desktop */
 .nav-toggle { display:none; }
 
+/* Mobile Contact Us button - hidden on desktop, shown in mobile menu */
+.nav-mobile-contact { display: none; }
+
 .hero {
   position: relative;
   padding: 100px 24px 24px;
@@ -1862,6 +1865,42 @@ section.hero h1 {
     width: 100%;
     height: 0;
     flex-shrink: 0;
+  }
+
+  /* ── Contact Us button at the bottom of the mobile menu ── */
+  .nav-mobile-contact {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 12px;
+    list-style: none;
+  }
+  .nav-links a.nav-mobile-contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    padding: 0 20px;
+    border-radius: 14px;
+    border: none;
+    background: #c7c8aa;
+    color: #c44d2e;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    gap: 10px;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-links a.nav-mobile-contact-btn:hover,
+  .nav-links a.nav-mobile-contact-btn:active {
+    background: #c44d2e;
+    color: #c7c8aa;
+  }
+  .nav-links a.nav-mobile-contact-btn.active-nav {
+    background: #c44d2e;
+    color: #c7c8aa;
   }
 }
 
